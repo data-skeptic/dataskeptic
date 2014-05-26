@@ -26,9 +26,9 @@ p {
 
 <a href="./">Home</a>
 |
-<a href="episodes.php">Episodes and Show Notes</a>
+<a href="episodes.php">Show Notes</a>
 |
-<a href="https://github.com/kylepolich/dataskeptic">github</a>
+<a href="github.php">github</a>
 |
 <a href="contact.php">Contact</a>
 
