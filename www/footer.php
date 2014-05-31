@@ -1,3 +1,5 @@
+<a href="http://dataskeptic.libsyn.com/rss"><img src="rrs2.gif" border=0" /></a>
+
 </center>
 
 <script>
