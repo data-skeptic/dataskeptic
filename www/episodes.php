@@ -38,7 +38,13 @@
 <div id="bbody">
 <?
   foreach ($posts as $post) {
-    echo("<h2>" . $post['title'] . "</h2>");
+    $link = $post['link'];
+    if (strpos($link, '/epnotes/') !== FALSE) {
+      echo("<h2><a href='$link'>" . $post['title'] . "</a></h2>");
+    }
+    else {
+      echo("<h2>" . $post['title'] . "</h2>");
+    }
     $posixTime = strtotime($post['pubDate']);
     echo("<b>Posted:</b> " . date('Y-m-d', $posixTime) . "<br/>");
     echo("<b>Duration:</b> " . $post['itunes:duration'] . "<br/>");
