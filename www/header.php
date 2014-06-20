@@ -19,20 +19,20 @@ p {
 <center>
 <h1>Data Skeptic podcast</h1>
 
-<img src="logo.png" />
+<img src="/logo.png" />
 
 <br/>
 <br/>
 
-<a href="./">Home</a>
+<a href="/">Home</a>
 |
-<a href="episodes.php">Show Notes</a>
+<a href="/episodes.php">Show Notes</a>
 |
 <a href="https://itunes.apple.com/us/podcast/the-data-skeptic-podcast/id890348705">iTunes</a>
 |
-<a href="github.php">github</a>
+<a href="/github.php">github</a>
 |
-<a href="contact.php">Contact</a>
+<a href="/contact.php">Contact</a>
 
 <br/>
 <br/>

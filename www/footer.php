@@ -1,13 +1,13 @@
 <br/>
 <table><tr>
-<td><a href="http://dataskeptic.libsyn.com/rss"><img src="rss2.gif" border=0" /></a></td>
+<td><a href="http://dataskeptic.libsyn.com/rss"><img src="/rss2.gif" border=0" /></a></td>
 <td width=50> </td>
 <td><a href="http://feedvalidator.org/check.cgi?url=http%3A//dataskeptic.libsyn.com/rss">
-<img src="http://skeptoid.com/images/valid-rss.png" />
+<img src="/valid-rss.png" />
 </a></td>
 <td width=50> </td>
 <td><a href="https://itunes.apple.com/us/podcast/the-data-skeptic-podcast/id890348705">
-<img src="itunes.png" height=35 /> on iTunes
+<img src="/itunes.png" height=35 /> on iTunes
 </a></td>
 </tr></table>
 
