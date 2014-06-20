@@ -9,6 +9,15 @@
       if($xml->nodeType==XMLReader::ELEMENT) {
         while($xml->read()) {
           $name = $xml->name;
+          if (strcmp($name, "enclosure") == 0) {
+            $attributes = array();
+            while ($xml->moveToNextAttribute()) {
+              $attributes[$xml->name] = $xml->value;
+            }
+            $post['a_length'] = $attributes['length'];
+            $post['a_type'] = $attributes['type'];
+            $post['a_url'] = $attributes['url'];
+          }
           if($xml->nodeType==XMLReader::ELEMENT) {
             $xml->read();
             $value = $xml->value;
@@ -49,6 +58,7 @@
     echo("<b>Posted:</b> " . date('Y-m-d', $posixTime) . "<br/>");
     echo("<b>Duration:</b> " . $post['itunes:duration'] . "<br/>");
     echo("<p>" . $post['description'] . "</p>");
+    echo("<p><audio controls='controls' style='width: 300px'><source type='" . $post['a_type'] . "' src='" . $post['a_url'] . "' />Your browser does not support our audio player.</audio></p>");
   }
 ?>
 </div>
