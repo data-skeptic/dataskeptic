@@ -1,7 +1,6 @@
-png("logo.png", width=600, height=200)
 x = seq(-4,4,length=200)
+png("logo.png", width=600, height=300)
 par(mar=c(4,5,1,1))
-png(filename="logo.png")
 plot(x, dnorm(x), type='l', ylab="Pr(x)", xlab=expression(sigma), cex.lab=2, lwd=3, axes=FALSE)
 axis(1)
 axis(2)

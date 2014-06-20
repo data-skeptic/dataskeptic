@@ -28,6 +28,8 @@ p {
 |
 <a href="episodes.php">Show Notes</a>
 |
+<a href="https://itunes.apple.com/us/podcast/the-data-skeptic-podcast/id890348705">iTunes</a>
+|
 <a href="github.php">github</a>
 |
 <a href="contact.php">Contact</a>
