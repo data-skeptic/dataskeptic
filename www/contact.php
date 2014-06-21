@@ -1,7 +1,7 @@
 <? include("header.php"); ?>
 
 <div id="bbody">
-<p>The host of the program can be found on twitter <a href="https://twitter.com/kpolich">@kpolich</a>, although he tweets infrequently and usually only posts non-Data Science related jokes that aren't very funny.</p>
+<p>The official twitter account of the show is <a href="https://twitter.com/dataskeptic">@dataskeptic</a></p>
 
 <p>To reach the show via email, contact <a href="mailto:kylepolich@gmail.com">kylepolich@gmail.com</a></p>
 
