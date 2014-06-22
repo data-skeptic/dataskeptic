@@ -2,7 +2,7 @@
 
 <div id="bbody">
 <p>
-The Data Skeptic Podcast features interviews and discussion of
+The Data Skeptic Podcast features conversations on
 topics related to data science, statistics, machine learning, 
 artificial intelligence and the like, all from the perspective
 of applying critical thinking and the scientific method to 
