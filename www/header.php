@@ -30,7 +30,9 @@ p {
 |
 <a href="https://itunes.apple.com/us/podcast/the-data-skeptic-podcast/id890348705">iTunes</a>
 |
-<a href="/github.php">github</a>
+<a href="/github.php">Github</a>
+|
+<a href="/social.php">Social</a>
 |
 <a href="/contact.php">Contact</a>
 
