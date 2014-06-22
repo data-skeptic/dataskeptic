@@ -19,7 +19,6 @@ def indexOf(needle, haystack, start):
     return -1
 
 twitter = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
-twitter.update_status(status='test')
 
 links = []
 feed = twitter.get_home_timeline()
