@@ -6,20 +6,19 @@ propertiesFile = "my.properties"
 cp = ConfigParser.ConfigParser()
 cp.readfp(open(propertiesFile))
 
-APP_KEY            = cp.get('app_key')
-APP_SECRET         = cp.get('app_secret')
-OAUTH_TOKEN        = cp.get('oauth_token')
-OAUTH_TOKEN_SECRET = cp.get('oauth_token_secret')
+APP_KEY            = cp.get('Params', 'app_key')
+APP_SECRET         = cp.get('Params', 'app_secret')
+OAUTH_TOKEN        = cp.get('Params', 'oauth_token')
+OAUTH_TOKEN_SECRET = cp.get('Params', 'oauth_token_secret')
 
-#twitter = Twython(APP_KEY, APP_SECRET)
-#auth = twitter.get_authentication_tokens()
-#OAUTH_TOKEN = auth['oauth_token']
-#OAUTH_TOKEN_SECRET = auth['oauth_token_secret']
+def indexOf(needle, haystack, start):
+  try:
+    idx = haystack.index(needle, start)
+    return idx
+  except ValueError:
+    return -1
 
 twitter = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
-
-#twitter.search(q='test')
-
 twitter.update_status(status='test')
 
 links = []
@@ -33,7 +32,6 @@ for item in feed:
       pos2 = len(text)
     url = text[pos1:pos2]
     anchor = text[0:pos1]
-    print anchor, url
     if len(anchor)>0 and len(url)>0:
       link = {}
       link['url'] = url
