@@ -1,10 +1,15 @@
 import json
 from twython import Twython
+import ConfigParser
 
-APP_KEY = '1K6safsIpde3dmH41fEt47HgT'
-APP_SECRET = 'EegtRLDEmROvZHiTGIaj0EDhw2RNegRur3toLYBQUgk0re13F1'
-OAUTH_TOKEN       = '2578087086-pvtK6SUyxHkIn2n6hFegDi61gmk2u8OuvTtV08n'
-OAUTH_TOKEN_SECRET = 'aCVKWF1SD0jphXiDkwHPRAHSWycQvNxJmrIzj16uCzzR0'
+propertiesFile = "my.properties"
+cp = ConfigParser.ConfigParser()
+cp.readfp(open(propertiesFile))
+
+APP_KEY            = cp.get('app_key')
+APP_SECRET         = cp.get('app_secret')
+OAUTH_TOKEN        = cp.get('oauth_token')
+OAUTH_TOKEN_SECRET = cp.get('oauth_token_secret')
 
 #twitter = Twython(APP_KEY, APP_SECRET)
 #auth = twitter.get_authentication_tokens()
