@@ -33,7 +33,7 @@ for data in recent:
   daily_ts = data['metrics'][metric]['values']
   daily_ts = [m for m in daily_ts if m is not None]  
   if len(daily_ts) > 0:
-    avg = numpy.mean(daily_ts)
+    avg = numpy.median(daily_ts)
     dts.append(datetime.fromtimestamp(data['starttime']))
     ts.append(avg)
 
@@ -41,8 +41,8 @@ plt.clf()
 fig, ax = plt.subplots(1)
 ax.plot(dts, ts)
 fig.autofmt_xdate()
-ax.fmt_xdata = mdates.DateFormatter('%Y-%m-%d')
-plt.title('My avg. daily heartrate')
+ax.fmt_xdata = mdates.DateFormatter('%m-%d')
+plt.title('My median daily heartrate')
 fig.set_size_inches(6,2.5)
 plt.savefig(metric + '.png', dpi=72)
 
