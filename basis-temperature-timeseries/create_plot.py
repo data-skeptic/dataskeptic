@@ -43,7 +43,8 @@ ax.plot(dts, ts)
 fig.autofmt_xdate()
 ax.fmt_xdata = mdates.DateFormatter('%m-%d')
 plt.title('My median daily heartrate')
-fig.set_size_inches(6,2.5)
+plt.tight_layout(pad=6.0)
+fig.set_size_inches(8,3.5)
 plt.savefig(metric + '.png', dpi=72)
 
 #TODO: sleep data is more interesting, but you need to do some post processing first
