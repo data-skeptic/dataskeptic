@@ -7,6 +7,11 @@
 
 <div id="bbody">
 
+<p>The official twitter account of the show is <a href="https://twitter.com/dataskeptic">@dataskeptic</a></p>
+
+<h1>My recent avg. daily heart rate</h1>
+<img src='heartrate.png' />
+
 <h1>Interesting links found on twitter</h1>
 <table cellpadding=5>
   <tr>
