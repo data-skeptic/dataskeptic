@@ -3,7 +3,6 @@
 <div id="bbody">
 <h1>Bayesian Updating</h1>
 
-
 <p>In this minisode Kyle and Linh Da discuss the meaning of Bayesian Updating.</p>
 
 <p>The root concept is Bayes Theorem:</p>
@@ -12,34 +11,44 @@
 Pr(A|B) = \dfrac{Pr(B|A) \cdot Pr(A)}{Pr(B)}
 \end{equation}
 
-Although a more helpful way of thinking about this alongside our discussion is to replace $A$ with $H$ for Hypothesis, and $B$ with $E$ for Evidence.  Let's also make a small tautological change to the denominator that makes it a little more intuitive to our application.
+Although a more helpful way of thinking about this alongside our discussion is to replace $A$ with $H$ for Hypothesis, and $B$ with $E$ for Evidence.
 
 \begin{equation}
-Pr(H|E) = \dfrac{Pr(E|H) \cdot Pr(H)}{Pr(E | H) + Pr(E | \neg H)}
+Pr(H|E) = \dfrac{Pr(E|H) \cdot Pr(H)}{Pr(E)}
 \end{equation}
 
-In this case $Pr(H)$ would represent your \emph{prior} probability / belief representing the likelihood that the hypothesis is true.  Given new evidence $E$, you can evaluate how likely that hypothesis was to generate that Evidence (i.e. $Pr(E|H)$).
+<p>In this case $Pr(H)$ would represent your \emph{prior} probability / belief representing the likelihood that the hypothesis is true.  Given new evidence $E$, you can evaluate how likely that hypothesis was to generate that Evidence (i.e. $Pr(E|H)$).</p>
 
-In our farmers market example, we had...
+<p>In our farmers market example, we had...</p>
 
 \begin{enumerate}
-\item $H_P$ - Box contains 100\% (p)omegranates
-\item $H_M$ - Box contains (m)ix of 50\% pomegranates and 50\% lemons
-\item $H_L$ - Box contains 100\% (l)emons
+\item $H_P$ - Box contains 100\% (P)omegranates
+\item $H_M$ - Box contains (M)ix of 50\% pomegranates and 50\% lemons
+\item $H_L$ - Box contains 100\% (L)emons
 \end{enumerate}
 
-We established our prior beliefs as $H_i = \frac{1}{3}$ for $i=0,1,2$.
+<p>We established our prior beliefs as $H_i = \frac{1}{3}$ for $i=0,1,2$.</p>
 
-When the farm pulls out one example fruit which turns out to be a pomegranate, Linh Da points out that ``it's not the bad of just lemons'' (a.k.a. $Pr(H_L) = 0$).  But that doesn't mean the other hypothesis are not 50 / 50!  What are they?
+<p>When the farm pulls out one example fruit which turns out to be a pomegranate, Linh Da points out that ``it's not the bad of just lemons'' (a.k.a. $Pr(H_L) = 0$).  But that doesn't mean the other hypothesis are not 50 / 50!  What are they?</p>
 
 \begin{equation}
-$Pr(H_P|E) = \dfrac{Pr(E|H_P) \cdot Pr(H_P)}{Pr(E | H_P) + Pr(E | \neg H_P)}
-= \dfrac{1.0 \cdot \frac{1}{3}}{Pr(E | H_P) + Pr(E | \neg H_P)}
+Pr(H_P|E) = \dfrac{Pr(E|H_P) \cdot Pr(H_P)}{Pr(E)}
+= \dfrac{1.0 \cdot \frac{1}{3}}{.50} = \frac{2}{3} = 66.\overline{6}\%
 \end{equation}
 
 \begin{equation}
-$Pr(H_M|E) = \dfrac{Pr(E|H_M) \cdot Pr(H_M)}{Pr(E | H_M) + Pr(E | \neg H_M)}
-= \dfrac{1.0 \cdot \frac{1}{3}}{Pr(E | H_M) + Pr(E | \neg H_M)}
+Pr(H_M|E) = \dfrac{Pr(E|H_M) \cdot Pr(H_M)}{Pr(E)}
+= \dfrac{0.50 \cdot \frac{1}{3}}{.50} = \frac{1}{3} = 33.\overline{3}\%
+\end{equation}
+
+<p>If you're having a hard time understanding why $Pr(E) = .50$, it's because this is your expectation of the evidence you got independent of which hypothesis turns out to be true.  Thus, it's based on your prior (original) belief over each hypothesis and their likelihood of producing the observation.  In other words...</p>
+
+\begin{equation}
+\begin{split}
+Pr(E) &= Pr(E|H_P) \cdot Pr(H_P) + Pr(E|H_M) \cdot Pr(H_M) + Pr(E|H_L) \cdot Pr(H_L) \\
+ &= 1.0 \cdot \frac{1}{3} + 0.50 \cdot \frac{1}{3} + 0.0 \cdot \frac{1}{3} \\
+ &= 0.5
+ \end{split}
 \end{equation}
 
 
