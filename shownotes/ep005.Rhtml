@@ -1,0 +1,49 @@
+<? include("../header.php") ?>
+
+<div id="bbody">
+<h1>Bayesian Updating</h1>
+
+
+<p>In this minisode Kyle and Linh Da discuss the meaning of Bayesian Updating.</p>
+
+<p>The root concept is Bayes Theorem:</p>
+
+\begin{equation}
+Pr(A|B) = \dfrac{Pr(B|A) \cdot Pr(A)}{Pr(B)}
+\end{equation}
+
+Although a more helpful way of thinking about this alongside our discussion is to replace $A$ with $H$ for Hypothesis, and $B$ with $E$ for Evidence.  Let's also make a small tautological change to the denominator that makes it a little more intuitive to our application.
+
+\begin{equation}
+Pr(H|E) = \dfrac{Pr(E|H) \cdot Pr(H)}{Pr(E | H) + Pr(E | \neg H)}
+\end{equation}
+
+In this case $Pr(H)$ would represent your \emph{prior} probability / belief representing the likelihood that the hypothesis is true.  Given new evidence $E$, you can evaluate how likely that hypothesis was to generate that Evidence (i.e. $Pr(E|H)$).
+
+In our farmers market example, we had...
+
+\begin{enumerate}
+\item $H_P$ - Box contains 100\% (p)omegranates
+\item $H_M$ - Box contains (m)ix of 50\% pomegranates and 50\% lemons
+\item $H_L$ - Box contains 100\% (l)emons
+\end{enumerate}
+
+We established our prior beliefs as $H_i = \frac{1}{3}$ for $i=0,1,2$.
+
+When the farm pulls out one example fruit which turns out to be a pomegranate, Linh Da points out that ``it's not the bad of just lemons'' (a.k.a. $Pr(H_L) = 0$).  But that doesn't mean the other hypothesis are not 50 / 50!  What are they?
+
+\begin{equation}
+$Pr(H_P|E) = \dfrac{Pr(E|H_P) \cdot Pr(H_P)}{Pr(E | H_P) + Pr(E | \neg H_P)}
+= \dfrac{1.0 \cdot \frac{1}{3}}{Pr(E | H_P) + Pr(E | \neg H_P)}
+\end{equation}
+
+\begin{equation}
+$Pr(H_M|E) = \dfrac{Pr(E|H_M) \cdot Pr(H_M)}{Pr(E | H_M) + Pr(E | \neg H_M)}
+= \dfrac{1.0 \cdot \frac{1}{3}}{Pr(E | H_M) + Pr(E | \neg H_M)}
+\end{equation}
+
+
+
+</div>
+
+<? include("../footer.php") ?>
