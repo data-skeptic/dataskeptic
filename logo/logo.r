@@ -1,3 +1,5 @@
+# This logo is now somewhat deprecated as Linh Da insisted I use the logo that appears on itunes on the site as well
+
 x = seq(-4,4,length=200)
 png("logo.png", width=600, height=300)
 par(mar=c(4,5,1,1))
