@@ -16,7 +16,7 @@ with working professionals and researchers doing noteworthy things
 with data.<p>
 
 <p>If you'd like to subscribe to the podcast, please do so on iTunes,
-Zune, Podcast Republic, or whatever your preferred method is.</p>
+Sticher, Zune, Podcast Republic, or whatever your preferred method is.</p>
 
 <p>If you would like to help improve this ugly site or ugly logo, the src
 is available on github and pull requests are warmly considered.</p>
