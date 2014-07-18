@@ -17,9 +17,7 @@ p {
 
 </style>
 <center>
-<h1>Data Skeptic podcast</h1>
-
-<img src="/ituneslogo.png" />
+<img src="/ituneslogo.png" alt="Data Skeptic Podcast" text="Data Skeptic Podcast" />
 
 <br/>
 <br/>
@@ -33,6 +31,8 @@ p {
 <a href="/github.php">Github</a>
 |
 <a href="/social.php">Social</a>
+|
+<a href="/resources.php">Resources</a>
 |
 <a href="/contact.php">Contact</a>
 
