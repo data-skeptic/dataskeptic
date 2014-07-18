@@ -19,7 +19,7 @@ p {
 <center>
 <h1>Data Skeptic podcast</h1>
 
-<img src="/logo.png" />
+<img src="/ituneslogo.png" />
 
 <br/>
 <br/>
