@@ -1,22 +1,11 @@
 <HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
 <BODY>
 
-<style>
-h1 {
-  color: 44AA44
-}
-p {
-  color: 224422
-}
-#bbody {
-  background-color:#ccc;
-  width: 600px;
-  padding: 10px;
-  text-align: left;
-}
-
-</style>
-<center>
+<div id="main">
+<div id="header">
 <img src="/ituneslogo.png" alt="Data Skeptic Podcast" text="Data Skeptic Podcast" />
 
 <br/>
@@ -30,11 +19,10 @@ p {
 |
 <a href="/github.php">Github</a>
 |
-<a href="/social.php">Social</a>
-|
 <a href="/resources.php">Resources</a>
 |
 <a href="/contact.php">Contact</a>
 
 <br/>
 <br/>
+</div>

@@ -1,10 +1,15 @@
+<div id="footer">
 <br/> <table><tr> <td><a href="http://dataskeptic.libsyn.com/rss"><img src="/rss2.gif" border=0" /></a></td> <td width=50> </td> <td><a 
 href="http://feedvalidator.org/check.cgi?url=http%3A//dataskeptic.libsyn.com/rss"> <img src="/valid-rss.png" /> </a></td> <td width=50> </td> <td><a 
 href="https://itunes.apple.com/us/podcast/the-data-skeptic-podcast/id890348705"> <img src="/itunes.png" height=35 /> on iTunes </a></td> <td width=50> </a> <td> <a 
 href="http://www.stitcher.com/s?fid=50561&refid=stpr"><img src="http://cloudfront.assets.stitcher.com/promo.assets/stitcher-banner-120x90.jpg" width="120" height="90" 
 alt="Listen to Stitcher"></a> </td> </tr></table>
+</div>
 
-</center>
+<div id="guesttweet">
+<? include("twitter.htm"); ?>
+</div>
+</div>
 
 <div id="speakpipe">
 <!-- Begin SpeakPipe code -->
