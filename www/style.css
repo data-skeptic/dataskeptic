@@ -15,15 +15,29 @@ p {
   color: 224422
 }
 #bbody {
-  background-color:#ccc;
-  width: 600px;
+  background-color:#eee;
+  left: 0;
+    width: -moz-calc(100% - 335px);
+    width: -webkit-calc(100% - 335px);
+    width: calc(100% - 335px);
   padding: 10px;
   text-align: left;
   position: relative;
 }
 
+#menu {
+  background-color:#ccc;  
+    width: -moz-calc(100% - 335px);
+    width: -webkit-calc(100% - 335px);
+    width: calc(100% - 335px);
+  padding: 10px;
+  text-align: center;
+}
+
 #header {
+  padding: 0px;
 }
 
 #footer {
+  padding: 10px;
 }
