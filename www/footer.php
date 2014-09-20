@@ -1,17 +1,26 @@
-<br/>
-<table><tr>
-<td><a href="http://dataskeptic.libsyn.com/rss"><img src="/rss2.gif" border=0" /></a></td>
-<td width=50> </td>
-<td><a href="http://feedvalidator.org/check.cgi?url=http%3A//dataskeptic.libsyn.com/rss">
-<img src="/valid-rss.png" />
-</a></td>
-<td width=50> </td>
-<td><a href="https://itunes.apple.com/us/podcast/the-data-skeptic-podcast/id890348705">
-<img src="/itunes.png" height=35 /> on iTunes
-</a></td>
-</tr></table>
+<div id="footer">
+<a href="http://dataskeptic.libsyn.com/rss"><img src="/rss2.gif" border=0" /></a> <br/>
+<a href="http://feedvalidator.org/check.cgi?url=http%3A//dataskeptic.libsyn.com/rss"> <img src="/valid-rss.png" /> </a> 
+</div>
 
-</center>
+<div id="guesttweet">
+<u><B>Recent tweets from guests</b></u><br/>
+<? include("twitter.htm"); ?>
+</div>
+</div>
+
+<div id="speakpipe">
+<!-- Begin SpeakPipe code -->
+<script type="text/javascript">
+(function(d){
+var app = d.createElement('script'); app.type = 'text/javascript'; app.async = true;
+var pt = ('https:' == document.location.protocol ? 'https://' : 'http://');
+app.src = pt + 'www.speakpipe.com/loader/1m0jjfmz48oamyjh1jsy3qip1z1vbu12.js'; 
+var s = d.getElementsByTagName('script')[0]; s.parentNode.insertBefore(app, s);
+})(document);
+</script>
+<!-- End SpeakPipe code -->
+</div>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
