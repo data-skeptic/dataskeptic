@@ -31,7 +31,13 @@ p {
     width: -webkit-calc(100% - 335px);
     width: calc(100% - 335px);
   padding: 10px;
-  text-align: center;
+  text-align: left;
+  font-family: "Lucida Bright", Georgia, serif;
+  font-size: 14pt;
+}
+
+#menu a {
+  text-decoration: none;
 }
 
 #header {
