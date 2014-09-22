@@ -15,25 +15,40 @@ p {
   color: 224422
 }
 #bbody {
-  background-color:#eee;
-  left: 0;
-    width: -moz-calc(100% - 335px);
-    width: -webkit-calc(100% - 335px);
-    width: calc(100% - 335px);
   padding: 10px;
   text-align: left;
-  position: relative;
+  left: 0;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+}
+
+#xtrastuff {
+  float: left;
+}
+
+#inner {
+  float: left;
+  width: 863px;
+}
+
+#cols {
+}
+
+#lcol {
+  float:left;
 }
 
 #menu {
   background-color:#ccc;  
-    width: -moz-calc(100% - 335px);
-    width: -webkit-calc(100% - 335px);
-    width: calc(100% - 335px);
   padding: 10px;
   text-align: left;
   font-family: "Lucida Bright", Georgia, serif;
   font-size: 14pt;
+}
+
+#topheader {
+}
+
+#main {
 }
 
 #menu a {
@@ -52,12 +67,16 @@ p {
   font-size: 24pt;
 }
 
+#wheretoget {
+  display: table;
+  margin: 0 auto;
+}
+
 #top {
   font-family: "Lucida Bright", Georgia, serif;
   float: left;
-  width: 500px;
-  border: 1px solid black;
-  height: 150px;
+  padding: 5px;
+  height: 140px;
 }
 
 #logo {
@@ -71,4 +90,14 @@ p {
 }
 
 .clear { clear: both;}
+
+#mc_embed_signup{
+  background:#fff;
+  clear:left;
+  font:14px Helvetica,Arial,sans-serif;
+  width:279px;
+  border: 1px solid black;
+  float: left;
+}
+
 

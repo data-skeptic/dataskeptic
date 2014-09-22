@@ -20,35 +20,44 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 </head>
 <BODY>
 
 <div id="main">
-<div id="header">
 
 <div id="topheader">
   <div id="logo"><img src="/ituneslogo.png" alt="Data Skeptic Podcast" text="Data Skeptic Podcast" /></div>
   <div id="top">
     <div id="headline">The Data Skeptic Podcast</div>
     <div id="desc">The Data Skeptic Podcast features conversations at the intersection of data science, skepticism, and empirical validation.</div>
+    <div class="clear"></div>
+    <div id="wheretoget">
+      <br/>
+      <a href="https://itunes.apple.com/us/podcast/the-data-skeptic-podcast/id890348705"><img src="/itunes.png" height=35 alt="Data Science itunes" /></a>
+      &nbsp;
+      <a href="http://www.stitcher.com/s?fid=50561&refid=stpr"><img src="stitcher_234x60.jpg" alt="Data Science Stitcher" height=35></a>
+    </div>
   </div>
   <div class="clear"></div>
 </div>
 
-<br/>
-<a href="https://itunes.apple.com/us/podcast/the-data-skeptic-podcast/id890348705"> <img src="/itunes.png" height=35 /></a>
-<br/>
-<a href="http://www.stitcher.com/s?fid=50561&refid=stpr"><img src="http://cloudfront.assets.stitcher.com/promo.assets/stitcher-banner-120x90.jpg" width="120" height="90" alt="Listen to Stitcher"></a>
-<br/>
-<? #include("mailinglist.php"); ?>
-<br/>
+<div id="cols">
 
+<div id="lcol">
+  <? include("mailinglist.php"); ?>
+  <div class="clear"></div>
+  <div id="xtrastuff">
+    <a href="http://dataskeptic.libsyn.com/rss"><img src="/rss2.gif" border=0" /></a> <br/>
+    <a href="http://feedvalidator.org/check.cgi?url=http%3A//dataskeptic.libsyn.com/rss"> <img src="/valid-rss.png" /> </a> 
+  </div>
+</div>
+
+<div id="inner">
 <div id="menu">
 <a href="/">Home</a>
 |
 <a href="/episodes.php">Show Notes</a>
-|
-<a href="https://itunes.apple.com/us/podcast/the-data-skeptic-podcast/id890348705">iTunes</a>
 |
 <a href="/github.php">Github</a>
 |
@@ -57,4 +66,3 @@
 <a href="/contact.php">Contact</a>
 </div>
 
-</div>

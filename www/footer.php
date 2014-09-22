@@ -1,6 +1,9 @@
+</div> <!-- inner -->
+<div class="clear"></div>
+</div> <!-- cols -->
+<div class="clear"></div>
 <div id="footer">
-<a href="http://dataskeptic.libsyn.com/rss"><img src="/rss2.gif" border=0" /></a> <br/>
-<a href="http://feedvalidator.org/check.cgi?url=http%3A//dataskeptic.libsyn.com/rss"> <img src="/valid-rss.png" /> </a> 
+(c) 2014
 </div>
 
 <div id="guesttweet">
