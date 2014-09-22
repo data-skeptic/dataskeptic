@@ -3,9 +3,10 @@
   width: 300px;
   padding: 5px;
   text-align: left;
-  position: absolute;
-  top: 0;
-  right: 0;
+  #position: absolute;
+  #top: 0;
+  #right: 0;
+  float: left;
 }
 
 h1 {
@@ -21,8 +22,16 @@ p {
   font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
 }
 
+.ep {
+  border: 1px solid black;
+  padding: 10px;
+}
+
 #xtrastuff {
   float: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #inner {

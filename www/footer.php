@@ -1,15 +1,19 @@
 </div> <!-- inner -->
-<div class="clear"></div>
-</div> <!-- cols -->
-<div class="clear"></div>
-<div id="footer">
-(c) 2014
-</div>
-
 <div id="guesttweet">
 <u><B>Recent tweets from guests</b></u><br/>
 <? include("twitter.htm"); ?>
 </div>
+
+
+<div class="clear"></div>
+</div> <!-- cols -->
+<div class="clear"></div>
+
+</div> <!-- main -->
+
+<div class="clear"></div>
+
+<div id="footer">
 </div>
 
 <div id="speakpipe">
