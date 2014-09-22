@@ -35,7 +35,7 @@ for guest in guests:
     tweets = twitter.get_user_timeline(screen_name=guest)
     img = data['profile_image_url_https']
     name = data['name']
-    tweets.reverse()
+    #tweets.reverse()
     tweets = tweets[0:min(3, len(tweets))]
     for tweet in tweets:
       htm = twitter.html_for_tweet(tweet)
