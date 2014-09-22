@@ -25,17 +25,23 @@
 
 <div id="main">
 <div id="header">
-<table><tr>
-<td valign=top><img src="/ituneslogo.png" alt="Data Skeptic Podcast" text="Data Skeptic Podcast" /></td>
-<td>
-<a href="https://itunes.apple.com/us/podcast/the-data-skeptic-podcast/id890348705"> <img src="/itunes.png" height=35 /></a> <br/><br/>
-<a href="http://www.stitcher.com/s?fid=50561&refid=stpr"><img src="http://cloudfront.assets.stitcher.com/promo.assets/stitcher-banner-120x90.jpg" width="120" height="90" alt="Listen to Stitcher"></a> <br/>
-</td><td>
-<? include("mailinglist.php"); ?>
 
-</td>
-</tr></table>
+<div id="topheader">
+  <div id="logo"><img src="/ituneslogo.png" alt="Data Skeptic Podcast" text="Data Skeptic Podcast" /></div>
+  <div id="top">
+    <div id="headline">The Data Skeptic Podcast</div>
+    <div id="desc">The Data Skeptic Podcast features conversations at the intersection of data science, skepticism, and empirical validation.</div>
+  </div>
+  <div class="clear"></div>
+</div>
 
+<br/>
+<a href="https://itunes.apple.com/us/podcast/the-data-skeptic-podcast/id890348705"> <img src="/itunes.png" height=35 /></a>
+<br/>
+<a href="http://www.stitcher.com/s?fid=50561&refid=stpr"><img src="http://cloudfront.assets.stitcher.com/promo.assets/stitcher-banner-120x90.jpg" width="120" height="90" alt="Listen to Stitcher"></a>
+<br/>
+<? #include("mailinglist.php"); ?>
+<br/>
 
 <div id="menu">
 <a href="/">Home</a>

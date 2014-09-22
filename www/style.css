@@ -47,3 +47,28 @@ p {
 #footer {
   padding: 10px;
 }
+
+#headline {
+  font-size: 24pt;
+}
+
+#top {
+  font-family: "Lucida Bright", Georgia, serif;
+  float: left;
+  width: 500px;
+  border: 1px solid black;
+  height: 150px;
+}
+
+#logo {
+  width: 279px;
+  border: 1px solid black;
+  float: left;
+}
+
+#desc {
+  float: left;
+}
+
+.clear { clear: both;}
+
