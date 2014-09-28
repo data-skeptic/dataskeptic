@@ -19,7 +19,7 @@ p {
   padding: 10px;
   text-align: left;
   left: 0;
-  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  font-family: "Lucida Bright", Georgia, serif;
 }
 
 .ep {
@@ -36,7 +36,8 @@ p {
 
 #inner {
   float: left;
-  width: 863px;
+  max-width: 863px;
+  font-family: "Lucida Bright", Georgia, serif;
 }
 
 #cols {
@@ -86,6 +87,7 @@ p {
   float: left;
   padding: 5px;
   height: 140px;
+  max-width: 863px;
 }
 
 #logo {

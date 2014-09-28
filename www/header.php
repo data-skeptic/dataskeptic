@@ -20,7 +20,8 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+<link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 </head>
 <BODY>
 
@@ -45,7 +46,6 @@
 <div id="cols">
 
 <div id="lcol">
-  <? include("mailinglist.php"); ?>
   <div class="clear"></div>
   <div id="xtrastuff">
     <a href="http://dataskeptic.libsyn.com/rss"><img src="/rss2.gif" border=0" /></a><br/>
