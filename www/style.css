@@ -3,9 +3,10 @@
   width: 300px;
   padding: 5px;
   text-align: left;
-  position: absolute;
-  top: 0;
-  right: 0;
+  #position: absolute;
+  #top: 0;
+  #right: 0;
+  float: left;
 }
 
 h1 {
@@ -15,25 +16,48 @@ p {
   color: 224422
 }
 #bbody {
-  background-color:#eee;
-  left: 0;
-    width: -moz-calc(100% - 335px);
-    width: -webkit-calc(100% - 335px);
-    width: calc(100% - 335px);
   padding: 10px;
   text-align: left;
-  position: relative;
+  left: 0;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+}
+
+.ep {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#xtrastuff {
+  float: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#inner {
+  float: left;
+  width: 863px;
+}
+
+#cols {
+}
+
+#lcol {
+  float:left;
 }
 
 #menu {
   background-color:#ccc;  
-    width: -moz-calc(100% - 335px);
-    width: -webkit-calc(100% - 335px);
-    width: calc(100% - 335px);
   padding: 10px;
   text-align: left;
   font-family: "Lucida Bright", Georgia, serif;
   font-size: 14pt;
+}
+
+#topheader {
+}
+
+#main {
 }
 
 #menu a {
@@ -47,3 +71,42 @@ p {
 #footer {
   padding: 10px;
 }
+
+#headline {
+  font-size: 24pt;
+}
+
+#wheretoget {
+  display: table;
+  margin: 0 auto;
+}
+
+#top {
+  font-family: "Lucida Bright", Georgia, serif;
+  float: left;
+  padding: 5px;
+  height: 140px;
+}
+
+#logo {
+  width: 279px;
+  border: 1px solid black;
+  float: left;
+}
+
+#desc {
+  float: left;
+}
+
+.clear { clear: both;}
+
+#mc_embed_signup{
+  background:#fff;
+  clear:left;
+  font:14px Helvetica,Arial,sans-serif;
+  width:279px;
+  border: 1px solid black;
+  float: left;
+}
+
+

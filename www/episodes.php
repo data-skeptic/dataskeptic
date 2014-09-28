@@ -57,18 +57,22 @@
 
 <div id="bbody">
 <?
+  $i = count($posts);
   foreach ($posts as $post) {
+    echo("<div class='ep'>");
     $link = $post['link'];
     if (strpos($link, '/epnotes/') !== FALSE) {
-      echo("<h2><a href='$link'>" . $post['title'] . "</a></h2>");
+      echo("<h2><a href='$link'>#" . $i . ": " . $post['title'] . "</a></h2>");
     }
     else {
-      echo("<h2>" . $post['title'] . "</h2>");
+      echo("<h2>#" . $i . ": " . $post['title'] . "</h2>");
     }
+    $i -= 1;
     $posixTime = strtotime($post['pubDate']);
+    echo("<table><tr><td>");
     echo("<b>Posted:</b> " . date('Y-m-d', $posixTime) . "<br/>");
     echo("<b>Duration:</b> " . $post['itunes:duration'] . "<br/>");
-    echo("<p>" . $post['description'] . "</p>");
+    echo("</td><td>");
     $aid = $post['aid'];
     if ($aid != "") {
       echo("<iframe style=\"border: none\" src=\"//html5-player.libsyn.com/embed/episode/id/" . $aid . "/height/360/width/640/theme/standard/direction/no/autoplay/no/autonext/no/thumbnail/yes/preload/no/no_addthis/no/\" height=\"125\" width=\"500\" scrolling=\"no\"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>");
@@ -76,6 +80,9 @@
     else {
       echo("<p><audio controls='controls' style='width: 300px'><source type='" . $post['a_type'] . "' src='" . $post['a_url'] . "' />Your browser does not support our audio player.</audio></p>");
     }
+    echo("</td></tr></table>");
+    echo("<p>" . $post['description'] . "</p>");
+    echo("</div><br/>");
   }
 ?>
 </div>
