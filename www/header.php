@@ -19,8 +19,12 @@
 <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="/jplayer/jquery.jplayer.min.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+<link rel="stylesheet" type="text/css" href="skin/jplayer.css" media="screen" />
+
 <link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 </head>
 <BODY>
@@ -46,6 +50,7 @@
 <div id="cols">
 
 <div id="lcol">
+  <? include("mailinglist.php"); ?>
   <div class="clear"></div>
   <div id="xtrastuff">
     <a href="http://dataskeptic.libsyn.com/rss"><img src="/rss2.gif" border=0" /></a><br/>
