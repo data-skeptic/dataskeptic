@@ -60,7 +60,7 @@
 <?
 $showonce=0;
   $i = count($posts);
-  $max = 6;
+  $max = 69;
   foreach ($posts as $post) {
     if ($max <=0) {
       continue;
@@ -76,11 +76,11 @@ $showonce=0;
     }
     $i -= 1;
     $posixTime = strtotime($post['pubDate']);
+    $url = $post['a_url'];
     echo("<b>Posted:</b> " . date('Y-m-d', $posixTime) . "<br/>");
     echo("<b>Duration:</b> " . $post['itunes:duration'] . "<br/>");
+    echo("<b>Direct Download:</b> <a href='" . $url . "'>" . str_replace("http://traffic.libsyn.com/dataskeptic/", "", $url) . "</a><br/>");
     $aid = $post['aid'];
-if ($showonce==0) {
-$showonce=0;
 ?>
 <div id="jquery_jplayer_<? echo($i); ?>" class="jp-jplayer"></div>
 
@@ -121,7 +121,7 @@ $(document).ready(function() {
         ready: function(event) {
             $(this).jPlayer("setMedia", {
                 title: "<? echo($post['title']); ?>",
-                mp3: "<? echo($post['a_url']); ?>"
+                mp3: "<? echo($url); ?>"
             });
         },
         swfPath: "http://jplayer.org/latest/js",
@@ -132,7 +132,6 @@ $(document).ready(function() {
 </script>
 
 <?
-}
     echo("" . $post['description'] . "");
     echo("</div><br/>");
   }
