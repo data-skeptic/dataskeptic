@@ -23,6 +23,10 @@ When presented with counter-arguments or empirical falsifications of claims, som
 
 <p><a href="http://probablyscience.libsyn.com/">Probably Science</a> is one of my sources of news.  Hosted by comedians with an interest in science, and featuring frequent celebrity appearances including not only Jana Levin but also Karen Gillan.</p>
 
+<p><a href="http://skeptoid.com/">Skeptoid</a> is a fantastic weekly program featuring short episodes on particular skeptical topics.  In many ways, skeptoid was the inspiration for the Data Skeptic mini episodes.</p>
+
+<p><a href="http://www.theskepticsguide.org/">The Skeptics' Guide to the Universe</a> is your estape to reality and an anticipated part of my weekend routine.</p>
+
 <p>... and my appologies to the many great other skeptical and data related podcast I enjoy but could not remember off the top of my head.</p>
 
 </div>

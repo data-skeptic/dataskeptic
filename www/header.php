@@ -19,8 +19,13 @@
 <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="/jplayer/jquery.jplayer.min.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="skin/jplayer.css" media="screen" />
+
+<link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 </head>
 <BODY>
 
