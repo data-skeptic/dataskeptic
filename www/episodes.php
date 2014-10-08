@@ -134,7 +134,24 @@ $(document).ready(function() {
 
 <?
 }
-    echo("" . $post['description'] . "");
+    $desc = $post['description'];
+    if (strpos($link, '/epnotes/') !== FALSE) {
+      $ii = strpos($desc, "<p");
+      if ($ii !== false) {
+        $jj = strpos($desc, "</p>", $ii);
+        if ($jj !== false) {
+          $kk = strpos($desc, "<p", $jj);
+          if ($kk !== false) {
+            $desc = substr($desc, 0, $jj + 4);
+          }
+        }
+      }
+      echo($desc);
+      echo("<p><a href='$link'>read more...</a></p>");
+    }
+    else {
+      echo($desc);
+    }
     echo("</div><br/>");
   }
 ?>
