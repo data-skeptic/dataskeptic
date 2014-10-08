@@ -81,6 +81,7 @@ $showonce=0;
     echo("<b>Duration:</b> " . $post['itunes:duration'] . "<br/>");
     echo("<b>Direct Download:</b> <a href='" . $url . "'>" . str_replace("http://traffic.libsyn.com/dataskeptic/", "", $url) . "</a><br/>");
     $aid = $post['aid'];
+if (2<1) {
 ?>
 <div id="jquery_jplayer_<? echo($i); ?>" class="jp-jplayer"></div>
 
@@ -132,6 +133,7 @@ $(document).ready(function() {
 </script>
 
 <?
+}
     echo("" . $post['description'] . "");
     echo("</div><br/>");
   }
