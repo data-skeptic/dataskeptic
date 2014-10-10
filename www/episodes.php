@@ -81,6 +81,7 @@ $showonce=0;
     echo("<b>Duration:</b> " . $post['itunes:duration'] . "<br/>");
     echo("<b>Direct Download:</b> <a href='" . $url . "'>" . str_replace("http://traffic.libsyn.com/dataskeptic/", "", $url) . "</a><br/>");
     $aid = $post['aid'];
+if (2<1) {
 ?>
 <div id="jquery_jplayer_<? echo($i); ?>" class="jp-jplayer"></div>
 
@@ -132,7 +133,25 @@ $(document).ready(function() {
 </script>
 
 <?
-    echo("" . $post['description'] . "");
+}
+    $desc = $post['description'];
+    if (strpos($link, '/epnotes/') !== FALSE) {
+      $ii = strpos($desc, "<p");
+      if ($ii !== false) {
+        $jj = strpos($desc, "</p>", $ii);
+        if ($jj !== false) {
+          $kk = strpos($desc, "<p", $jj);
+          if ($kk !== false) {
+            $desc = substr($desc, 0, $jj + 4);
+          }
+        }
+      }
+      echo($desc);
+      echo("<p><a href='$link'>read more...</a></p>");
+    }
+    else {
+      echo($desc);
+    }
     echo("</div><br/>");
   }
 ?>
