@@ -44,6 +44,7 @@ plot(year, daybirths, ylim=c(300, 600), type='l', axes=FALSE, ylab='', lwd=2, co
 axis(1)
 axis(2, col="green")
 text(1964.75, 350, "blackout", srt=90)
+legend(1961, 575, c("267th day", "week mean"), lwd=c(2,2), col=c("green", "blue"))
 par(new=TRUE)
 plot(year, wkmeans, type='l', axes=FALSE, ylab='', xlab='', ylim=c(2500, 4500), lwd=2, col="blue")
 axis(4, col="blue")
