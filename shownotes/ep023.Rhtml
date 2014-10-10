@@ -36,6 +36,20 @@ of the black out baby boom claims</p>
 <tr><td>1966</td><td>434.5</td><td>3041.6</td><td>431</td></tr>
 </table>
 
+<!--begin.rcode echo=FALSE, fig.align='center'
+year = 1961:1966
+daybirths = c(475,497,431,406,468,431)
+wkmeans = c(3350.6,3270.1,3333.7,3291.3,3203.7,3041.6)
+plot(year, daybirths, ylim=c(300, 600), type='l', axes=FALSE, ylab='', lwd=2, col="green")
+axis(1)
+axis(2, col="green")
+text(1964.5, 350, "blackout", srt=90)
+par(new=TRUE)
+plot(year, wkmeans, type='l', axes=FALSE, ylab='', xlab='', ylim=c(2500, 4500), lwd=2, col="blue")
+axis(4, col="blue")
+abline(v=1965)
+end.rcode-->
+
 <p>While discussing subliminal advertising, we mentioned a few of the claims made by
 <a href="http://en.wikipedia.org/wiki/Wilson_Bryan_Key">Wilson Bryan Key</a>, notably
 the "clam plate orgy":</p>
