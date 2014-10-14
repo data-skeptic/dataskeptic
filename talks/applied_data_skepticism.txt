@@ -1,0 +1,11 @@
+kepler
+- existing heliocentri model
+- kepler's model
+- compare as R^2
+- flaw due to missing relatively
+ockham
+epicurus
+bayes/laplace
+karl popper
+use some real scatter plot with a couple of fits and evaluate the criteria each time
+
