@@ -7,7 +7,10 @@ function endswith($haystack,$needle) {
 function processRss($feed) {
   try {
     $xml = new XMLReader();
-    $xml->open($feed);
+    $b = $xml->open($feed);
+    if (!$b) {
+      $xml->open("../" . $feed);
+    }
     $item = false;
     $posts = array();
     while ($xml->read()) {
