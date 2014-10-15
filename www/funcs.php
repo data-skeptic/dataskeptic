@@ -1,4 +1,9 @@
-<?
+<?php
+function endswith($haystack,$needle) {
+    $expectedPosition = strlen($haystack) - strlen($needle);
+    return strripos($haystack, $needle, 0) === $expectedPosition;
+}
+
 function processRss($feed) {
   try {
     $xml = new XMLReader();
@@ -57,14 +62,14 @@ function processRss($feed) {
 }
 
 function makePlayer($post, $i) {
-  $url = ?;
-  $title = ?;
+  $url = $post['a_url'];
+  $title = $post['title'];
   $str =  "<div id=\"jquery_jplayer_" . $i . "\" class=\"jp-jplayer\"></div>";
   $str .= "<div id=\"jp_container_" . $i . "\" class=\"jp-audio\">";
   $str .= "    <div class=\"jp-type-single\">";
   $str .= "        <div class=\"jp-gui jp-interface\">";
   $str .= "            <ul class=\"jp-controls\">";
-  $str .= "                <li><a href=\"javascript:;\" class=\"jp-play\" tabindex=\"1\">play</a></li>";";
+  $str .= "                <li><a href=\"javascript:;\" class=\"jp-play\" tabindex=\"1\">play</a></li>\";";
   $str .= "                <li><a href=\"javascript:;\" class=\"jp-pause\" tabindex=\"1\">pause</a></li>";
   $str .= "                <li><a href=\"javascript:;\" class=\"jp-volume-max\" tabindex=\"1\" title=\"max volume\">max volume</a></li>";
   $str .= "            </ul>";
@@ -105,5 +110,6 @@ function makePlayer($post, $i) {
   $str .= "    });";
   $str .= "});";
   $str .= "</script>";
+  return $str;
 }
 ?>

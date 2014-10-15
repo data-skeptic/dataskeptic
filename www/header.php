@@ -1,3 +1,18 @@
+<?php
+  include("funcs.php");
+  $posts = processRss("feed.rss");
+  $ii = count($posts);
+  $playercontent = "";
+  for ($x=0; $x < count($posts); $x++) {
+    $p = $posts[$x];
+    if (endswith($p['link'], $_SERVER['REQUEST_URI'])) {
+      $post = $p;
+      $i = $ii;
+      $playercontent = makePlayer($post, $i); 
+    }
+    $ii--;
+  }
+?>
 <HTML>
 <head>
   <title>Data Skeptic | A podcast about data science and skepticism</title>
@@ -22,8 +37,8 @@
 
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
   <script type="text/javascript" src="/jplayer/jquery.jplayer.min.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="skin/jplayer.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/style.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/skin/jplayer.css" media="screen" />
 
 <link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 </head>
@@ -41,7 +56,7 @@
       <br/>
       <a href="https://itunes.apple.com/us/podcast/the-data-skeptic-podcast/id890348705"><img src="/itunes.png" height=35 alt="Data Science itunes" /></a>
       &nbsp;
-      <a href="http://www.stitcher.com/s?fid=50561&refid=stpr"><img src="stitcher_234x60.jpg" alt="Data Science Stitcher" height=35></a>
+      <a href="http://www.stitcher.com/s?fid=50561&refid=stpr"><img src="/stitcher_234x60.jpg" alt="Data Science Stitcher" height=35></a>
     </div>
   </div>
   <div class="clear"></div>
@@ -64,10 +79,13 @@
 |
 <a href="/episodes.php">Show Notes</a>
 |
-<a href="/github.php">Github</a>
-|
 <a href="/resources.php">Resources</a>
 |
 <a href="/contact.php">Contact</a>
 </div>
 
+<?
+  if (strpos($_SERVER['REQUEST_URI'], "epnotes") !== FALSE) {
+    echo($playercontent);
+  }
+?>
