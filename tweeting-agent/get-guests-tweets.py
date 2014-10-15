@@ -28,6 +28,7 @@ f = open('guests.lst', 'r')
 guests = f.readlines()
 f.close()
 guests.reverse()
+alltweets = []
 for guest in guests:
   guest = guest.strip()
   if len(guest)>0:
@@ -37,10 +38,18 @@ for guest in guests:
     name = data['name']
     #tweets.reverse()
     tweets = tweets[0:min(3, len(tweets))]
-    for tweet in tweets:
-      htm = twitter.html_for_tweet(tweet)
-      out.write('<tr><td valign=top><img src=\'' + img + '\' /></td>')
-      out.write('<td valign=top><a href="http://twitter.com/' + guest[1:len(guest)] + '">' + guest + '</a><br/>' + htm.encode('utf-8') + '</td></tr>')
+    alltweets.extend(tweets)
+
+alltweets.sort(key=lambda x: x['created_at'])
+if len(alltweets)>10:
+  alltweets = alltweets[0:10]
+
+for tweet in alltweets:
+  htm = twitter.html_for_tweet(tweet)
+  guest = tweet['user']['screen_name'].encode('utf-8')
+  img = twitter.show_user(screen_name=guest)['profile_image_url_https']
+  out.write('<tr><td valign=top><img src=\'' + img + '\' /></td>')
+  out.write('<td valign=top><a href="http://twitter.com/' + guest[1:len(guest)] + '">' + guest + '</a><br/>' + htm.encode('utf-8') + '</td></tr>')
 
 out.flush()
 out.close()
