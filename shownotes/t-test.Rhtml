@@ -98,17 +98,17 @@ for (n in sampleSizes) {
   pval = eval$p.value
   pvals = c(pvals, pval)
 }
+falsePositives = sum(pvals < 0.05) / length(pvals)
 hist(pvals, breaks=seq(0,1,length=20))
 abline(v=0.05, lwd=2, col="blue")
 text(0.05, 25, expression(alpha), pos=4)
 text(0.05, 25, "   = 0.05", pos=4)
-falsePositives = sum(pvals < 0.05) / length(pvals)
 end.rcode-->
 
 <p>The code above iteratively calculates randomly data and then performs a t-test, and captures the p-value.  The plot is a histogram 
 which summaries how often each range of p-values is observed in these trials.  Remembering that a p-value is the probability that any difference in the populations is due to chance.  Thus, we expect a wide range of p-values since we know the data is in fact random, and this is what we find.</p>
 
-<p>Further, assuming $\alpha = 0.05$, notice that $100 * falsePositives$% of trials report the difference in populations to be statistically significant, which we know is false!  This is not a flaw in the test, but a useful observation.  The t-test will occasionally find a statistically significant difference in data which (unknown to the tester) has no real difference.  In this case, since we created our data, we know it should be random.  However, in general, we have no access to ground truth - we do tests to determine if changes are meaningful.  One should always keep in mind that the choosen $\alpha$ value defines the frequency with which an incorrect result will be generated.</p>
+<p>Further, assuming $\alpha = 0.05$, notice that <!--rinline round(100*falsePositives,2)-->% of trials report the difference in populations to be statistically significant, which we know is false!  This is not a flaw in the test, but a useful observation.  The t-test will occasionally find a statistically significant difference in data which (unknown to the tester) has no real difference.  In this case, since we created our data, we know it should be random.  However, in general, we have no access to ground truth - we do tests to determine if changes are meaningful.  One should always keep in mind that the choosen $\alpha$ value defines the frequency with which an incorrect result will be generated.</p>
 
 <h2>How sensitive is the t-test?</h2>
 <p>So how sensitive is the t-test to small changes?  Let's run another simulation in which we add a very small difference to our two populations, and measure how big a sample size is required to detect it.  In the next set of simulations, I'll make the second population 0.02 higher than the first population.  The plot below how many iterations it took before a statistically significant example was detected (giving up after 2000 iterations)</p>
@@ -135,7 +135,8 @@ for (n in sampleSizes) {
   }
   i = i + 1
 }
-plot(sampleSizes, iters, xlab="Sample Size", ylab="iterations before detection", axes=FALSE, cex=0.5, ylim=c(0, max(iters)*1.1)
+ym = max(iters[!is.na(iters)])*1.1
+plot(sampleSizes, iters, xlab="Sample Size", ylab="iterations before detection", axes=FALSE, cex=0.5, ylim=c(0, ym))
 xat=seq(0, max(sampleSizes), by=10000)
 axis(1, at=xat, labels=xat)
 axis(2)
