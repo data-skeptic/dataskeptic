@@ -55,6 +55,13 @@
   }
 ?>
 
+<script>
+function OpenInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
+</script>
+
 <div id="bbody">
 <h2>Recent Episodes</h2>
 <?
@@ -80,6 +87,7 @@ $showonce=0;
     echo("<b>Posted:</b> " . date('Y-m-d', $posixTime) . "<br/>");
     echo("<b>Duration:</b> " . $post['itunes:duration'] . "<br/>");
     echo("<b>Direct Download:</b> <a href='" . $url . "'>" . str_replace("http://traffic.libsyn.com/dataskeptic/", "", $url) . "</a><br/>");
+    echo("<b>Play in new window:</b> <a href='#' onclick=\"OpenInNewTab('listen.php?title=" . urlencode($post['title']) . "')\">Listen</a><br/>");
     $aid = $post['aid'];
     $desc = $post['description'];
     $done = 0;

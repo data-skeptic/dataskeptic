@@ -16,19 +16,6 @@
 <div id="footer">
 </div>
 
-<div id="speakpipe">
-<!-- Begin SpeakPipe code -->
-<script type="text/javascript">
-(function(d){
-var app = d.createElement('script'); app.type = 'text/javascript'; app.async = true;
-var pt = ('https:' == document.location.protocol ? 'https://' : 'http://');
-app.src = pt + 'www.speakpipe.com/loader/1m0jjfmz48oamyjh1jsy3qip1z1vbu12.js'; 
-var s = d.getElementsByTagName('script')[0]; s.parentNode.insertBefore(app, s);
-})(document);
-</script>
-<!-- End SpeakPipe code -->
-</div>
-
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
