@@ -2,7 +2,6 @@
 <div id="mc_embed_signup">
 <form action="//dataskeptic.us9.list-manage.com/subscribe/post?u=65e63d6f84f1d87759105d133&amp;id=dc60d554db" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 	<h2><nobr>Subscribe to our email list</nobr></h2>
-<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 <div class="mc-field-group">
 	<label for="mce-EMAIL">Email Address</label>
 	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
