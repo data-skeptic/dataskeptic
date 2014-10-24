@@ -50,7 +50,7 @@
   <div id="logo"><img src="/ituneslogo.png" alt="Data Skeptic Podcast" text="Data Skeptic Podcast" /></div>
   <div id="top">
     <div id="headline">The Data Skeptic Podcast</div>
-    <div id="desc">The Data Skeptic Podcast features conversations at the intersection of data science, skepticism, and empirical validation.</div>
+    <div id="desc">Conversations at the intersection of data science, skepticism, and empirical validation.</div>
     <div class="clear"></div>
     <div id="wheretoget">
       <br/>

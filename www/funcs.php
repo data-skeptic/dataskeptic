@@ -67,7 +67,7 @@ function processRss($feed) {
 function makePlayer($post, $i) {
   $url = $post['a_url'];
   $title = $post['title'];
-  $str =  "<div id=\"jquery_jplayer_" . $i . "\" class=\"jp-jplayer\"></div>";
+  $str =  "<br/><div id=\"jquery_jplayer_" . $i . "\" class=\"jp-jplayer\"></div>";
   $str .= "<div id=\"jp_container_" . $i . "\" class=\"jp-audio\">";
   $str .= "    <div class=\"jp-type-single\">";
   $str .= "        <div class=\"jp-gui jp-interface\">";
