@@ -1,6 +1,7 @@
 import json
 from twython import Twython
 import ConfigParser
+from dateutil import parser
 
 propertiesFile = "my.properties"
 cp = ConfigParser.ConfigParser()
@@ -40,7 +41,8 @@ for guest in guests:
     tweets = tweets[0:min(3, len(tweets))]
     alltweets.extend(tweets)
 
-alltweets.sort(key=lambda x: x['created_at'])
+alltweets.sort(key=lambda x: parser.parse(x['created_at']))
+alltweets.reverse()
 if len(alltweets)>10:
   alltweets = alltweets[0:10]
 
