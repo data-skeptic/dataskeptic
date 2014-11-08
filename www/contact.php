@@ -9,7 +9,7 @@
 
 <p>For show note corrections and similar contributions, pull requests to <a href="http://dataskeptic.com/github.php">Data Skeptic github repository</a> are warmly welcome.</p>
 
-<p>If you have a show related question, please as on Twitter or Facebook where everyone can benefit.</p>
+<p>If you have a show related question, please reach out on Twitter or Facebook where everyone can benefit.</p>
 
 </div>
 
