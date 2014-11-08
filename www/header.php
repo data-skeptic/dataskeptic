@@ -79,6 +79,8 @@
 |
 <a href="/episodes.php">Show Notes</a>
 |
+<a href="/blog.php">Blog</a>
+|
 <a href="/resources.php">Resources</a>
 |
 <a href="/contact.php">Contact</a>
