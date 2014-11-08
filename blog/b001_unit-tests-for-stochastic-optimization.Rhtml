@@ -1,0 +1,26 @@
+<? include("../header.php") ?>
+
+<div id="bbody">
+<h1>Unit Tests for Stochastic Optimization</h1>
+
+<p>I came across a paper by Tom Schaul, Ioannis Antonoglou, and David Silver from 
+<a href="http://deepmind.com/">DeepMind Technologies</a>
+titled <a href="http://arxiv.org/pdf/1312.6055v3.pdf">Unit Tests for Stochastic Optimization</a>.  This
+work explores setting a few benchmarking test cases uses for any optimization algorithm.</p>
+
+<p>The core of their work is proposing some well crafted "snags" that an overly ambitious or overly 
+cautious solution space exploration would either get trapped in or fail to find.  Somewhat 
+surprisingly, they noted many existing algorithms struggled to achieve robustness (i.e. passing
+all tests).</p>
+
+<p>This is the first paper I've found along these lines and I hope to see future similar work.
+With the growing use and prevalence of optimization algorithms, more and more decisions will be made
+based on their (often ill-understood) results.  Unfortunately, I believe a well implemented, easy to
+use library that implements a useful algorithm will be used blindly by many people.  This demands
+extra care by library authors and algorithm designers, and tools like the methods described in this
+paper can help fill this important step.</p>
+
+Full text PDF available <a href="http://arxiv.org/pdf/1312.6055v3.pdf">here</a> and related
+source code <a href="https://github.com/IoannisAntonoglou/optimBench">here</a>.
+
+<? include("../footer.php") ?>
