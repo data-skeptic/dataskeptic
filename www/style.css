@@ -112,3 +112,43 @@ p {
 }
 
 
+div.tblcontainer {
+    margin:1%;
+}
+
+table.tablesorter {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+table.tablesorter th {
+	border-width: 1px;
+	font-size:8px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+table.tablesorter td {
+	border-width: 1px;
+	padding: 2px;
+	border-style: solid;
+	border-color: #666666;
+}
+
+h1 {
+	font-family: verdana,arial,sans-serif;
+	font-size:12.5pt;
+	color:#888888;
+	font-variant:small-caps;
+}
+
+h1:first-letter{font-size:13pt;}
+
+tr:hover {
+	background-color: #eeeeee;
+}
+
