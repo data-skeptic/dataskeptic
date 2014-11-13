@@ -45,6 +45,11 @@ When presented with counter-arguments or empirical falsifications of claims, som
   </thead>
   <tbody>
     <tr>
+      <td><a href="http://www.amazon.com/All-Statistics-Statistical-Inference-Springer/dp/0387402721">All of Statistics</a></td>
+      <td><a href="http://www.stat.cmu.edu/~larry/">Larry Wasserman</a></td>
+      <td><a href="http://dataskeptic.com/epnotes/ep31_plenty-of-fish-data-science-approaches-with-thomas-levi.php">Thomas Levi</a></td>
+    </tr>
+    <tr>
       <td><a href="http://miningthesocialweb.com">Mining the Social Web</a></td>
       <td><a href="http://dataskeptic.com/epnotes/ep27_mining-the-social-web.php">Matthew Russell</a></td>
       <td>Kyle Polich / guest Matthew Russell</td>
