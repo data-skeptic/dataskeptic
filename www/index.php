@@ -15,7 +15,7 @@ featuring a high level discussions with co-host Linhda (a
 non-data scientist) on useful topics of data science.  These 
 make great primers for non-technical people.</p>
 
-<p>Other eisodes feature longer interviews with 
+<p>Other episodes feature longer interviews with 
 working professionals and researchers doing noteworthy things
 with data.<p>
 

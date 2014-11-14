@@ -31,6 +31,81 @@ When presented with counter-arguments or empirical falsifications of claims, som
 
 <p>... and my appologies to the many great other skeptical and data related podcast I enjoy but could not remember off the top of my head.</p>
 
+<!--
+  TO ADD:
+  Amy
+-->
+
+<h2>Recommended Books</h2>
+<table id="myTable" class="tablesorter">
+  <thead>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Recommended By</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="http://www.amazon.com/All-Statistics-Statistical-Inference-Springer/dp/0387402721">All of Statistics</a></td>
+      <td><a href="http://www.stat.cmu.edu/~larry/">Larry Wasserman</a></td>
+      <td><a href="http://dataskeptic.com/epnotes/ep31_plenty-of-fish-data-science-approaches-with-thomas-levi.php">Thomas Levi</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://miningthesocialweb.com">Mining the Social Web</a></td>
+      <td><a href="http://dataskeptic.com/epnotes/ep27_mining-the-social-web.php">Matthew Russell</a></td>
+      <td>Kyle Polich / guest Matthew Russell</td>
+    </tr>
+    <tr>
+      <td><a href="http://101.datascience.community/tag/jeffrey-m-stanton/">Introduction to Data Science</a></td>
+      <td><a href="http://dataskeptic.com/epnotes/practicing-and-communicating-data-science.php">Jeff Stanton</a></td>
+      <td>Kyle Polich / guest Jeff Stanton</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.amazon.com/gp/product/0743254236/">Calculated Risks</a></td>
+      <td><a href="http://en.wikipedia.org/wiki/Gerd_Gigerenzer">Gerd Gigerenzer</a></td>
+      <td><a href="http://dataskeptic.com/epnotes/practicing-and-communicating-data-science.php">Jeff Stanton</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://www-bcf.usc.edu/~gareth/ISL/">Introduction to Statistical Learning</a></td>
+      <td>
+        <a href="http://www-bcf.usc.edu/~gareth">Gareth James</a>,
+        <a href="http://www.biostat.washington.edu/~dwitten/">Daniela Witten</a>,
+        <a href="http://www.stanford.edu/~hastie/">Trevor Hastie</a>,
+        <a href="http://www-stat.stanford.edu/~tibs/">Robert Tibshirani</a>
+      </td>
+      <td><a href="http://dataskeptic.com/epnotes/ep017_zest-finance-with-marick-sinay.php">Marick Sinay</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://statweb.stanford.edu/~tibs/ElemStatLearn/">Elements of Statistical Learning</a></td>
+      <td>
+        <a href="http://www-stat.stanford.edu/~hastie/">Trevor Hastie</a>,
+        <a href="http://www-stat.stanford.edu/~tibs/">Robert Tibshirani</a>,
+        <a href="http://www-stat.stanford.edu/~jhf">Jerome Friedman</a>
+      </td>
+      <td><a href="http://dataskeptic.com/epnotes/ep017_zest-finance-with-marick-sinay.php">Marick Sinay</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://www.amazon.com/Secret-Knowledge-Expanded-Edition-Rediscovering/dp/0142005126">Secret Knowledge</a></td>
+      <td><a href="http://en.wikipedia.org/wiki/David_Hockney">David Hockney</a></td>
+      <td><a href="http://dataskeptic.com/epnotes/ep014.php">Kate Jones-Smith</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://www.amazon.com/Visual-Display-Quantitative-Information/dp/0961392142/">Visual Display of Quantitative Information</a></td>
+      <td><a href="http://www.edwardtufte.com/tufte/">Edward Tufte</a></td>
+      <td>Kyle Polich</td>
+    </tr>
+  </tbody>
+</table>
+
+<br/>
+<br/>
+<br/>
+
 </div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#myTable").tablesorter();
+});
+</script>
 
 <? include("footer.php"); ?>
