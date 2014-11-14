@@ -1,29 +1,68 @@
 <? include("../header.php") ?>
 
 <div id="bbody">
-<h1>Random Numbers</h1>
+<h1>[MINI] Monkeys on Typewriters</h1>
 
-<p>
-</p>
+<p>What is randomness?  How can we determine if some results are randomly generated or not?  Why are random numbers important to us in our everyday life?  These topics and more are discussed in this mini-episode on random numbers.</p>
+
+<p>Many readers will be vaguely familar with the idea of "X number of monkeys banging on Y number of typewriters for Z number of years" - the idea being that such a setup would produce random sequences of letters.  The origin of this idea was the mathemetician Borel who was interested in whether or not 1,000,000 monkeys working for 10 hours per day might eventually reproduce the works of shakespeare.</p>
+
+<p>Let us define $SH$ to be the "Shakespeare Hyothesis" - the assertion that our monkeys might coincidentally reproduced the complete works of shakespeare at some point.  Let us further assume that the works appear in sequence in the order they were completed, lest we introduce an additional combinatorical problem of how likely the monkeys are to produce a the works in any order.</p>
+
+<p>There are 884,421 total works in the complete works of shakespeare, and I'll estimate that on average, words have 5.1 of the 26 characters of the alphabet.  Thus...</p>
+
+$$Pr(SH) = \dfrac{1}{26^{884421 (5.1)}} = \dfrac{1}{26^{430547.1}} = \dfrac{1}{10^{10^{3.788584}}}$$
+
+<!--begin.rcode echo=FALSE
+perhour=80*120*5.1*60*10*1000000
+ex=log(26,10)
+end.rcode-->
+
+<p>Let us first assume trained monkeys will output random keystrokes at a rake of 80 per minute.  This is on the higher end of typical typists, although they're trying to type deliberately which is probably slower than random, so this is probably conservative.</p>
+
+<p>Multiply that by 5.1 characters per word, 60 minutes per hour, 10 hours per day, and 1 million monkeys gives us...</p>
+
+$$ CharactersPerDay = 80 \cdot 120 \cdot 5.1 \cdot 60 \cdot 10 \cdot 1000000 = 2.9376 × 10^{13}$$
+
+<p>Wow, that's alot of random text!  You could fit the complete works into that $3.3215 x 10^7$ times per day if you typed it out perfectly.  However, the monkeys will not deliberately type it, we're wondering if they might coincidentally do it.  As we showed above (when defining $Pr(SH)$), we're going to have to be exceptionally lucky, so we're going to need alot of failed attempts.</p>
+
+<p>In other words, if the entire works of Shakespeare were "abcde" (5 characters long) and the monkeys banged out "weiojskabfabcdadfjabcdeadfff" (28 characters long), there are 23 possible sequences of length 5 - one of which does happen to be "abcde" in my convoluted example.</p>
+
+<p>So if we assume that work from previous days carries over in one long sequential stream of gibberish, then after the first 884421th character is recorded, every subsequence starting from the beginning is fair game to match the complete works.</p>
+
+<p>I'll now make an important assumption: monkeys banging on typewriters output each letter with equal probability.  In other words, they don't write "B" more than $\frac{1}{26}$ of the time in show of their love of bananas.  For simplicity, I'll also assume we're not worried about matching the case of the letters.</p>
+
+<p>Given this important assumption, we can now express the problem using the Binomial probability distribution where $p=Pr(SH)=26 ^{-430547.1}$.  I'm going to approache the problem with a step that non-statisticians might find counter intuitive.  I'm going to ask the question "what's is the probability of <u>not</u> generating the entire works of shakespeare given enough monkey banging?".  This is easier to compute than summing the probability they do it one, twice, thrice, etc.</p>
+
+<p>Frustratingly, these extreme valued numbers cannot be handled by most statistical software and R (the language the show notes are written in) is no different.  So, let's go back to basics and see about computing this by hand.  The binomial distriution has this form:</p>
+
+$$Pr(X=k) = {n \choose k} p^k \big(1 -p\big)^{(n-k)}$$
+
+<p>For our example, $k=0$, $n$ is the number of trials (which we will want to play with), and $p$ is the probability of success on a single trial.  Thus, we want to know:</p>
+
+$$1 - Pr\big(X=0\big) = 1 - {n \choose 0} p^0 \big(1 -p \big)^{(n-0)} \\
+= 1 - \big(1 - 26 ^{-430547.1} \big)^{n} $$
 
 <!--
+&=& 
+-->
+
+
+<!--
+
 Game Science example
+uniform vs. gaussian vs. monte carlo
+
 Generate random sequence, read to linhda, ask if random
 pseudo-random
 -atmospheric, CBR
 -global vs. local randomness
-monkeys on typewritters
--There are 884,421 total words in Shakespeare's 43 works.
--avg word length = 5.1
--Pr(works) = 1 / 26^(884421*5.1)
 
-library("Brobdingnag")
-asprob=as.brob(26)^(884421*5.1)
-perhour=80*120*5.1*60*10*1000000
 
--Borel mathematician defined it, used 1 mil monkeys, 10 hours per day, 120 is very fast for typist, lets use 80 (higher end of avg)
--80*120*5.1*60*10*1mil = length one day
-uniform vs. gaussian vs. monte carlo
+#library("Brobdingnag")
+#asprob=as.brob(26)^(884421*5.1)
+#perhour=80*120*5.1*60*10*1000000
+
 comparison to random (seti, etc)
 uses
 tests:frequency,serial,gap
@@ -32,5 +71,15 @@ tests:frequency,serial,gap
 -statistically sample
 -simulation
 -->
+
+ <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/javascript">MathJax.Hub.Config({tex2jax: {processEscapes: true,
+        processEnvironments: false, inlineMath: [ ['$','$'] ],
+        displayMath: [ ['$$','$$'] ] },
+        asciimath2jax: {delimiters: [ ['$','$'] ] },
+        "HTML-CSS": {minScaleAdjust: 125 } });
+    </script>
 
 <? include("../footer.php") ?>
