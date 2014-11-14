@@ -41,36 +41,26 @@ $$Pr(X=k) = {n \choose k} p^k \big(1 -p\big)^{(n-k)}$$
 <p>For our example, $k=0$, $n$ is the number of trials (which we will want to play with), and $p$ is the probability of success on a single trial.  Thus, we want to know:</p>
 
 $$1 - Pr\big(X=0\big) = 1 - {n \choose 0} p^0 \big(1 -p \big)^{(n-0)} \\
-= 1 - \big(1 - 26 ^{-430547.1} \big)^{n} $$
+= 1 - \big(1 - 26 ^{-430547.1} \big)^{n} \\
+= 1 - \Bigg( \dfrac{26 ^{430547.1} - 1}{26 ^{430547.1}} \Bigg)^{n}
+$$
 
-<!--
-&=& 
--->
+<p>An exact solution is still ellusive, but we can see that the fractional component is some very tiny value $\epsilon$.  Thus, if we are interested in finding the $n$ required to generate Shakespeare's works with $q=0.5$ probability, then...</p>
 
+$$
+log_{\epsilon}(0.5) = n
+$$
 
-<!--
+<p>So even, if we don't have an exact solution, let's get something with pretty good precision, perhaps $\epsilon=0.999999999999$.  We'll then divide by the Characters Per Day previous calculated to determine the likelihood of success in a single day.</p>
 
-Game Science example
-uniform vs. gaussian vs. monte carlo
+<!--begin.rcode echo=TRUE
+cpd = 2.9376e13
+p = log(.5, .999999999999)
+success_single_day = p / cpd
+print(success_single_day)
+end.rcode-->
 
-Generate random sequence, read to linhda, ask if random
-pseudo-random
--atmospheric, CBR
--global vs. local randomness
-
-
-#library("Brobdingnag")
-#asprob=as.brob(26)^(884421*5.1)
-#perhour=80*120*5.1*60*10*1000000
-
-comparison to random (seti, etc)
-uses
-tests:frequency,serial,gap
--compression
--pick private key
--statistically sample
--simulation
--->
+<p>So given this overly generous $\epsilon$, there's a <!--rinline success_single_day*100 -->% chance that one million monkeys on a million typewriters would reproduce the works of shakespeare in a single day.</p>
 
  <script type="text/javascript"
         src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
