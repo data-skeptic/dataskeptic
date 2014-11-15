@@ -34,6 +34,7 @@ When presented with counter-arguments or empirical falsifications of claims, som
 <!--
   TO ADD:
   Amy
+  Alex book on magic
 -->
 
 <h2>Recommended Books</h2>
@@ -44,11 +45,40 @@ When presented with counter-arguments or empirical falsifications of claims, som
     <th>Recommended By</th>
   </thead>
   <tbody>
+<!--
+    <tr>
+      <td><a href="http://www.amazon.com/Data-Love-Story-Online-Dating/dp/0525953809">Data, a Love Story</a></td>
+      <td><a href="http://www.webbmediagroup.com/amy-webb">Amy Webb</a></td>
+      <td>Kyle Polich / guest Amy Webb</td>
+    </tr>
+-->
+<?
+  if (time() > strtotime("2014-12-05")) {
+?>
+<!--
     <tr>
       <td><a href="http://www.amazon.com/All-Statistics-Statistical-Inference-Springer/dp/0387402721">All of Statistics</a></td>
       <td><a href="http://www.stat.cmu.edu/~larry/">Larry Wasserman</a></td>
       <td><a href="http://dataskeptic.com/epnotes/ep31_plenty-of-fish-data-science-approaches-with-thomas-levi.php">Thomas Levi</a></td>
     </tr>
+-->
+<?
+  }
+  if (time() > strtotime("2014-11-21")) {
+?>
+    <tr>
+      <td><a href="http://www.amazon.com/Bright-sided-Relentless-Promotion-Positive-Undermined/dp/0805087494">Brite-sided</a></td>
+      <td><a href="http://en.wikipedia.org/wiki/Barbara_Ehrenreich">Barbara Ehrenreich</a></td>
+      <td><a href="http://dataskeptic.com/epnotes/ep29_the-secret-and-the-global-consciousness-project.php">Alex Boklin</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://www.amazon.com/Sleights-Mind-Neuroscience-Everyday-Deceptions/dp/0312611676">Sleights of Mind: What the Neuroscience of Magic Reveals About Our Everyday Deceptions</a></td>
+      <td><a href="http://macknik.neuralcorrelate.com/">Stephen Macknik</a>, <a href="http://smc.neuralcorrelate.com/">Susana Martinez-Conde</a>, <a href="http://sandrablakeslee.com/">Sandra Blakesly</a></td>
+      <td><a href="http://dataskeptic.com/epnotes/ep29_the-secret-and-the-global-consciousness-project.php">Alex Boklin</a></td>
+    </tr>
+<?
+}
+?>
     <tr>
       <td><a href="http://miningthesocialweb.com">Mining the Social Web</a></td>
       <td><a href="http://dataskeptic.com/epnotes/ep27_mining-the-social-web.php">Matthew Russell</a></td>
