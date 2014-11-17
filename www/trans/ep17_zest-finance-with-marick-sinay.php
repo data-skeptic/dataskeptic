@@ -1,4 +1,4 @@
-<? include("header.php"); ?>
+<? include("../header.php"); ?>
 
 <p><b>Kyle:</b>  So welcome back to another episode of the Data Skeptic podcast. I'm here today with my guest Marick Sinay. How are you Marick?
 
