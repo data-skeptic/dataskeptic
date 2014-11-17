@@ -77,9 +77,11 @@ $showonce=0;
     $link = $post['link'];
     if (strpos($link, '/epnotes/') !== FALSE) {
       echo("<h2><a href='$link'>#" . $i . ": " . $post['title'] . "</a></h2>");
+      $tfile = substr($link, strpos($link, '/epnotes/')+9, strlen($link));
     }
     else {
       echo("<h2>#" . $i . ": " . $post['title'] . "</h2>");
+      $tfile = "";
     }
     $i -= 1;
     $posixTime = strtotime($post['pubDate']);
@@ -87,7 +89,15 @@ $showonce=0;
     echo("<b>Posted:</b> " . date('Y-m-d', $posixTime) . "<br/>");
     echo("<b>Duration:</b> " . $post['itunes:duration'] . "<br/>");
     echo("<b>Direct Download:</b> <a href='" . $url . "'>" . str_replace("http://traffic.libsyn.com/dataskeptic/", "", $url) . "</a><br/>");
-    echo("<b>Play in new window:</b> <a href='#' onclick=\"OpenInNewTab('listen.php?title=" . urlencode($post['title']) . "')\">Listen</a><br/>");
+    echo("<b>Open in new window:</b> <a href='#' onclick=\"OpenInNewTab('listen.php?title=" . urlencode($post['title']) . "')\">Listen</a><br/>");
+    if (strpos($link, '/epnotes/') !== FALSE) {
+      $i = strpos($link, '/epnotes/');
+      $transurl = "trans/" . $tfile;
+//echo($_SERVER["DOCUMENT_ROOT"]);
+      if (file_exists($_SERVER["DOCUMENT_ROOT"] . "/" . $transurl) && $tfile != "") {
+        echo("<b>Transcript:</b> <a href='" . $transurl . "'>here</a><br/>");
+      }
+    }
     $aid = $post['aid'];
     $desc = $post['description'];
     $done = 0;
