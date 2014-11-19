@@ -1,3 +1,19 @@
+setwd("~/git/dataskeptic/blog")
+years = 2002:2012
+
+for (year in years) {
+  file = paste("mort", year, "us.zip", sep="")
+  url = paste("ftp://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/mortality/", file, sep="")
+  if(!file.exists(file)) {
+    print(url)
+    download.file(url, destfile=file, cacheOK=TRUE, quiet=TRUE, mode="wb", method="wget")
+  }
+  unzip(file)
+  uncompressed = unzip(file, list=TRUE)$Name
+  data = read.csv(uncompressed)
+}
+data[1,]
+
 <? include("../header.php") ?>
 
 ftp://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/DVS/mortality/mort2012us.zip
