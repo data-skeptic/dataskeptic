@@ -29,3 +29,44 @@ not going to comment on neurological aspects
 check for Perry Renshaw on neurologica
 
 <? include("../footer.php") ?>
+
+dir="C:\\Users\\kpolich\\Dropbox\\"
+file="vshead.txt"
+absfile = paste(dir, file, sep="")
+f = file(absfile)
+open(f)
+l = readLines(f, n=1, warn=FALSE)
+while (length(l) > 0) {
+  print(l)
+  residentStatus = as.numeric(substr(l, 20, 20))
+  education1 = as.numeric(substr(l, 61,62))
+  education2 = as.numeric(substr(l, 63,63))
+  educationType = as.numeric(substr(l,64,64))
+  monthOfDeath = as.numeric(substr(l, 65,66))
+  gender = substr(l, 69,69)
+  ageData = substr(l, 70,82)
+  # TODO: process ageData
+  placeOfDeath = substr(l, 83,83)
+  maritalStatus = substr(l, 84,84)
+  dayOfWeekOfDeath = substr(l, 85,85)
+  year = substr(l, 102, 105)
+  injuryAtWork = substr(l, 106,106)
+  mannerOfDeath = substr(l, 107,107)
+  methodOfDisposal = substr(l, 108, 108)
+  autopsy = substr(l, 109, 109)
+  activity = substr(l, 144, 144)
+  placeOfInjury = substr(l, 145, 145)
+  causeData =substr(l, 146,162)
+  # TODO: parse cause data
+  mutlipleConditionsData = substr(l, 163, 443)
+  # TODO: parse multiple conditions data
+  race = as.numeric(substr(l, 445,446))
+  raceBridgeFlag = substr(l, 447, 447)
+  raceImputationFlag = substr(l, 448, 448)
+  raceRecord3 = as.numeric(substr(l, 449, 449))
+  raceRecord5 = as.numeric(substr(l, 450, 450))
+  hispanicOrigin = as.numeric(substr(l, 484, 486))
+  hispanicRecord = as.numeric(substr(l, 488, 488))
+  l = readLines(f, n=1, warn=FALSE)
+  
+}
