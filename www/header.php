@@ -1,3 +1,4 @@
+
 <?php
   include("funcs.php");
   $posts = processRss("feed.rss");
@@ -72,6 +73,8 @@
     <a href="http://dataskeptic.libsyn.com/rss"><img src="/rss2.gif" border=0" /></a><br/>
     <a href="http://feedvalidator.org/check.cgi?url=http%3A//dataskeptic.libsyn.com/rss"> <img src="/valid-rss.png" /></a><br/><br/>
   </div>
+  <div class="clear"></div>
+  If you have a comment or question for the show, you can leave us a voice message by calling (310) 906-0752.
 </div>
 
 <div id="inner">

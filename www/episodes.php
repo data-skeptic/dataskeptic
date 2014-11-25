@@ -91,7 +91,7 @@ $showonce=0;
     echo("<b>Direct Download:</b> <a href='" . $url . "'>" . str_replace("http://traffic.libsyn.com/dataskeptic/", "", $url) . "</a><br/>");
     echo("<b>Open in new window:</b> <a href='#' onclick=\"OpenInNewTab('listen.php?title=" . urlencode($post['title']) . "')\">Listen</a><br/>");
     if (strpos($link, '/epnotes/') !== FALSE) {
-      $i = strpos($link, '/epnotes/');
+      $ii = strpos($link, '/epnotes/');
       $transurl = "trans/" . $tfile;
 //echo($_SERVER["DOCUMENT_ROOT"]);
       if (file_exists($_SERVER["DOCUMENT_ROOT"] . "/" . $transurl) && $tfile != "") {
