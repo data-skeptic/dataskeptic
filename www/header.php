@@ -74,7 +74,7 @@
     <a href="http://feedvalidator.org/check.cgi?url=http%3A//dataskeptic.libsyn.com/rss"> <img src="/valid-rss.png" /></a><br/><br/>
   </div>
   <div class="clear"></div>
-  If you have a comment or question for the show, you can leave us a voice message by calling (310) 906-0752.
+  <div id="vm">If you have a comment or question for the show, you can leave us a voice message by calling <b>(310) 906-0752</b>.</div>
 </div>
 
 <div id="inner">

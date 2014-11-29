@@ -152,3 +152,9 @@ tr:hover {
 	background-color: #eeeeee;
 }
 
+#vm {
+  width: 279px;
+  background-color:#efefef;
+  padding: 5px;
+}
+
