@@ -195,3 +195,95 @@ while (length(l) > 0) {
 }
 
 
+<? include("../header.php") ?>
+
+<div id="bbody">
+<h1>CDC Data on Suicide</h1>
+
+<p>Many people have heard the claim that there is a relationship between suicide
+rates and the holiday season.  I've heard this claim in several incompatible ways:
+that suicides rise sharply BEFORE the holidays, and that rates sharply DECLINE
+right before and then sharply increase AFTER the holidays.</p>
+
+<p>Like many unsourced claims, there's a certain plausibility to this.  Despite
+these two theories being contradictory, I find myself saying "oh, sure, that makes
+sense, because..." to each.  So what does the data tell us?</p>
+
+<p>I hope it goes without saying that this casual analysis is not meant to desensitize
+or trivialize the tragic loss of life.  A better understanding of this data may help
+us as a species provide better services and outreach to those struggling with depression
+or other causes of suicide.</p>
+
+<h2>Data Aquisition</h2>
+<p>The CDC tracks and publishes a certain amount of data on mortality.  Unfortunately,
+it does not appear that they share these statistics to the resolution of day of the year.
+I presume this is done for privacy reasons, since, given other details like the State,
+marital status, age, etc., there could be cases where the exact day might remove
+anonymity.</p>
+
+<p>The CDC reports the data by month, so that's what I can look at.  The raw data
+can be found <a href="http://www.cdc.gov/nchs/data_access/Vitalstatsonline.htm">here</a>,
+although, the file format can be a little challenging to work with.  You'll need the
+file format layout PDF found <a href="http://www.cdc.gov/nchs/data/dvs/Record_Layout_2012.pdf">here</a>,
+or consider reaching out to me directly.  My code to process the data is a bit messy,
+but a good collaboration opportunity might motivate me to make it more public facing.</p>
+
+<h2>Suicide rates by month</h2>
+
+<!--begin.rcode
+data = read.csv("cdc_postprocessed.txt", sep="\t")
+f = data$mannerOfDeath=="Suicide"
+a=aggregate(year ~ monthOfDeath, data[f,], FUN=length)
+a$year = a$year / sum(a$year)
+plot(-1, xlim=c(1,13), ylim=c(0.05, 0.1), axes=FALSE, ylab="% for year", xlab="month")
+segments(a$monthOfDeath, a$year, a$monthOfDeath+1, a$year, lwd=2)
+axis(1, at=1:13, labels=c(1:12, ""))
+axis(2)
+col="blue"
+a=aggregate(year ~ monthOfDeath, data[!f,], FUN=length)
+a$year = a$year / sum(a$year)
+segments(a$monthOfDeath, a$year, a$monthOfDeath+1, a$year, col=col, lwd=3)
+points(1:12+.5, a$year, col=col)
+legend(6.5, 0.06, c("suicide", "other"), lwd=c(3,3), col=c("black", "blue"))
+points(7.2,0.0557, col=col)
+end.rcode-->
+
+<p>The plot above shows the rates per month of death by suicide and all other causes.
+Looking at the suicide rates (black lines) for November and December, we see an
+insiginficant rise - one much less than the rise is other deaths.  This seems to
+disprove the hypothesis that suicide rates increase before the holidays.</p>
+
+<p>Consider the sequence of December, January, and February.  We do see a spike (for
+this data which is 2012) from December to January, and a corresponding fall from
+January to Feburary.  This data is consistent with the hypothesis of a spike following
+the holidays, however, this "spike" is not outside the normal fluxtuation.  Further,
+we see more dramatic jumps (note the rates in May), which suggests that <u>if</u> the
+post holiday hypothesis holds some water, the magnitude of the affect is smaller
+than other phenomenon and trends.</p>
+
+<h2>Suicide by State</h2>
+
+<h2>Suicide and Altitude</h2>
+<p>The inspiration for my analysis was when my friend Brad Bode from the 
+<a href="http://www.martialmoves.com/">Martial Moves Podcast</a> shared an article
+claiming that 
+<a href="http://mic.com/articles/104096/there-s-a-suicide-epidemic-in-utah-and-one-neuroscientist-thinks-he-knows-why">altitude may be correlated with suicide rates</a>.
+This struck me as implausible, yet, a great hypothesis because it is testable, and
+if true, actionable.</p>
+
+
+claim: utah is highest
+claim: altitude has affect
+gun use
+http://ajp.psychiatryonline.org/doi/abs/10.1176/appi.ajp.2010.10020289
+low population
+sunlight exposure
+mormonism
+not going to comment on neurological aspects
+check for Perry Renshaw on neurologica
+
+<h2>If you or someone you know needs help</h2>
+
+mention where to get help
+
+<? include("../footer.php") ?>
