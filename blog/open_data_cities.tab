@@ -1,0 +1,48 @@
+state	city	url
+NM	Albuquerque	http://www.cabq.gov/abq-data/
+MI	Ann Arbor	http://www.a2gov.org/data/
+CO	Arvada	http://arvada.org/opendata/
+NC	Asheville	http://opendatacatalog.ashevillenc.gov/
+GA	Atlanta	http://gis.atlantaga.gov/
+TX	Austin	http://data.austintexas.gov/
+MD	Baltimore	http://data.baltimorecity.gov/
+WA	Belleville	https://data.illinois.gov/belleville
+MA	Boston	https://data.cityofboston.gov/
+	Boston Enterprise GIS	http://www.cityofboston.gov/maps/
+VT	Burlington	https://data.burlingtonvt.gov/
+IL	Champaign	https://data.illinois.gov/champaign
+IL	Chicago	http://data.cityofchicago.org/
+	Cook County	http://data.cookcountyil.gov/
+CO	Denver	http://data.denvergov.org/
+	Gilpin County	http://data.opencolorado.org/group/gilpin-county
+HI	Honolulu	https://data.honolulu.gov/
+TX	Houston	http://data.codeforhouston.com/
+KS	Kansas City	https://data.kcmo.org/
+	King County	http://www.datakc.org/
+NV	Las Vegas	https://opendata.lasvegasnevada.gov/
+KY	Lexington	http://www.lexingtonky.gov/index.aspx?page=416
+CA	Los Angeles	https://controllerdata.lacity.org/browse
+KY	Louisville	http://portal.louisvilleky.gov/service/data
+WI	Madison	https://data.cityofmadison.com/
+	Montgomery County	https://data.montgomerycountymd.gov/
+	NC OpenBook	http://www.ncopenbook.gov/NCOpenBook/
+LA	New Orleans	http://data.nola.gov/
+NY	New York City	http://www.nyc.gov/data/
+	Open Door Kentucky	http://opendoor.ky.gov/transparency/Pages/default.aspx
+CA	Palo Alto	http://data.cityofpaloalto.org/
+PA	Philadelphia	http://www.opendataphilly.org/
+OR	Portland	http://civicapps.org/datasets/
+RI	Providence	https://data.providenceri.gov/
+NC	Raleigh	http://www.raleighnc.gov/open/
+IL	Rockford	https://data.illinois.gov/rockford
+CF	San Francisco	http://www.datasf.org/
+	San Mateo County	https://data.smcgov.org/
+CA	Santa Cruz	http://data.cityofsantacruz.com/
+AZ	Scottsdale	http://data.scottsdaleaz.gov/
+WA	Seattle	http://data.seattle.gov/
+MA	Somerville	http://data.somervillema.gov/
+IN	South Bend	https://data.southbendin.gov/
+	Wake County	http://www.wakegov.com/data/Pages/default.aspx
+TX	Weatherford	http://tx-weatherford2.civicplus.com/index.aspx?NID=1448
+FL	Wellington	https://data.wellingtonfl.gov/
+

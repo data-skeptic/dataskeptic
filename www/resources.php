@@ -105,7 +105,7 @@ When presented with counter-arguments or empirical falsifications of claims, som
         <a href="http://www.stanford.edu/~hastie/">Trevor Hastie</a>,
         <a href="http://www-stat.stanford.edu/~tibs/">Robert Tibshirani</a>
       </td>
-      <td><a href="http://dataskeptic.com/epnotes/ep017_zest-finance-with-marick-sinay.php">Marick Sinay</a></td>
+      <td><a href="http://dataskeptic.com/epnotes/ep17_zest-finance-with-marick-sinay.php">Marick Sinay</a></td>
     </tr>
     <tr>
       <td><a href="http://statweb.stanford.edu/~tibs/ElemStatLearn/">Elements of Statistical Learning</a></td>
