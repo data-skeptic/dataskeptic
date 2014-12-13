@@ -8,7 +8,7 @@
 <br/>
 
 <table id="myTablez" class="tablesorter">
-<tr><td><b>Event:</b></td><td>"How to Lie with Data, and How a Skeptic Can Recognize Deception" at 
+<tr><td><b>Event:</b></td><td><a href="http://dataskeptic.com/events/20140103_How-to-Lie-with-Data.php">"How to Lie with Data, and How a Skeptic Can Recognize Deception"</a> at 
 <a href="http://lanyrd.com/2015/skepticamp/">SkeptiCamp Monterey</a></td>
 <tr><td><b>Type:</b></td><td>Talk</td></tr>
 <tr><td><b>Date:</b></td><td>2015-01-03</td></tr>
