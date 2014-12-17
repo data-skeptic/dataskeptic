@@ -1,5 +1,4 @@
 #guesttweet {
-  background-color:#eee;
   width: 300px;
   padding: 5px;
   text-align: left;
@@ -108,7 +107,6 @@ p {
   font:14px Helvetica,Arial,sans-serif;
   width:279px;
   border: 1px solid black;
-  float: left;
 }
 
 
@@ -158,3 +156,29 @@ tr:hover {
   padding: 5px;
 }
 
+@media (max-width: 500px) {
+  #guesttweet {
+    background-color:#fff;
+  }
+  #topheadertopheader {padding-bottom: 50px; }
+  #cols  { display: table; width: 100%; }
+  #inner { display: table-header-group; }
+  #lcol  { display: none; }
+}
+@media (min-width: 500px) and (max-width: 1000px) {
+  #guesttweet {
+    background-color:#eee;
+  }
+  #mc_embed_signup{
+    float: left;
+  }
+  #lcol  { display: none; }
+}
+@media (min-width: 1000px) {
+  #guesttweet {
+    background-color:#fff;
+  }
+  #mc_embed_signup{
+    float: left;
+  }
+}

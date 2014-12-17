@@ -17,6 +17,7 @@
 <HTML>
 <head>
   <title>Data Skeptic | A podcast about data science and skepticism</title>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
   <meta name="Keywords" content="data science, data skepticism, kyle polich, empirical evidence">
   <meta name="Description" content="The Data Skeptic Podcast features conversations on topics related to data science, statistics, machine learning, artificial intelligence and the like, all from the perspective of applying critical thinking and the scientific method to evaluate the veracity of claims and efficacy of approaches.">
 <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
@@ -39,6 +40,10 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="/jplayer/jquery.jplayer.min.js"></script>
 <script type="text/javascript" src="http://cdn.ucb.org.br/Scripts/tablesorter/jquery.tablesorter.min.js"></script>
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type='text/javascript' src='scripts/respond.min.js'></script>
 <link rel="stylesheet" type="text/css" href="/style.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="/skin/jplayer.css" media="screen" />
 
@@ -59,6 +64,8 @@
       <a href="https://itunes.apple.com/us/podcast/the-data-skeptic-podcast/id890348705"><img src="/itunes.png" height=35 alt="Data Science itunes" /></a>
       &nbsp;
       <a href="http://www.stitcher.com/s?fid=50561&refid=stpr"><img src="/stitcher_234x60.jpg" alt="Data Science Stitcher" height=35></a>
+      &nbsp;
+      <a href="http://subscribe.getmiro.com/?type=audio&url1=http%3A%2F%2Fpodcast.datadrivensecurity.info%2Ffeed%2Fddsec-feed.xml" alt="Miro"><img src="Miro-icon.png" height=35 /></a>
     </div>
   </div>
   <div class="clear"></div>
