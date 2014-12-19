@@ -65,7 +65,7 @@
       &nbsp;
       <a href="http://www.stitcher.com/s?fid=50561&refid=stpr"><img src="/stitcher_234x60.jpg" alt="Data Science Stitcher" height=35></a>
       &nbsp;
-      <a href="http://subscribe.getmiro.com/?type=audio&url1=http%3A%2F%2Fpodcast.datadrivensecurity.info%2Ffeed%2Fddsec-feed.xml" alt="Miro"><img src="Miro-icon.png" height=35 /></a>
+      <a href="http://subscribe.getmiro.com/?type=audio&url1=http%3A%2F%2Fpodcast.datadrivensecurity.info%2Ffeed%2Fddsec-feed.xml" alt="Miro"><img src="/Miro-icon.png" height=35 /></a>
     </div>
   </div>
   <div class="clear"></div>
