@@ -55,15 +55,19 @@ When presented with counter-arguments or empirical falsifications of claims, som
 <?
   if (time() > strtotime("2014-12-05")) {
 ?>
+<?
+  }
+?>
+    <tr>
+      <td><a href="http://www.amazon.com/The-Conquest-Happiness-Bertrand-Russell/dp/0871401622">The Conquest of Happiness</a></td>
+      <td><a href="http://en.wikipedia.org/wiki/Bertrand_Russell">Bertrand Russell</a></td>
+      <td><a href="http://dataskeptic.com/epnotes/ep33_Economic-Modeling-and-Prediction-with-Peter-Backus.php">Peter Backus</a></td>
+    </tr>
     <tr>
       <td><a href="http://www.amazon.com/All-Statistics-Statistical-Inference-Springer/dp/0387402721">All of Statistics</a></td>
       <td><a href="http://www.stat.cmu.edu/~larry/">Larry Wasserman</a></td>
       <td><a href="http://dataskeptic.com/epnotes/ep31_plenty-of-fish-data-science-approaches-with-thomas-levi.php">Thomas Levi</a></td>
     </tr>
-<?
-  }
-  if (time() > strtotime("2014-11-21")) {
-?>
     <tr>
       <td><a href="http://www.amazon.com/Bright-sided-Relentless-Promotion-Positive-Undermined/dp/0805087494">Brite-sided</a></td>
       <td><a href="http://en.wikipedia.org/wiki/Barbara_Ehrenreich">Barbara Ehrenreich</a></td>
@@ -74,9 +78,6 @@ When presented with counter-arguments or empirical falsifications of claims, som
       <td><a href="http://macknik.neuralcorrelate.com/">Stephen Macknik</a>, <a href="http://smc.neuralcorrelate.com/">Susana Martinez-Conde</a>, <a href="http://sandrablakeslee.com/">Sandra Blakesly</a></td>
       <td><a href="http://dataskeptic.com/epnotes/ep29_the-secret-and-the-global-consciousness-project.php">Alex Boklin</a></td>
     </tr>
-<?
-  }
-?>
     <tr>
       <td><a href="http://www.amazon.com/Zero-The-Biography-Dangerous-Idea/dp/0140296476">Zero: The Biography of a Dangerous Idea</a></td>
       <td><a href="http://en.wikipedia.org/wiki/Charles_Seife">Charles Seife</a></td>
