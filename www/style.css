@@ -86,7 +86,6 @@ p {
   float: left;
   padding: 5px;
   height: 140px;
-  max-width: 863px;
 }
 
 #logo {
@@ -160,10 +159,13 @@ tr:hover {
   #guesttweet {
     background-color:#fff;
   }
-  #topheadertopheader {padding-bottom: 50px; }
   #cols  { display: table; width: 100%; }
   #inner { display: table-header-group; }
   #lcol  { display: none; }
+  #headline { display: none; }
+  #desc { display: none; }
+  #wheretoget { align: center; }
+  #logo       { align: center; }
 }
 @media (min-width: 500px) and (max-width: 1000px) {
   #guesttweet {
