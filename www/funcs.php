@@ -1,4 +1,9 @@
 <?php
+function startsWith($haystack, $needle)
+{
+     $length = strlen($needle);
+     return (substr($haystack, 0, $length) === $needle);
+}
 function endswith($haystack,$needle) {
     $expectedPosition = strlen($haystack) - strlen($needle);
     return strripos($haystack, $needle, 0) === $expectedPosition;

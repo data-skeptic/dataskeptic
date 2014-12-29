@@ -1,4 +1,3 @@
-
 <? include("header.php"); ?>
 
 <div id="bbody">
@@ -56,15 +55,18 @@ Peter mentions the demon haunted world
 -->
 <?
   if (time() > strtotime("2014-12-05")) {
+  }
 ?>
+    <tr>
+      <td><a href="http://www.amazon.com/The-Conquest-Happiness-Bertrand-Russell/dp/0871401622">The Conquest of Happiness</a></td>
+      <td><a href="http://en.wikipedia.org/wiki/Bertrand_Russell">Bertrand Russell</a></td>
+      <td><a href="http://dataskeptic.com/epnotes/ep33_Economic-Modeling-and-Prediction-with-Peter-Backus.php">Peter Backus</a></td>
+    </tr>
     <tr>
       <td><a href="http://www.amazon.com/The-Conquest-Happiness-Bertrand-Russell/dp/0871401622">The Conquest of Happiness</a></td>
       <td><a href="http://en.wikipedia.org/wiki/Bertrand_Russell">Bertrand Russell</a></td>
       <td><a href="http://dataskeptic.com/epnotes/">Peter Backus</a></td>
     </tr>
-<?
-  }
-?>
     <tr>
       <td><a href="http://www.amazon.com/All-Statistics-Statistical-Inference-Springer/dp/0387402721">All of Statistics</a></td>
       <td><a href="http://www.stat.cmu.edu/~larry/">Larry Wasserman</a></td>
@@ -108,7 +110,7 @@ Peter mentions the demon haunted world
         <a href="http://www.stanford.edu/~hastie/">Trevor Hastie</a>,
         <a href="http://www-stat.stanford.edu/~tibs/">Robert Tibshirani</a>
       </td>
-      <td><a href="http://dataskeptic.com/epnotes/ep017_zest-finance-with-marick-sinay.php">Marick Sinay</a></td>
+      <td><a href="http://dataskeptic.com/epnotes/ep17_zest-finance-with-marick-sinay.php">Marick Sinay</a></td>
     </tr>
     <tr>
       <td><a href="http://statweb.stanford.edu/~tibs/ElemStatLearn/">Elements of Statistical Learning</a></td>
