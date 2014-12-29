@@ -1,0 +1,70 @@
+<? include("../header.php") ?>
+
+<div id="bbody">
+<h1>LAX Departure Data</h1>
+
+<p>I'm a huge supporter of civic open data.  I've jealously watched my former home of Chicago become a leader in many of these initatives,
+and am happy the my current city of Los Angeles is working hard to become a leader as well.  The socrata portal found at 
+<a href="http://data.lacity.org">data.lacity.org</a> has a wealth of interesting datasets that I look forward to exploring
+further in future blog entries.</p>
+
+<p>My topic for today is a quick analysis of the
+<a href="https://data.lacity.org/A-Prosperous-City/Los-Angeles-International-Airport-Passenger-Traffi/g3qu-7q2u">Los Angeles International
+Airport Passenger Traffic By Terminal</a> dataset.  I am not particularly interested in traffic by terminal, but was able to aggregate this
+data to observe some global trends and learn a bit about air travel.</p>
+
+<p>I had originally been curious to see if I could detect superstition around 9/11 - would there be a noticable drop in travel on this
+anniversary?  Unfortunately, this dataset is aggregated by month.  Regardless, it would still be interesting to see if there are any travel trends
+both annually and monthly.</p>
+
+<!--begin.rcode fig.width=9, fig.height=4, echo=FALSE, fig.align='center'
+file = "~/git/dataskeptic/blog/Los_Angeles_International_Airport_-_Passenger_Traffic_By_Terminal.csv"
+data = read.csv(file, stringsAsFactors=FALSE)
+a = aggregate(Passenger_Count ~ Arrival_Departure, data, FUN=sum)
+parrival = a[a$Arrival_Departure=="Arrival", "Passenger_Count"] / sum(a$Passenger_Count)
+data$dt = as.Date(data$ReportPeriod, format="%m/%d/%Y")
+filter = data$Arrival_Departure=="Departure"
+data = data[filter,]
+
+dom = data[data$Domestic_International=="Domestic", ]
+intl = data[data$Domestic_International=="International", ]
+
+adom = aggregate(Passenger_Count ~ dt, dom, FUN=sum)
+aintl = aggregate(Passenger_Count ~ dt, intl, FUN=sum)
+
+mi = max(aintl$Passenger_Count)
+md = max(adom$Passenger_Count)
+m = max(mi, md)
+
+par(mar=c(2,4,2,0))
+plot(adom$dt, adom$Passenger_Count, ylim=c(0, m), type='l', ylab="Departures", xlab="", lwd=2, col="blue")
+points(aintl$dt, aintl$Passenger_Count, type='l')
+text(as.Date("2006-01-01"), 2250000, "domestic", pos=4, col="blue")
+text(as.Date("2006-01-01"), 900000, "international", pos=4)
+end.rcode-->
+
+<p>The figure above shows monthly trends from 2006 to the present of daily passenger counts for flight departures.  Since about 2009,
+Los Angeles International Airport has seen a steady growth in daily flight volume.</p>
+
+<p>We're nearly at the end of a holiday season.  As most people already know, travel at this time of year can often be prohibitively
+expensive, especially compared to the rates available in January.  I had always assumed this was due to higher than usual demand.
+Let's see if the data supports that hypothesis.</p>
+
+<!--begin.rcode fig.width=9, fig.height=4, echo=FALSE, fig.align='center'
+data = data[data$dt < "2014-01-01",]
+data$mon = as.POSIXlt(data$dt)$mon + 1
+a = aggregate(Passenger_Count ~ mon, data, FUN=sum)
+par(las=1)
+par(mar=c(2,4,1,1))
+m = 25000000
+barplot(a$Passenger_Count, names.arg=a$mon, axes=FALSE, ylim=c(0, m))
+axis(2, at=seq(0, m, by=5000000), labels=c("0", "500k", "1mil", "1.5mil", "2mil", "2.5mil"))
+end.rcode-->
+
+<p>Hmmm.  According to this dataset (aggregating by month over 2006-2013), December is not a particularly high volume month of travel at all.  Indeed, we see a bump over November, and a decline for January and February, but clearly the summer months are the most popular for travel.</p>
+
+<p>So why am I so utterly convinced it's worse to travel around the holidays than any other time of year?  I imagine there are two key reasons for my intuition being inconsistent with the data.  First, "holiday travel" and "December travel" are not actually the same thing.  Although December as a whole is not an outlier month, it seems reasonable that there are a few days within the month that are especially dense for travel.  Perhaps not enough to sway the entire month, but clustered enough to give rise to this assumption.  Second, the likelihood of flight cancellation and delay are highly weather dependent, and thus, more likely to introduce bottlenecks during winter months when compared to summer months.</p>
+
+</div>
+
+<? include("../footer.php") ?>
