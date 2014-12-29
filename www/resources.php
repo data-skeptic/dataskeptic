@@ -60,11 +60,6 @@ Peter mentions the demon haunted world
     <tr>
       <td><a href="http://www.amazon.com/The-Conquest-Happiness-Bertrand-Russell/dp/0871401622">The Conquest of Happiness</a></td>
       <td><a href="http://en.wikipedia.org/wiki/Bertrand_Russell">Bertrand Russell</a></td>
-      <td><a href="http://dataskeptic.com/epnotes/ep33_Economic-Modeling-and-Prediction-with-Peter-Backus.php">Peter Backus</a></td>
-    </tr>
-    <tr>
-      <td><a href="http://www.amazon.com/The-Conquest-Happiness-Bertrand-Russell/dp/0871401622">The Conquest of Happiness</a></td>
-      <td><a href="http://en.wikipedia.org/wiki/Bertrand_Russell">Bertrand Russell</a></td>
       <td><a href="http://dataskeptic.com/epnotes/">Peter Backus</a></td>
     </tr>
     <tr>
