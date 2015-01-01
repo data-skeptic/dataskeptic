@@ -45,3 +45,38 @@ for key in counts.keys():
 
 f.close()
 
+followers = twitter.get_followers_ids(screen_name='dataskeptic')
+
+ids = followers['ids']
+
+fc = []
+
+for i in range(0, len(ids)):
+  id = str(ids[i]).strip()
+  if len(id)>1:
+    udata = twitter.show_user(user_id=id)
+    #followers = twitter.get_followers_ids(screen_name=guest)
+    fc.append(udata['followers_count'])
+    time.sleep(1)
+
+
+time.sleep(60*30)
+
+twitter = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
+
+for i in range(360, len(ids)):
+  id = str(ids[i]).strip()
+  if len(id)>1:
+    udata = twitter.show_user(user_id=id)
+    #followers = twitter.get_followers_ids(screen_name=guest)
+    fc.append(udata['followers_count'])
+    time.sleep(5)
+
+
+f = open('dataskeptic_followers.tab', 'w')
+for i in range(0, len(fc)):
+  f.write(str(fc[i]))
+  f.write('\n')
+
+f.close()
+
