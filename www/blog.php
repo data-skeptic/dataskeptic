@@ -15,6 +15,15 @@
       array_push($posts, $post);
     }
   }
+  function sortByTitle($a, $b) {
+    $a = $a['link'];
+    $b = $b['link'];
+    if ($a == $b) {
+      return 0;
+    }
+    return ($a > $b) ? -1 : 1;
+  }
+  usort($posts, 'sortByTitle');
 ?>
 
 <script>
