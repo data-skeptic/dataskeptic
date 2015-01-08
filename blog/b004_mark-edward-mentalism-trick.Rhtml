@@ -86,19 +86,25 @@ and treat these as independent for this post.</p>
 
 <h2>The top 10 least common initials</h2>
 
-<!--begin.rcode echo=c(4)
+<!--begin.rcode echo=FALSE
 cpt = cpt[, c("i", "f")]
 cpt$f = cpt$f*100
 colnames(cpt) = c("Initials", "Frequency (%)")
-print(xtable(cpt[1:10,], digits=c(6)), type='html', include.rownames=FALSE)
+cpt2 = cpt
+cpt2[, 2] = formatC(cpt2[,2], format="f", digits=6)
+tbl1 = kable(cpt2[1:10,], format='html', row.names=FALSE, output=FALSE)
 end.rcode-->
+
+<!--rinline tbl1 -->
 
 <h2>The top 10 most common initials</h2>
 
 <!--begin.rcode echo=FALSE
 cpt = cpt[rev(order(cpt[,2])),]
-print(xtable(cpt[1:10,], digits=c(2)), type='html', include.rownames=FALSE)
+tbl2 = kable(cpt[1:10,], format='html', row.names=FALSE, output=FALSE)
 end.rcode-->
+
+<!--rinline tbl2 -->
 
 <p>I'm aware that magicians, illusionists, and mentalists sometimes rely
 on a bit of luck.  I recall a lecture by Dr. Tony Barnhart in which he
@@ -120,7 +126,7 @@ x = which(cpt$i=="DD")
 abline(v=x, lty=2, col=rgb(0,0,0,.3))
 abline(h=cpt[x, "f"], lty=2, col=rgb(0,0,0,.3))
 msg = paste("DD = ", round(cpt[x, "f"]*100,3), "%", sep="")
-text(x, cpt[x, "f"]+.0012, msg, pos=4)
+text(x, cpt[x, "f"]+.01, msg, pos=4)
 end.rcode-->
 
 <p>Hmm, not necessarily the most common choice, although this distribution
