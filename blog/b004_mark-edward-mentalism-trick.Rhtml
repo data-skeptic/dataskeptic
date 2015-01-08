@@ -1,0 +1,172 @@
+<? include("../header.php"); ?>
+
+<h1>What are the odds of a sealed envelop prediction?</h1>
+
+<p>I attended and presented a talk titled
+<a href="https://www.youtube.com/watch?v=-mhI8xM2eTU">How to Lie with Data</a>
+on Jan 3rd, 2015 in Seaside, CA, hosted by the 
+<a href="http://montereycountyskeptics.blogspot.com/">Monterey County Skeptics</a>.
+Given the statistical elements of my talk (and perhaps having somethign to
+do with sitting in the front row), I got occasional glances from the other
+great speakers when anyone referred to correlation or something of a
+statistical nature.  And I'm proud to report being able to nod in 
+agreement at all cases.</p>
+
+<p>MC Mark Edward performed a trick in which he showed a sealed envelope,
+and selected a woman at random from the audience to come up.  As memory
+serve, he asked her, with a bit of showmanship, to think of a 
+relative's (?) initials.  Finally the sealed envelope was opened, revealing
+the initials "DD" which the woman reported to be those she was thinking of.
+Mark turned to me and asked "What are the odds?" which was without a doubt
+intended as a rhetorical question.</p>
+
+<p>But no, why not answer the question?</p>
+
+<p>If I was forced to give an answer on the spot, I would have said
+$\frac{1}{26} \cdot \frac{1}{26} = \frac{1}{676} \approx 0.148\%$ as a
+quick lower bound.  That is, out of 26 letters of the alphabet, pick
+one at random, then pick another at random out of 676 possible combinations.
+</p>
+
+<p>This is a lower bound because there are two faulty assumptions.
+First, when it comes to initials, not all letters are equally common.
+So what are the odds of each letter?</p>
+
+<!--begin.rcode fig.width=10, fig.height=4, echo=FALSE, fig.align='center'
+library(data.table)
+library(xtable)
+
+# Load data
+ffname = read.csv("firstnames_female.tab", sep="\t", stringsAsFactors=FALSE)
+fmname = read.csv("firstnames_male.tab", sep="\t", stringsAsFactors=FALSE)
+lname  = read.csv("surnames.tab", sep="\t", stringsAsFactors=FALSE)
+
+# A little data munging
+ffname$count = as.numeric(gsub(",","", ffname$count))
+fmname$count = as.numeric(gsub(",","", fmname$count))
+fname = rbind(ffname, fmname)
+lname$count  = as.numeric(gsub(",","", lname$count))
+fname$freq = 1.0 * fname$count / sum(fname$count)
+lname$freq = 1.0 * lname$count / sum(lname$count)
+fname$initial = substring(fname$name,1,1)
+lname$initial = substring(lname$name,1,1)
+
+# Getting closer to what we want
+fa = aggregate(freq ~ initial, fname, FUN=sum)
+la = aggregate(freq ~ initial, lname, FUN=sum)
+colnames(fa)[2] = "ff"
+colnames(la)[2] = "fl"
+
+fa = fa[order(fa$initial), ]
+la = la[order(la$initial), ]
+
+cpt = data.frame(CJ(fa$initial, la$initial))
+colnames(cpt) = c("F", "L")
+cpt = merge(cpt, fa, by.x="F", by.y="initial")
+cpt = merge(cpt, la, by.x="L", by.y="initial")
+cpt$f = cpt$ff * cpt$fl
+cpt$i = paste(cpt$F, cpt$L, sep="")
+#cpt[which(cpt$i=="DD"),]
+cpt = cpt[order(cpt$f),]
+
+# plot it
+par(mar=c(2,4,1,1))
+barplot(rbind(fa$ff, la$fl), beside=TRUE, col=c("green", "blue"), names.arg=fa$initial, legend.text=c("first name", "last / surname"), ylab="Frequency")
+end.rcode-->
+
+<p>Second, I'm not convinced that the initials are independent.  There
+is some propensity for alliteration in name selection, especially if
+you're Stan Lee.  Further, culture plays a role.  The first name
+Rodrigo is almost certianly more likely be to followed by Lopez,
+Gonzalez, or Hernandez than it is to be followed by Chang, Westinghouse,
+or McCloud.</p>
+
+<p>Hmm, let's leave the question of correlated initials for another day
+and treat these as independent for this post.</p>
+
+<h2>The top 10 least common initials</h2>
+
+<!--begin.rcode echo=c(4)
+cpt = cpt[, c("i", "f")]
+cpt$f = cpt$f*100
+colnames(cpt) = c("Initials", "Frequency (%)")
+print(xtable(cpt[1:10,], digits=c(6)), type='html', include.rownames=FALSE)
+end.rcode-->
+
+<h2>The top 10 most common initials</h2>
+
+<!--begin.rcode echo=FALSE
+cpt = cpt[rev(order(cpt[,2])),]
+print(xtable(cpt[1:10,], digits=c(2)), type='html', include.rownames=FALSE)
+end.rcode-->
+
+<p>I'm aware that magicians, illusionists, and mentalists sometimes rely
+on a bit of luck.  I recall a lecture by Dr. Tony Barnhart in which he
+explained that he could often influence a card choice, but kept three decks
+on his person matching the three most common choices, just in case.  That
+still leaves him open to failure, but the odds are with him.</p>
+
+<p>Could Mark have influenced the audience member's choice?  If so,
+what do the odds look like?  In other words, what's the probability
+of "DD"?</p>
+
+<!--begin.rcode fig.width=10, fig.height=5, echo=FALSE, fig.align='center'
+par(mar=c(4,4,1,1))
+colnames(cpt) = c("i", "f")
+plot(cpt$f, xlab="initials ordered by likelihood", ylab="Likelihood", axes=FALSE, cex=0.5)
+axis(1)
+axis(2)
+x = which(cpt$i=="DD")
+abline(v=x, lty=2, col=rgb(0,0,0,.3))
+abline(h=cpt[x, "f"], lty=2, col=rgb(0,0,0,.3))
+msg = paste("DD = ", round(cpt[x, "f"]*100,3), "%", sep="")
+text(x, cpt[x, "f"]+.0012, msg, pos=4)
+end.rcode-->
+
+<p>Hmm, not necessarily the most common choice, although this distribution
+assumes no influence.  The truth is, Mark most likely executed this trick
+by doing something (which I did not notice) to influence the selection.
+If I knew what that was, I would want to apply Bayesian statistics to
+update this probability distribution in light of new evidence.  Since I
+have no new evidence, I cannot do that, so the unconditional probability
+is as far as I can take it.</p>
+
+<h2>Good Metric for Magic Tricks?</h2>
+<p>All this has left me wondering if I could define a statistical
+measure of the quality or impressiveness of a magic trick, illusion,
+or act of mentalism.  As Mark pointed out, a great deal of magic
+and mentalism is about the showmanship.  In other words, how
+unlikely the odds is probably a poor measure of how much an observer
+will find enjoyment or be impressed.</p>
+
+<p>However, perhaps rating tricks by the probability that the
+performer did them by chance could be an interesting measure of
+the quality of the trick.  I'm not sure.  Any magicians, illusionists,
+mentalists, etc. have an opinion?  Please let me know!</p>
+
+<h1>Data source</h1>
+This analysis was based on data from
+<a href="mongabay.com">Mongabay.com</a>
+collected on 2015-01-05
+specifically, 
+<a href="http://names.mongabay.com/most_common_surnames.htm">Most common surnames</a>,
+<a href="http://names.mongabay.com/male_names.htm">Male Names</a>,
+and <a href="http://names.mongabay.com/female_names.htm">Female Names</a>.
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+ <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/javascript">MathJax.Hub.Config({tex2jax: {processEscapes: true,
+        processEnvironments: false, inlineMath: [ ['$','$'] ],
+        displayMath: [ ['$$','$$'] ] },
+        asciimath2jax: {delimiters: [ ['$','$'] ] },
+        "HTML-CSS": {minScaleAdjust: 125 } });
+    </script>
+
+<? include("../footer.php"); ?>
