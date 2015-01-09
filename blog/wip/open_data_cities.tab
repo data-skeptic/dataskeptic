@@ -1,0 +1,53 @@
+state	city	url	missing
+NM	Albuquerque	http://www.cabq.gov/abq-data/	0
+MI	Ann Arbor	http://www.a2gov.org/data/	0
+CO	Arvada	http://arvada.org/opendata/	0
+NC	Asheville	http://opendatacatalog.ashevillenc.gov/	0
+GA	Atlanta	http://gis.atlantaga.gov/	0
+TX	Austin	http://data.austintexas.gov/	0
+MD	Baltimore	http://data.baltimorecity.gov/	0
+IL	Belleville	https://data.illinois.gov/belleville	0
+MA	Boston	https://data.cityofboston.gov/	0
+	Boston Enterprise GIS	http://www.cityofboston.gov/maps/	0
+VT	Burlington	https://data.burlingtonvt.gov/	0
+IL	Champaign	https://data.illinois.gov/champaign	0
+IL	Chicago	http://data.cityofchicago.org/	0
+	Cook County	http://data.cookcountyil.gov/	0
+CO	Denver	http://data.denvergov.org/	0
+	Gilpin County	http://data.opencolorado.org/group/gilpin-county	0
+HI	Honolulu	https://data.honolulu.gov/	0
+TX	Houston	http://data.codeforhouston.com/	0
+KS	Kansas City	https://data.kcmo.org/	0
+	King County	http://www.datakc.org/	0
+NV	Las Vegas	https://opendata.lasvegasnevada.gov/	0
+KY	Lexington	http://www.lexingtonky.gov/index.aspx?page=416	0
+CA	Los Angeles	https://controllerdata.lacity.org/browse	0
+KY	Louisville	http://portal.louisvilleky.gov/service/data	0
+WI	Madison	https://data.cityofmadison.com/	0
+	Montgomery County	https://data.montgomerycountymd.gov/	0
+	NC OpenBook	http://www.ncopenbook.gov/NCOpenBook/	0
+LA	New Orleans	http://data.nola.gov/	0
+NY	New York City	http://www.nyc.gov/data/	0
+	Open Door Kentucky	http://opendoor.ky.gov/transparency/Pages/default.aspx	0
+CA	Palo Alto	http://data.cityofpaloalto.org/	0
+PA	Philadelphia	http://www.opendataphilly.org/	0
+OR	Portland	http://civicapps.org/datasets/	0
+RI	Providence	https://data.providenceri.gov/	0
+NC	Raleigh	http://www.raleighnc.gov/open/	0
+IL	Rockford	https://data.illinois.gov/rockford	0
+CA	San Francisco	http://www.datasf.org/	0
+	San Mateo County	https://data.smcgov.org/	0
+CA	Santa Cruz	http://data.cityofsantacruz.com/	0
+AZ	Scottsdale	http://data.scottsdaleaz.gov/	0
+WA	Seattle	http://data.seattle.gov/	0
+MA	Somerville	http://data.somervillema.gov/	0
+IN	South Bend	https://data.southbendin.gov/	0
+	Wake County	http://www.wakegov.com/data/Pages/default.aspx	0
+TX	Weatherford	http://tx-weatherford2.civicplus.com/index.aspx?NID=1448	0
+FL	Wellington	https://data.wellingtonfl.gov/	0
+AZ	Phoenix	https://www.phoenix.gov/opendata	1
+TX	San Antonio	http://www.sanantonio.gov/opengovernment/	1
+CA	San Diego
+TX	Dallas
+CA	San Jose
+check fort worth down

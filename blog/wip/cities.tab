@@ -1,0 +1,733 @@
+rank	city	state	pop2012	pop2013
+1	San Marcos	Texas	50092	54076
+2	Frisco	Texas	128463	136791
+3	South Jordan	Utah	55960	59366
+4	Cedar Park	Texas	57965	61238
+5	Lehi	Utah	51540	54382
+6	Goodyear	Arizona	69556	72864
+7	Georgetown	Texas	52533	54898
+8	Gaithersburg	Maryland	62943	65690
+9	Mount Pleasant town	South Carolina	71947	74885
+10	Meridian	Idaho	80409	83596
+11	Odessa	Texas	106500	110720
+12	Gilbert town	Arizona	221223	229972
+13	McKinney	Texas	143032	148559
+14	Franklin	Tennessee	66326	68886
+15	Pearland	Texas	96374	100065
+16	Buckeye town	Arizona	54608	56683
+17	Fort Myers	Florida	65697	68190
+18	New Braunfels	Texas	61006	63279
+19	Cary town	North Carolina	145794	151088
+20	Midland	Texas	119665	123933
+21	Pflugerville	Texas	51936	53752
+22	Bismarck	North Dakota	64777	67034
+23	Coconut Creek	Florida	54976	56792
+24	Castle Rock town	Colorado	51377	53063
+25	Lake Elsinore	California	55699	57525
+26	Irvine	California	229373	236716
+27	Fargo	North Dakota	110142	113658
+28	Layton	Utah	68603	70790
+29	West Des Moines	Iowa	59391	61255
+30	Nampa	Idaho	83921	86518
+31	League City	Texas	88286	90983
+32	North Richland Hills	Texas	65327	67317
+33	Casper	Wyoming	57933	59628
+34	Round Rock	Texas	106710	109821
+35	Bend	Oregon	78939	81236
+36	San Marcos	California	86906	89387
+37	Carmel	Indiana	83573	85927
+38	Seattle	Washington	634635	652405
+39	Murfreesboro	Tennessee	113871	117044
+40	Sioux Falls	South Dakota	160230	164676
+41	Edinburg	Texas	78661	80836
+42	Delray Beach	Florida	62356	64072
+43	Pleasanton	California	72145	74110
+44	Brentwood	California	53558	55000
+45	Cape Coral	Florida	161492	165831
+46	Auburn	Alabama	57058	58582
+47	Grand Forks	North Dakota	53533	54932
+48	Menifee	California	81324	83447
+49	Kissimmee	Florida	63516	65173
+50	Baytown	Texas	73513	75418
+51	Mansfield	Texas	59339	60872
+52	Wellington	Florida	58688	60202
+53	Plantation	Florida	88023	90268
+54	Allen	Texas	89744	92020
+55	Sanford	Florida	54617	56002
+56	Fayetteville	Arkansas	77015	78960
+57	Thornton	Colorado	124230	127359
+58	Fishers town	Indiana	81850	83891
+59	Durham	North Carolina	239633	245475
+60	Austin	Texas	864407	885400
+61	Noblesville	Indiana	55217	56540
+62	New Orleans	Louisiana	369888	378715
+63	Edmond	Oklahoma	84979	87004
+64	Charlotte	North Carolina	774442	792862
+65	Denver	Colorado	634542	649495
+66	Sugar Land	Texas	81996	83860
+67	Bradenton	Florida	50618	51763
+68	Orland Park village	Illinois	57311	58590
+69	Springdale	Arkansas	73588	75229
+70	Redwood City	California	79114	80872
+71	Norman	Oklahoma	115643	118197
+72	College Station	Texas	97907	100050
+73	Gilroy	California	50594	51701
+74	Lakeville	Minnesota	57317	58562
+75	North Little Rock	Arkansas	64687	66075
+76	Roseville	California	124372	127035
+77	Orlando	Florida	250159	255483
+78	Hillsboro	Oregon	95355	97368
+79	Centennial	Colorado	103924	106114
+80	Fort Collins	Colorado	148938	152061
+81	Henderson	Nevada	265285	270811
+82	Columbus	Georgia	198701	202824
+83	Temecula	California	104618	106780
+84	Washington	District of Columbia	633427	646449
+85	North Charleston	South Carolina	102003	104054
+86	Wilmington	North Carolina	109874	112067
+87	Broomfield	Colorado	58311	59471
+88	Raleigh	North Carolina	423338	431746
+89	Walnut Creek	California	65598	66900
+90	Conroe	Texas	61809	63032
+91	Bellevue	Nebraska	52626	53663
+92	St. George	Utah	75335	76817
+93	Auburn	Washington	73428	74860
+94	Livermore	California	83531	85156
+95	Iowa City	Iowa	70231	71591
+96	Aurora	Colorado	339242	345803
+97	Jupiter town	Florida	57202	58298
+98	Surprise	Arizona	121256	123546
+99	Fort Worth	Texas	778084	792727
+100	Charleston	South Carolina	125635	127999
+101	Hendersonville	Tennessee	53071	54068
+102	Minneapolis	Minnesota	392768	400070
+103	Billings	Montana	107079	109059
+104	Greenwood	Indiana	52694	53665
+105	Novi	Michigan	56915	57960
+106	San Antonio	Texas	1383641	1409019
+107	Novato	California	53220	54194
+108	Oklahoma City	Oklahoma	599679	610613
+109	Rogers	Arkansas	59036	60112
+110	Woodbury	Minnesota	64481	65656
+111	Boca Raton	Florida	87812	89407
+112	Mountain View	California	76479	77846
+113	Peoria	Arizona	159746	162592
+114	Arvada	Colorado	109772	111707
+115	Tuscaloosa	Alabama	93683	95334
+116	Columbia	Missouri	113285	115276
+117	Antioch	California	105267	107100
+118	Richland	Washington	51520	52413
+119	North Las Vegas	Nevada	223033	226877
+120	Missouri City	Texas	69000	70185
+121	Blaine	Minnesota	59391	60407
+122	Davie town	Florida	95205	96830
+123	Concord	North Carolina	82105	83506
+124	Pittsburg	California	65584	66695
+125	Pembroke Pines	Florida	159630	162329
+126	Bakersfield	California	357603	363630
+127	Chula Vista	California	252545	256780
+128	Redmond	Washington	56583	57530
+129	Phoenix	Arizona	1488524	1513367
+130	Fairfield	California	107531	109320
+131	St. Charles	Missouri	66466	67569
+132	Carlsbad	California	109166	110972
+133	Houston	Texas	2160712	2195914
+134	San Jose	California	982579	998537
+135	Elk Grove	California	158466	161007
+136	Perris	California	71186	72326
+137	West Jordan	Utah	108346	110077
+138	Flagstaff	Arizona	67589	68667
+139	Loveland	Colorado	70217	71334
+140	Palm Coast	Florida	77511	78740
+141	Mission Viejo	California	94846	96346
+142	Killeen	Texas	135015	137147
+143	Maple Grove	Minnesota	64410	65415
+144	Fremont	California	221469	224922
+145	Rancho Cordova	California	66872	67911
+146	Huntington Beach	California	194563	197575
+147	Richmond	Virginia	210857	214114
+148	Scottsdale	Arizona	223473	226918
+149	Columbus	Ohio	810103	822553
+150	Bowling Green	Kentucky	60568	61488
+151	Westminster	Colorado	109287	110945
+152	Nashville-Davidson metropolitan government (balance)	Tennessee	624993	634464
+153	Bloomington	Illinois	77727	78902
+154	Rochester	Minnesota	109108	110742
+155	Hayward	California	149338	151574
+156	Normal town	Illinois	53860	54664
+157	Jonesboro	Arkansas	70505	71551
+158	Lewisville	Texas	99600	101074
+159	Greenville	North Carolina	87834	89130
+160	Smyrna	Georgia	52662	53438
+161	Sunrise	Florida	88808	90116
+162	Boynton Beach	Florida	70070	71097
+163	Plymouth	Minnesota	72921	73987
+164	Colorado Springs	Colorado	433570	439886
+165	Asheville	North Carolina	85993	87236
+166	New Rochelle	New York	78315	79446
+167	Olathe	Kansas	130011	131885
+168	Milpitas	California	68798	69783
+169	Santa Cruz	California	61977	62864
+170	Gulfport	Mississippi	70014	71012
+171	Marysville	Washington	62384	63269
+172	Chandler	Arizona	245671	249146
+173	San Angelo	Texas	96134	97492
+174	San Diego	California	1337029	1355896
+175	St. Peters	Missouri	54081	54842
+176	Alexandria	Virginia	146839	148892
+177	Palm Beach Gardens	Florida	50001	50699
+178	North Port	Florida	58398	59212
+179	Somerville	Massachusetts	77724	78804
+180	Indio	California	82399	83539
+181	Longmont	Colorado	88694	89919
+182	Irving	Texas	225547	228653
+183	Cheyenne	Wyoming	61600	62448
+184	San Mateo	California	99755	101128
+185	Pompano Beach	Florida	102993	104410
+186	Laredo	Texas	244778	248142
+187	Rocklin	California	58930	59738
+188	Boulder	Colorado	101771	103166
+189	Broken Arrow	Oklahoma	102103	103500
+190	Bellevue	Washington	132187	133992
+191	Lubbock	Texas	236326	239538
+192	Homestead	Florida	63220	64079
+193	Manteca	California	70984	71948
+194	Corpus Christi	Texas	312154	316381
+195	Denton	Texas	121460	123099
+196	Huntsville	Alabama	183775	186254
+197	Medford	Oregon	76649	77677
+198	Temple	Texas	69264	70190
+199	St. Paul	Minnesota	291039	294873
+200	Greeley	Colorado	95286	96539
+201	Overland Park	Kansas	178914	181260
+202	Mesa	Arizona	451677	457587
+203	Moreno Valley	California	198588	201175
+204	Rio Rancho	New Mexico	90775	91956
+205	Pasco	Washington	66731	67599
+206	Rockville	Maryland	63250	64072
+207	Sparks	Nevada	92089	93282
+208	Dallas	Texas	1241700	1257676
+209	Omaha	Nebraska	428850	434353
+210	Lawrence	Kansas	89661	90811
+211	Bossier City	Louisiana	65497	66333
+212	Fayetteville	North Carolina	201834	204408
+213	Renton	Washington	95782	97003
+214	Boston	Massachusetts	637845	645966
+215	Berkeley	California	115301	116768
+216	Clovis	California	98523	99769
+217	Santee	California	55409	56105
+218	Oakland	California	401230	406253
+219	Rapid City	South Dakota	69943	70812
+220	Riverside	California	312747	316619
+221	Rock Hill	South Carolina	68258	69103
+222	Chino	California	80003	80988
+223	Union City	California	71647	72528
+224	Las Vegas	Nevada	596178	603488
+225	Palmdale	California	155260	157161
+226	Tampa	Florida	348701	352957
+227	Danbury	Connecticut	82676	83684
+228	Lincoln	Nebraska	265506	268738
+229	Kirkland	Washington	83417	84430
+230	Stamford	Connecticut	124942	126456
+231	San Francisco	California	827420	837442
+232	Madison	Wisconsin	240441	243344
+233	Vancouver	Washington	165435	167405
+234	Kent	Washington	122979	124435
+235	Port St. Lucie	Florida	169018	171016
+236	Conway	Arkansas	63072	63816
+237	Miramar	Florida	128777	130288
+238	Marietta	Georgia	58407	59089
+239	Chapel Hill town	North Carolina	58949	59635
+240	Springfield	Missouri	162236	164122
+241	Tempe	Arizona	166297	168228
+242	Southaven	Mississippi	50416	50997
+243	San Leandro	California	86963	87965
+244	Reno	Nevada	230667	233294
+245	Lakewood	Colorado	145558	147214
+246	Watsonville	California	51887	52477
+247	Corona	California	157719	159503
+248	Encinitas	California	60901	61588
+249	Glendale	Arizona	232035	234632
+250	Arcadia	California	57002	57639
+251	Lakeland	Florida	99601	100710
+252	Greensboro	North Carolina	276566	279639
+253	Shawnee	Kansas	63619	64323
+254	Petaluma	California	58790	59440
+255	O'Fallon	Missouri	81908	82809
+256	Lafayette	Louisiana	122928	124276
+257	Lynchburg	Virginia	77185	78014
+258	Midwest City	Oklahoma	56153	56756
+259	Greenville	South Carolina	60746	61397
+260	San Ramon	California	73726	74513
+261	Portland	Oregon	603026	609456
+262	Bowie	Maryland	56161	56759
+263	Bryan	Texas	77880	78709
+264	Orem	Utah	90684	91648
+265	Hoboken	New Jersey	52026	52575
+266	Cambridge	Massachusetts	106172	107289
+267	Pharr	Texas	73024	73790
+268	Weston	Florida	67679	68388
+269	Grand Island	Nebraska	50026	50550
+270	Ames	Iowa	61153	61792
+271	Warner Robins	Georgia	71783	72531
+272	Lexington	Kentucky	305252	308428
+273	Kennewick	Washington	75977	76762
+274	McAllen	Texas	135242	136639
+275	Santa Rosa	California	170234	171990
+276	Alameda	California	75641	76419
+277	Indianapolis city (balance)	Indiana	834843	843393
+278	Murrieta	California	106392	107479
+279	Santa Maria	California	101189	102216
+280	Coral Springs	Florida	125332	126604
+281	Santa Barbara	California	89508	90412
+282	Napa	California	78281	79068
+283	Wyoming	Michigan	73365	74100
+284	High Point	North Carolina	106678	107741
+285	Chesapeake	Virginia	228303	230571
+286	Grand Rapids	Michigan	190414	192294
+287	Waco	Texas	127771	129030
+288	San Rafael	California	58419	58994
+289	Richmond	California	106524	107571
+290	Atlanta	Georgia	443505	447841
+291	Champaign	Illinois	82619	83424
+292	Santa Monica	California	91588	92472
+293	Turlock	California	69695	70365
+294	Columbia	South Carolina	132094	133358
+295	Tulsa	Oklahoma	394349	398121
+296	Eagan	Minnesota	64835	65453
+297	Tamarac	Florida	62562	63155
+298	Salinas	California	154201	155662
+299	Boise City	Idaho	212237	214237
+300	Moore	Oklahoma	57869	58414
+301	Flower Mound town	Texas	67969	68609
+302	Joplin	Missouri	50316	50789
+303	West New York town	New Jersey	51637	52122
+304	Grand Prairie	Texas	181667	183372
+305	Santa Ana	California	331128	334227
+306	Concord	California	124718	125880
+307	Pasadena	California	138443	139731
+308	West Valley City	Utah	132349	133579
+309	St. Petersburg	Florida	247394	249688
+310	Vista	California	96041	96929
+311	Hempstead village	New York	54855	55361
+312	Carrollton	Texas	125542	126700
+313	Yorba Linda	California	66420	67032
+314	Lauderhill	Florida	69176	69813
+315	Fort Lauderdale	Florida	170819	172389
+316	Oceanside	California	171222	172794
+317	Lafayette	Indiana	69734	70373
+318	White Plains	New York	57341	57866
+319	Beaverton	Oregon	92697	93542
+320	Victoria	Texas	64511	65098
+321	Sacramento	California	475367	479686
+322	Newton	Massachusetts	87180	87971
+323	Salt Lake City	Utah	189462	191180
+324	Winston-Salem	North Carolina	234322	236441
+325	Santa Fe	New Mexico	69350	69976
+326	Arlington	Texas	376215	379577
+327	Rochester Hills	Michigan	72308	72952
+328	Anchorage municipality	Alaska	298294	300950
+329	Fontana	California	201217	203003
+330	Oxnard	California	201226	203007
+331	Daly City	California	103823	104739
+332	Federal Way	Washington	91923	92734
+333	Richardson	Texas	103562	104475
+334	Dothan	Alabama	67407	68001
+335	Bayonne	New Jersey	64460	65028
+336	Palo Alto	California	66063	66642
+337	Lynwood	California	70751	71371
+338	Hoover	Alabama	83397	84126
+339	Buena Park	California	82166	82882
+340	Revere	Massachusetts	53292	53756
+341	Vallejo	California	117814	118837
+342	Sunnyvale	California	146292	147559
+343	Weymouth Town	Massachusetts	54944	55419
+344	Margate	Florida	54982	55456
+345	Hollywood	Florida	145275	146526
+346	Glendale	California	194364	196021
+347	South San Francisco	California	65615	66174
+348	Jurupa Valley	California	97205	98030
+349	Madera	California	62575	63105
+350	Deerfield Beach	Florida	77387	78041
+351	Cathedral City	California	52535	52977
+352	Brookhaven	Georgia	50181	50603
+353	Port Orange	Florida	56727	57203
+354	Tyler	Texas	99390	100223
+355	Honolulu	Hawaii	344997	347884
+356	Salem	Oregon	159282	160614
+357	Victorville	California	120092	121096
+358	Missoula	Montana	68551	69122
+359	Visalia	California	126709	127763
+360	Avondale	Arizona	78173	78822
+361	Fresno	California	505736	509924
+362	Miami	Florida	414221	417650
+363	Santa Clara	California	119261	120245
+364	Plano	Texas	272178	274409
+365	Los Angeles	California	3852782	3884307
+366	Brooklyn Park	Minnesota	77737	78373
+367	Deltona	Florida	85593	86290
+368	Troy	Michigan	82153	82821
+369	Clearwater	Florida	108820	109703
+370	Louisville	Kentucky	604990	609893
+371	Daytona Beach	Florida	61819	62316
+372	Yuba City	California	64895	65416
+373	Citrus Heights	California	84607	85285
+374	Chico	California	87378	88077
+375	Cupertino	California	59712	60189
+376	Sandy	Utah	89521	90231
+377	Eau Claire	Wisconsin	67014	67545
+378	La Mesa	California	58181	58642
+379	Jersey City	New Jersey	255325	257342
+380	Athens-Clarke County unified government (balance)	Georgia	119041	119980
+381	Sarasota	Florida	52910	53326
+382	Merced	California	80471	81102
+383	Davenport	Iowa	101367	102157
+384	Kansas City	Kansas	147335	148483
+385	Escondido	California	147593	148738
+386	Euless	Texas	52815	53224
+387	Beaumont	Texas	116894	117796
+388	Lee's Summit	Missouri	92479	93184
+389	Frederick	Maryland	66387	66893
+390	Tustin	California	77742	78327
+391	Gardena	California	59512	59957
+392	Eugene	Oregon	158013	159190
+393	Brownsville	Texas	180521	181860
+394	Mission	Texas	80455	81050
+395	Johnson City	Tennessee	64647	65123
+396	New York City	New York	8344397	8405837
+397	Provo	Utah	115441	116288
+398	Norwalk	Connecticut	87137	87776
+399	Hawthorne	California	85573	86199
+400	Roanoke	Virginia	97764	98465
+401	El Cajon	California	101486	102211
+402	Jacksonville	Florida	836608	842583
+403	Fort Wayne	Indiana	254688	256496
+404	Naperville	Illinois	143844	144864
+405	Royal Oak	Michigan	58532	58946
+406	Modesto	California	203508	204933
+407	Jackson	Tennessee	67215	67685
+408	Virginia Beach	Virginia	445378	448479
+409	DeSoto	Texas	51128	51483
+410	Glendora	California	50722	51074
+411	Peoria	Illinois	115710	116513
+412	Shoreline	Washington	54415	54790
+413	Newport News	Virginia	180781	182020
+414	Newport Beach	California	86681	87273
+415	National City	California	59431	59834
+416	Yonkers	New York	198422	199766
+417	Gainesville	Florida	126636	127488
+418	Hemet	California	81208	81750
+419	Woodland	California	56215	56590
+420	Melbourne	Florida	76996	77508
+421	Farmington Hills	Michigan	80759	81295
+422	Rancho Cucamonga	California	170257	171386
+423	Palm Bay	Florida	104211	104898
+424	Everett	Washington	104682	105370
+425	Largo	Florida	77916	78409
+426	Elizabeth	New Jersey	126757	127558
+427	Appleton	Wisconsin	73137	73596
+428	Suffolk	Virginia	85194	85728
+429	Mount Vernon	New York	67801	68224
+430	Great Falls	Montana	58984	59351
+431	Davis	California	65796	66205
+432	Haverhill	Massachusetts	61705	62088
+433	Johns Creek	Georgia	82278	82788
+434	Chattanooga	Tennessee	172304	173366
+435	Ocala	Florida	57119	57468
+436	Laguna Niguel	California	64261	64652
+437	Sterling Heights	Michigan	130438	131224
+438	Ann Arbor	Michigan	116328	117025
+439	Simi Valley	California	125436	126181
+440	Southfield	Michigan	72578	73006
+441	Redondo Beach	California	67418	67815
+442	Knoxville	Tennessee	182200	183270
+443	Apple Valley town	California	70510	70924
+444	Hanford	California	54368	54686
+445	Kansas City	Missouri	464299	467007
+446	Tulare	California	60816	61170
+447	Lancaster	California	158601	159523
+448	Eden Prairie	Minnesota	62246	62603
+449	Passaic	New Jersey	70464	70868
+450	Gastonia	North Carolina	72792	73209
+451	Gresham	Oregon	108780	109397
+452	Fountain Valley	California	56389	56707
+453	Tacoma	Washington	202308	203446
+454	Bellingham	Washington	82170	82631
+455	El Monte	California	115064	115708
+456	Garden Grove	California	174169	175140
+457	Thousand Oaks	California	128019	128731
+458	Placentia	California	51919	52206
+459	Santa Clarita	California	178611	179590
+460	Rowlett	Texas	57727	58043
+461	Lake Forest	California	78881	79312
+462	Hialeah	Florida	232126	233394
+463	Taylorsville	Utah	60191	60519
+464	Pontiac	Michigan	59565	59887
+465	Waltham	Massachusetts	61894	62227
+466	Alpharetta	Georgia	61965	62298
+467	West Palm Beach	Florida	101889	102436
+468	Anaheim	California	343176	345012
+469	Owensboro	Kentucky	58106	58416
+470	Burnsville	Minnesota	61108	61434
+471	Quincy	Massachusetts	92998	93494
+472	Lake Charles	Louisiana	73634	74024
+473	Corvallis	Oregon	55008	55298
+474	Redding	California	90650	91119
+475	Lawrence	Massachusetts	77262	77657
+476	Vacaville	California	93797	94275
+477	Whittier	California	86197	86635
+478	Peabody	Massachusetts	51781	52044
+479	Plainfield	New Jersey	50333	50588
+480	Minnetonka	Minnesota	51112	51368
+481	Paramount	California	54708	54980
+482	Chino Hills	California	76194	76572
+483	Warren	Michigan	134215	134873
+484	Spokane Valley	Washington	90670	91113
+485	Orange	California	139290	139969
+486	Lowell	Massachusetts	108335	108861
+487	Malden	Massachusetts	60218	60509
+488	Kalamazoo	Michigan	75188	75548
+489	Lynn	Massachusetts	91153	91589
+490	Pensacola	Florida	52453	52703
+491	Harrisonburg	Virginia	51153	51395
+492	Highland	California	54036	54291
+493	San Clemente	California	64738	65040
+494	Miami Gardens	Florida	110862	111378
+495	Nashua	New Hampshire	86735	87137
+496	Spokane	Washington	209754	210721
+497	Clifton	New Jersey	85004	85390
+498	Amarillo	Texas	195550	196429
+499	Costa Mesa	California	111675	112174
+500	Diamond Bar	California	56199	56449
+501	Bloomington	Indiana	82212	82575
+502	Union City	New Jersey	67947	68247
+503	St. Clair Shores	Michigan	59812	60070
+504	Blue Springs	Missouri	53066	53294
+505	Upland	California	75091	75413
+506	Porterville	California	54943	55174
+507	Idaho Falls	Idaho	58048	58292
+508	La Habra	California	61396	61653
+509	North Miami	Florida	60753	61007
+510	Camarillo	California	65811	66086
+511	Pomona	California	150720	151348
+512	Medford	Massachusetts	56933	57170
+513	Fullerton	California	138410	138981
+514	Ogden	Utah	83903	84249
+515	Elgin	Illinois	109694	110145
+516	Roswell	Georgia	93649	94034
+517	Sandy Springs	Georgia	99362	99770
+518	Springfield	Oregon	59932	60177
+519	Perth Amboy	New Jersey	51771	51982
+520	Rosemead	California	54342	54561
+521	Janesville	Wisconsin	63565	63820
+522	Monterey Park	California	60843	61085
+523	Garland	Texas	233638	234566
+524	Wheaton	Illinois	53437	53648
+525	Miami Beach	Florida	90668	91026
+526	Torrance	California	146906	147478
+527	East Orange	New Jersey	64297	64544
+528	St. Cloud	Minnesota	66047	66297
+529	Mount Prospect village	Illinois	54565	54771
+530	Huntington Park	California	58658	58879
+531	West Covina	California	107337	107740
+532	Ontario	California	166876	167500
+533	Burbank	California	104320	104709
+534	Rialto	California	101540	101910
+535	Elkhart	Indiana	51079	51265
+536	Dubuque	Iowa	58042	58253
+537	Des Moines	Iowa	206765	207510
+538	Colton	California	53052	53243
+539	Baldwin Park	California	76361	76635
+540	Hesperia	California	91821	92147
+541	Little Rock	Arkansas	196661	197357
+542	Lakewood	California	80835	81121
+543	Pasadena	Texas	152204	152735
+544	Brockton	Massachusetts	93763	94089
+545	Palatine village	Illinois	69111	69350
+546	Downey	California	112853	113242
+547	Norwalk	California	106226	106589
+548	Inglewood	California	111163	111542
+549	San Buenaventura (Ventura)	California	108450	108817
+550	Redlands	California	69763	69999
+551	Albuquerque	New Mexico	554621	556495
+552	Tracy	California	84406	84691
+553	Wichita Falls	Texas	104546	104898
+554	Bloomington	Minnesota	86030	86319
+555	Kingsport	Tennessee	52785	52962
+556	Burlington	North Carolina	51338	51510
+557	Westminster	California	91433	91739
+558	Albany	Oregon	51412	51583
+559	Bridgeport	Connecticut	146728	147216
+560	Alhambra	California	84298	84577
+561	Montebello	California	63288	63495
+562	Wilmington	Delaware	71292	71525
+563	Wichita	Kansas	385316	386552
+564	Birmingham	Alabama	211441	212113
+565	Syracuse	New York	144212	144669
+566	Pico Rivera	California	63574	63771
+567	Arlington Heights village	Illinois	75763	75994
+568	San Bernardino	California	213062	213708
+569	South Gate	California	95392	95677
+570	New Brunswick	New Jersey	55666	55831
+571	Stockton	California	297239	298118
+572	Long Beach	California	468054	469428
+573	Milford city (balance)	Connecticut	51493	51644
+574	Philadelphia	Pennsylvania	1548647	1553165
+575	Lakewood	Washington	58926	59097
+576	Compton	California	97595	97877
+577	Newark	New Jersey	277625	278427
+578	Savannah	Georgia	142364	142772
+579	New Bedford	Massachusetts	94807	95078
+580	Coon Rapids	Minnesota	61926	62103
+581	Bellflower	California	77375	77593
+582	Yakima	Washington	93002	93257
+583	Evanston	Illinois	75368	75570
+584	Las Cruces	New Mexico	101060	101324
+585	Muncie	Indiana	70137	70316
+586	Pueblo	Colorado	107975	108249
+587	Tinley Park village	Illinois	57138	57282
+588	Tucson	Arizona	524801	526116
+589	Cedar Rapids	Iowa	128109	128429
+590	Cincinnati	Ohio	296785	297517
+591	Yucaipa	California	52407	52536
+592	Hoffman Estates village	Illinois	52271	52398
+593	Longview	Texas	81246	81443
+594	Carson	California	92378	92599
+595	Oak Park village	Illinois	51942	52066
+596	Schaumburg village	Illinois	74729	74907
+597	Lodi	California	63194	63338
+598	Chicago	Illinois	2712920	2718782
+599	Abilene	Texas	119842	120099
+600	Oshkosh	Wisconsin	66638	66778
+601	Des Plaines	Illinois	58801	58918
+602	Port Arthur	Texas	54029	54135
+603	Eastvale	California	55084	55191
+604	Taunton	Massachusetts	55969	56069
+605	Chicopee	Massachusetts	55618	55717
+606	Oak Lawn village	Illinois	56975	57073
+607	Paterson	New Jersey	145711	145948
+608	Portland	Maine	66218	66318
+609	Evansville	Indiana	120129	120310
+610	Kenner	Louisiana	66878	66975
+611	Skokie village	Illinois	65085	65176
+612	Springfield	Massachusetts	153489	153703
+613	Aurora	Illinois	199701	199963
+614	Milwaukee	Wisconsin	598402	599164
+615	Worcester	Massachusetts	182312	182544
+616	Waukegan	Illinois	88715	88826
+617	Waukesha	Wisconsin	70933	71016
+618	Mesquite	Texas	143317	143484
+619	Anderson	Indiana	55607	55670
+620	South Bend	Indiana	100794	100886
+621	Waterloo	Iowa	68308	68366
+622	Lake Havasu City	Arizona	52803	52844
+623	Dayton	Ohio	143258	143355
+624	Fort Smith	Arkansas	87591	87650
+625	Manchester	New Hampshire	110313	110378
+626	Norfolk	Virginia	246007	246139
+627	West Allis	Wisconsin	60666	60697
+628	Hampton	Virginia	136632	136699
+629	Trenton	New Jersey	84308	84349
+630	El Paso	Texas	674124	674433
+631	Vineland	New Jersey	61025	61050
+632	Warwick	Rhode Island	81940	81971
+633	Cicero town	Illinois	84072	84103
+634	Fall River	Massachusetts	88672	88697
+635	Pawtucket	Rhode Island	71156	71172
+636	Berwyn	Illinois	56750	56758
+637	Bolingbrook village	Illinois	73927	73936
+638	Green Bay	Wisconsin	104769	104779
+639	Albany	New York	98417	98424
+640	Mobile	Alabama	194888	194899
+641	Bartlett	Tennessee	58223	58226
+642	Lancaster	Pennsylvania	59322	59325
+643	Independence	Missouri	117238	117240
+644	Cranston	Rhode Island	80573	80566
+645	Bristol	Connecticut	60582	60568
+646	La Crosse	Wisconsin	51537	51522
+647	Kokomo	Indiana	56912	56895
+648	St. Joseph	Missouri	77177	77147
+649	Racine	Wisconsin	78231	78199
+650	Hamilton	Ohio	62284	62258
+651	Baltimore	Maryland	622417	622104
+652	Delano	California	52435	52403
+653	Harlingen	Texas	65706	65665
+654	Lorain	Ohio	63757	63710
+655	Rochester	New York	210515	210358
+656	Florissant	Missouri	52404	52363
+657	Duluth	Minnesota	86200	86128
+658	Springfield	Ohio	59413	59357
+659	Bethlehem	Pennsylvania	75090	75018
+660	Lansing	Michigan	114085	113972
+661	Battle Creek	Michigan	51900	51848
+662	Reading	Pennsylvania	87990	87893
+663	Council Bluffs	Iowa	62039	61969
+664	Pittsburgh	Pennsylvania	306189	305841
+665	Hartford	Connecticut	125164	125017
+666	Kenosha	Wisconsin	100011	99889
+667	New Haven	Connecticut	130829	130660
+668	Providence	Rhode Island	178247	177994
+669	Grand Junction	Colorado	59868	59778
+670	Springfield	Illinois	117184	117006
+671	Allentown	Pennsylvania	118764	118577
+672	New Britain	Connecticut	73055	72939
+673	Buffalo	New York	259387	258959
+674	Sioux City	Iowa	82598	82459
+675	Memphis	Tennessee	654556	653450
+676	Utica	New York	61918	61808
+677	Folsom	California	73243	73098
+678	Joliet	Illinois	148106	147806
+679	Waterbury	Connecticut	109905	109676
+680	Elyria	Ohio	54073	53956
+681	St. Louis	Missouri	319112	318416
+682	Schenectady	New York	66049	65902
+683	Topeka	Kansas	127989	127679
+684	Baton Rouge	Louisiana	230006	229426
+685	Akron	Ohio	198622	198100
+686	Meriden	Connecticut	60625	60456
+687	Kettering	Ohio	56036	55870
+688	Parma	Ohio	80671	80429
+689	Cleveland	Ohio	391294	390113
+690	West Haven	Connecticut	55214	55046
+691	Terre Haute	Indiana	61212	61025
+692	Augusta-Richmond County consolidated government (balance)	Georgia	197976	197350
+693	Decatur	Alabama	56001	55816
+694	Toledo	Ohio	283302	282313
+695	Scranton	Pennsylvania	76073	75806
+696	Tallahassee	Florida	187084	186411
+697	Portsmouth	Virginia	96564	96205
+698	Charleston	West Virginia	51014	50821
+699	Rocky Mount	North Carolina	57181	56954
+700	Lakewood	Ohio	51364	51143
+701	Rockford	Illinois	150915	150251
+702	Erie	Pennsylvania	101155	100671
+703	Canton	Ohio	72892	72535
+704	Clarksville	Tennessee	143145	142357
+705	Manhattan	Kansas	56468	56143
+706	Camden	New Jersey	77359	76903
+707	Flint	Michigan	100412	99763
+708	Livonia	Michigan	95848	95208
+709	Pocatello	Idaho	54732	54350
+710	Westland	Michigan	83182	82578
+711	Taylor	Michigan	62307	61817
+712	Dearborn Heights	Michigan	57072	56620
+713	Decatur	Illinois	75308	74710
+714	Dearborn	Michigan	96654	95884
+715	Gary	Indiana	79085	78450
+716	Hammond	Indiana	79609	78967
+717	Shreveport	Louisiana	202066	200327
+718	Jacksonville	North Carolina	69690	69079
+719	Saginaw	Michigan	50763	50303
+720	Youngstown	Ohio	65824	65184
+721	Carson	Nevada	54616	54080
+722	Yuma	Arizona	93013	91923
+723	Macon	Georgia	91176	89981
+724	Detroit	Michigan	698582	688701
+725	Albany	Georgia	77280	76185
+726	Lawton	Oklahoma	98548	97151
+727	Jackson	Mississippi	175195	172638
+728	Montgomery	Alabama	204573	201332
+729	Valdosta	Georgia	57706	56481
+999	Weatherford	Texas	26467	27021
+999	Burlington	Vermont	42417	42284
+999	Belleville	Illinois	43765	43765
