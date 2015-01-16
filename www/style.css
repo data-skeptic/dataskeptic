@@ -167,7 +167,7 @@ tr:hover {
   #wheretoget { align: center; }
   #logo       { align: center; }
 }
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 1200px) {
   #guesttweet {
     background-color:#eee;
   }
@@ -176,7 +176,7 @@ tr:hover {
   }
   #lcol  { display: none; }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   #guesttweet {
     background-color:#fff;
   }
