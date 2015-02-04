@@ -103,8 +103,10 @@
 |
 <a href="/blog.php">Blog</a>
 |
+<!--
 <a href="/events.php">Events</a>
 |
+-->
 <a href="/resources.php">Resources</a>
 |
 <a href="/contact.php">Contact</a>
