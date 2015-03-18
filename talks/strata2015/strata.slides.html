@@ -213,7 +213,37 @@ div.output_prompt {
 <body>
 <div class="reveal">
 <div class="slides">
-<section>
+<div style=display:none>
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c"># %load &#39;custom.css&#39;</span>
+<span class="o">&lt;</span><span class="n">style</span><span class="o">&gt;</span>
+
+<span class="nd">@font</span><span class="o">-</span><span class="n">face</span> <span class="p">{</span>
+    <span class="n">font</span><span class="o">-</span><span class="n">family</span><span class="p">:</span> <span class="s">&quot;Computer Modern&quot;</span><span class="p">;</span>
+    <span class="n">src</span><span class="p">:</span> <span class="n">url</span><span class="p">(</span><span class="s">&#39;http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="c">#notebook_panel { /* main background */</span>
+    <span class="n">background</span><span class="p">:</span> <span class="c">#888;</span>
+    <span class="n">color</span><span class="p">:</span> <span class="c">#f6f6f6;</span>
+<span class="p">}</span>
+<span class="c">#notebook li { /* More space between bullet points */</span>
+<span class="n">margin</span><span class="o">-</span><span class="n">top</span><span class="p">:</span><span class="mf">0.8</span><span class="n">em</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="o">&lt;/</span><span class="n">style</span><span class="o">&gt;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+    </div></section>
+    </section><section>
     <section>
     
 <div class="cell border-box-sizing text_cell rendered">
@@ -221,7 +251,7 @@ div.output_prompt {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<table border=0><tr>
+<table border=0 cellpadding=10><tr>
 <td><img src='strata-logo.png' /></td>
 <td>
 <center>
@@ -238,8 +268,40 @@ San Jose, CA
 <p><a href="http://datascience.com">DataScience, Inc</a></p>
 <p><a href="http://dataskeptic.com">The Data Skeptic Podcast</a></p>
 <p><a href="https://twitter.com/dataskeptic">@dataskeptic</a></p>
-<p>kyle@datascience.com</p>
+<p><a href="mailto:kyle@datascience.com">kyle@datascience.com</a></p>
 </td>
+</tr>
+<tr>
+<td colspan=2 align=center>
+My slides are available online at:<br/>
+<a href="http://dataskeptic.com/talks/strata2015/">http://dataskeptic.com/talks/strata2015/</a>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div></section>
+    </section><section>
+    <section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h1>Thanks to...</h1></p>
+<table>
+<tr>
+<td><img src="dsla.jpg"/></td>
+<td>Where I won a free conference badge</td>
+</tr>
+<tr>
+<td><img src="oreilly.gif" /></td>
+<td>Who provide the past and organized the conference</td>
+</tr>
+<tr>
+<td><img src="ibm.jpg" width=300 /></td>
+<td>IBM and Alex Liu who host this meetup</td>
 </tr>
 </table>
 </div>
@@ -256,8 +318,40 @@ San Jose, CA
 <h1 id="My-High-Level-Take-aways">My High Level Take-aways<a class="anchor-link" href="#My-High-Level-Take-aways">&#182;</a></h1><ul>
 <li>Hadoop is becoming to data what C/C++ are to programming</li>
 <li>Spark is growing in support</li>
+<li>Streaming and in-memory are strong themes</li>
 <li>R continues to grow, notably with Spark support</li>
+<li>Data Cleansing becoming a more noteworthy topic<ul>
+<li>Trifacta</li>
+<li>Paxata</li>
+<li>Open Refine</li>
+<li>And more</li>
 </ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="paxata.jpg" width=600 /></p>
+
+</div>
+</div>
+</div></section><section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="hot.png" width=500/>
+<br/>
+Source: <a href="http://redmonk.com/dberkholz/2015/02/17/strata-2015-reaching-for-the-business-user/">http://redmonk.com/dberkholz/2015/02/17/strata-2015-reaching-for-the-business-user/</a></p>
 
 </div>
 </div>
@@ -273,7 +367,7 @@ San Jose, CA
 <h1 id="Thursday-Keynotes">Thursday Keynotes<a class="anchor-link" href="#Thursday-Keynotes">&#182;</a></h1>
 </div>
 </div>
-</div><div class="fragment" data-fragment-index="3">
+</div></section><section>
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -284,8 +378,7 @@ San Jose, CA
 
 </div>
 </div>
-</div>
-    </div><div class="fragment" data-fragment-index="4">
+</div></section><section>
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -301,8 +394,7 @@ San Jose, CA
 
 </div>
 </div>
-</div>
-    </div><div class="fragment" data-fragment-index="5">
+</div></section><section>
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -316,8 +408,7 @@ San Jose, CA
 
 </div>
 </div>
-</div>
-    </div><div class="fragment" data-fragment-index="6">
+</div></section><section>
     
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -328,8 +419,17 @@ San Jose, CA
 
 </div>
 </div>
+</div></section><section>
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
-    </div></section>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vbb-AjiXyh0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+</div></section>
     </section><section>
     <section>
     
@@ -602,25 +702,36 @@ from joseph-rickert
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <center>
-<h1>Thank you!</h1>
 <table>
 <tr>
-<td><img src="datascienceTOP.png" width=300 /></td>
-<td><img src="ituneslogo.png" /></td>
+<td colspan=3><center>
+<h1>Thank you!</h1>
+</center></td>
+<tr>
+<td><a href="http://datascience.com"><img src="datascienceTOP.png" width=300 /></a></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><a href="http://dataskeptic.com"><img src="ituneslogo.png" width=300 /></a></td>
 </tr>
 <tr>
-<td align="center">kyle@datascience.com
+<td align="center">
+<center>
+<a href="mailto:kyle@datascience.com">kyle@datascience.com</a>
 <br/>
-We are hiring http://bit.ly/1LvAAVc
+We are hiring <a href="http://bit.ly/1LvAAVc">http://bit.ly/1LvAAVc</a>
+</center>
 </td>
-<td align="center">@DataSkeptic</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td align="center">
+<center>
+<a href="https://twitter.com/dataskeptic">@DataSkeptic</a>
+</center>
+</td>
 </tr>
 </table>
 </center>
 </div>
 </div>
-</div></section>
-    </section>
+</div>
 </div>
 </div>
 
