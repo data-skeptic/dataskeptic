@@ -13,6 +13,8 @@ When presented with counter-arguments or empirical falsifications of claims, som
 
 <br/>
 <h2>Other Recommended Podcasts</h2>
+<p><a href="http://www.partiallyderivative.com/">Partially Derivative</a> is a fun and light hearted exploration of the latest news in data science.  It's sort of like diggnation for data science.  Great show and discussions.</p>
+
 <p><a href="http://www.yrad.com/cs/">The Conspiracy Skeptic</a> discusses well known conspiracies from an evidence based perspective.  As they say on talk radio "Long time listener; first time caller" - since I appeared as a guest to discuss The Bible Code in August of 2014.</p>
 
 <p><a href="http://www.skeptic.com/podcasts/monstertalk/">Monster Talk</a> is another personal favorite exploring the skeptical angle on cryptozoological claims, folklore, and monsters in general.</p>
