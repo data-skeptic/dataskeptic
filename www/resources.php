@@ -11,6 +11,9 @@ good reference to skeptical materials and references on many questionable claims
 <p><a href="http://whatstheharm.net/">What's the Harm?</a>
 When presented with counter-arguments or empirical falsifications of claims, some people often respond with "What's the Harm?".  This site is a great place to answer that question.</p>
 
+<h2>Data Science Learning Resources</h2>
+<p><a href="http://sqlzoo.net/wiki/SQL_Tutorial">SQL Zoo</a> can interactively teach you the basics of SQL.</p>
+
 <br/>
 <h2>Other Recommended Podcasts</h2>
 <p><a href="http://www.partiallyderivative.com/">Partially Derivative</a> is a fun and light hearted exploration of the latest news in data science.  It's sort of like diggnation for data science.  Great show and discussions.</p>
