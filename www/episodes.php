@@ -114,16 +114,21 @@ $showonce=0;
         }
       }
       if ($done == 0) {
-        $ii = strpos($desc, "<br");
+        $ii = strpos($desc, "<br>");
         if ($ii !== false) {
+		
+		
           $desc = substr($desc, 0, $ii);
+		  
         }
       }
-      echo($desc);
+	  
+	  
+      echo preg_replace('/[[:^print:]]/', '', $desc);
       echo("<p><a href='$link'>read more...</a></p>");
     }
     else {
-      echo($desc);
+     echo preg_replace('/[[:^print:]]/', '', $desc);
     }
     echo("</div><br/>");
   }
@@ -132,3 +137,4 @@ For a complete list, please find the podcast on itunes, stitcher, or your podcas
 </div>
 
 <? include("footer.php"); ?>
+
