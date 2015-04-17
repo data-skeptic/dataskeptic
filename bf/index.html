@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Draw a footprint</title>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.ui.core.min.js"></script>
+<script type="text/javascript" src="jquery.ui.widget.min.js"></script>
+<script type="text/javascript" src="jquery.ui.mouse.min.js"></script>
+<script type="text/javascript" src="jquery.ui.draggable.min.js"></script>
+
+<!-- wColorPicker -->
+<link rel="Stylesheet" type="text/css" href="wColorPicker.css" />
+<script type="text/javascript" src="wColorPicker.js"></script>
+
+<!-- wPaint -->
+<link rel="Stylesheet" type="text/css" href="wPaint.css" />
+<script type="text/javascript" src="wPaint.js"></script>
+</head>
+<body>
+
+<h1>Sasquatch Footprints</h1>
+<p>The topic of bigfoot is one of controversy.  Some people believe this creature exists; others do not.  Regardless of your belief,
+one cannot deny that bigfoot has a significant place in our folklore and myths.</p>
+
+<p>Please draw a footprint in the space below that reflects the size you expect for a reported sasquatch footprint.  A human footprint
+is provided for reference.</p>
+
+<div id="menu">
+<table>
+<tr>
+<td><div id="wPaint" style="position:relative; width:800px; height:500px; background:#FFFFFF; border:solid black 1px;">
+<img src='http://fortbendlifestylesandhomes.com/wp-content/uploads/2011/04/shutterstock_59769157-feet.gif' height=200 />
+</div></td>
+<td><img id="canvasImage" src=""/></td>
+</tr>
+<tr>
+</div>
+<br/>
+<!--- <input id="canvasImageData" type="text" /> --->
+</tr>
+</table>
+
+<!--
+<a href="javascript:saveImage();">save image</a> | <a href="javascript:clearCanvas();">clear canvas</a>
+-->
+<button onclick='clearCanvas();'>Clear</button>
+<input type="button" value="Upload Image" onclick="upload_image('wPaint');"/>
+
+<script type="text/javascript">
+
+function dataURItoBlob(dataURI) {
+    // convert base64/URLEncoded data component to raw binary data held in a string
+    var byteString;
+    if (dataURI.split(',')[0].indexOf('base64') >= 0)
+        byteString = atob(dataURI.split(',')[1]);
+    else
+        byteString = unescape(dataURI.split(',')[1]);
+
+    // separate out the mime component
+    var mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0];
+
+    // write the bytes of the string to a typed array
+    var ia = new Uint8Array(byteString.length);
+    for (var i = 0; i < byteString.length; i++) {
+        ia[i] = byteString.charCodeAt(i);
+    }
+    return new Blob([ia], {type:mimeString});
+}
+
+
+		var wp = $("#wPaint").wPaint({
+			strokeStyle: '#000000',
+			drawDown: function(e, mode){ $("#canvasDown").val(this.settings.mode + ": " + e.pageX + ',' + e.pageY); },
+			drawMove: function(e, mode){ $("#canvasMove").val(this.settings.mode + ": " + e.pageX + ',' + e.pageY); },
+			drawUp: function(e, mode){ $("#canvasUp").val(this.settings.mode + ": " + e.pageX + ',' + e.pageY); }
+		}).data('_wPaint');
+		
+		function saveImage() {
+			var imageData = $("#wPaint").wPaint("image");
+			$("#canvasImage").attr('src', imageData);
+			$("#canvasImageData").val(imageData);
+		}
+
+		function clearCanvas() {
+			$("#wPaint").wPaint("clear");
+		}
+		
+		function upload_image(id) {
+			var imageData = $("#" + id).wPaint("image");
+			var blob = dataURItoBlob(imageData);
+			var fd = new FormData();
+			fd.append('file', blob);
+			$.ajax({
+				url: 'hello.py/post_img',
+				type: 'POST',
+				data: fd,
+				async: false,
+				cache: false,
+				enctype: 'multipart/form-data',
+				processData: false,
+				contentType: false,
+				success: function(data) {
+					alert('Thanks for participating');
+					clearCanvas();
+				}
+			});
+		}
+
+$.extend($.fn.wPaint.defaults, {
+  mode:        'pencil',  // set mode
+  lineWidth:   '3',       // starting line width
+  fillStyle:   '#FFFFFF', // starting fill style
+  strokeStyle: '#000000'  // start stroke style
+});
+	</script>
+
+</body>
+</html>
