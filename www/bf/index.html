@@ -30,9 +30,9 @@
 					<a href="/" alt="The Data Skeptic Podcast"><img src="DSlogo_white.png"></a>
 					<h1>Sasquatch Footprints</h1>
 				</header>
-				<p>Whether he is called Sasquatch, Bigfoot, or any of a wide variety of names, the topic of Bigfoot is controversial &mdash; some have no doubt these creatures exists, others do not see enough evidence agree. Regardless of where you stand, one cannot deny that Bigfoot has had a significant place in our folklore and popular culture. </p>
+				<p>Whether he is called Sasquatch, Bigfoot, or any of a wide variety of names, the topic of Bigfoot is controversial &mdash; some have no doubt these creatures exists, others do not see enough evidence. Regardless of where you stand, one cannot deny that Bigfoot has had a significant place in our folklore and popular culture. </p>
 
-				<p>We&#39;d like your help testing what people think is the average size of Bigfoot&#39;s footprint, relative to an average human&#39;s foot. Please draw a footprint in the space below that reflects the size you expect for a reported Bigfoot footprint.  There is no right answer, and feel free to adjust as much as you feel necessary.</p>
+				<p>We&#39;d like your help testing what people think is the average size of Bigfoot&#39;s footprint, relative to an average human&#39;s foot. Please draw a footprint in the space below that reflects the size you think of for a bigfoot's print.</p>
 
 				<div id="menu">
 					<table>
@@ -46,6 +46,20 @@
 						</tr>
 					</table>
 				</div>	
+				<div>
+					<center>
+					<br/>
+					<table>
+					<tr>
+					<td>What is your email? (optional)</td>
+					<td><input id='email' style='width:250px; font-size: 14pt' /></td>
+					</tr><tr>
+					<td>With what probability (0 - 100%) do you think Bigfoot might be real? &nbsp; </td>
+					<td><input id='prob' style='width: 100px; font-size: 14pt' /> % </td>
+					</tr>
+					</table>
+					</center>
+				</div>
 				<div id="buttonHolder">
 					<button class="butBase" id="clearBut" onclick='clearCanvas();'>Clear</button>
 					<input class="butBase" id="subBut" type="button" value="Upload Image" onclick="upload_image('wPaint');"/>
@@ -101,11 +115,13 @@
 				
 			function upload_image(id) {
 				var imageData = $("#" + id).wPaint("image");
+				var email = $('#email').val();
+				var prob = $('#prob').val();
 				var blob = dataURItoBlob(imageData);
 				var fd = new FormData();
 				fd.append('file', blob);
 				$.ajax({
-					url: 'hello.py/post_img',
+					url: 'hello.py/post_img?email=' + email + "&prob=" + prob,
 					type: 'POST',
 					data: fd,
 					async: false,

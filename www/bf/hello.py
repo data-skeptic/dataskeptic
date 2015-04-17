@@ -26,7 +26,19 @@ def index():
 	return page
 
 def post_img(req):
-	#return req.form.keys()
+	frm = util.FieldStorage(req)
+	if frm.has_key('email'):
+		email = frm.getfirst('email')
+	else:
+		email = ''
+	if frm.has_key('prob'):
+		prob = frm.getfirst('prob')
+	else:
+		prob = ''
+	row = email + '\t' + prob + '\n'
+	f = open('/mnt/data/responses.csv', 'a')
+	f.write(row)
+	f.close()
 	tempFile = req.form['file']
 	id = str(uuid.uuid4())
 	key = bucket.new_key(id + '.jpg')
