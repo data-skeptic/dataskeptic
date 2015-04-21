@@ -12,7 +12,10 @@ h1 {
   color: 44AA44
 }
 p {
-  color: 224422
+     color: #224422;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 24px;
 }
 #bbody {
   padding: 10px;
@@ -52,6 +55,7 @@ p {
   text-align: left;
   font-family: "Lucida Bright", Georgia, serif;
   font-size: 14pt;
+  border-radius:10px;
 }
 
 #topheader {
@@ -62,6 +66,10 @@ p {
 
 #menu a {
   text-decoration: none;
+  color:#224422;
+  font-weight:bold;
+  font-family:sans-serif;
+  
 }
 
 #header {
@@ -74,6 +82,7 @@ p {
 
 #headline {
   font-size: 24pt;
+  font-family: sans-serif;
 }
 
 #wheretoget {
@@ -96,6 +105,7 @@ p {
 
 #desc {
   float: left;
+  font-family: sans-serif;
 }
 
 .clear { clear: both;}
@@ -184,3 +194,4 @@ tr:hover {
     float: left;
   }
 }
+
