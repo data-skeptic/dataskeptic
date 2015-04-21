@@ -2,7 +2,7 @@
 
 
 <p class=MsoNormal style='text-align:justify'>Linda: The data skeptic podcast
-is a legal show featuring conversations about skepticism, critical thinking and
+is a weekly show featuring conversations about skepticism, critical thinking and
 data science.</p>
 
 <p class=MsoNormal style='text-align:justify'>Kyle: Welcome to another episode
