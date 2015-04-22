@@ -1,4 +1,16 @@
-<!DOCTYPE html> 
+<?
+function generateRandomString($length = 10) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
+$code = generateRandomString(6);
+?>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -51,6 +63,10 @@
 					<br/>
 					<table>
 					<tr>
+					<td>This field contains a test code, take note if you come from Mechanical Turk: &nbsp; </td>
+					<td><input id='code' style='width: 100px; font-size: 14pt' value='<? echo($code); ?>' /></td>
+					</tr>
+					</tr><tr>
 					<td>What is your email? (optional)</td>
 					<td><input id='email' style='width:250px; font-size: 14pt' /></td>
 					</tr><tr>

@@ -35,7 +35,11 @@ def post_img(req):
 		prob = frm.getfirst('prob')
 	else:
 		prob = ''
-	row = email + '\t' + prob + '\n'
+	if frm.has_key('code'):
+		code = frm.getfirst('code')
+	else:
+		code = ''
+	row = email + '\t' + prob + '\t' + code + '\n'
 	f = open('/mnt/data/responses.csv', 'a')
 	f.write(row)
 	f.close()
