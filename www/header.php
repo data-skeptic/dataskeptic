@@ -1,4 +1,3 @@
-
 <?php
   include("funcs.php");
   $posts = processRss("feed.rss");
@@ -20,6 +19,10 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
   <meta name="Keywords" content="data science, data skepticism, kyle polich, empirical evidence">
   <meta name="Description" content="The Data Skeptic Podcast features conversations on topics related to data science, statistics, machine learning, artificial intelligence and the like, all from the perspective of applying critical thinking and the scientific method to evaluate the veracity of claims and efficacy of approaches.">
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/responsive.css" />
 <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
@@ -36,7 +39,10 @@
 <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
-
+<script type="text/javascript" src="js/jquery-.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/ie-emulation-modes-warning.js"></script>
+<script type="text/javascript" src="js/ie10-viewport-bug-workaround.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="/jplayer/jquery.jplayer.min.js"></script>
 <script type="text/javascript" src="http://cdn.ucb.org.br/Scripts/tablesorter/jquery.tablesorter.min.js"></script>
@@ -54,7 +60,7 @@
 <div id="main">
 
 <div id="topheader">
-  <div id="logo"><img src="/ituneslogo.png" alt="Data Skeptic Podcast" text="Data Skeptic Podcast" /></div>
+  <div id="logo"><img src="ituneslogo.png" alt="Data Skeptic Podcast" text="Data Skeptic Podcast" /></div>
   <div id="top">
     <div id="headline">The Data Skeptic Podcast</div>
     <div id="desc">Conversations at the intersection of data science, skepticism, and empirical validation.</div>
@@ -77,8 +83,8 @@
   <? include("mailinglist.php"); ?>
   <div class="clear"></div>
   <div id="xtrastuff">
-    <a href="http://dataskeptic.libsyn.com/rss"><img src="/rss2.gif" border=0" /></a><br/>
-    <a href="http://feedvalidator.org/check.cgi?url=http%3A//dataskeptic.libsyn.com/rss"> <img src="/valid-rss.png" /></a><br/><br/>
+    <a href="http://dataskeptic.libsyn.com/rss"><img src="rss2.gif" border=0" /></a><br/>
+    <a href="http://feedvalidator.org/check.cgi?url=http%3A//dataskeptic.libsyn.com/rss"> <img src="valid-rss.png" /></a><br/><br/>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -94,22 +100,36 @@
   <div class="clear"></div>
   <div id="vm">If you have a comment or question for the show, you can leave us a voice message by calling <b>(310) 906-0752</b>.</div>
 </div>
+ <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+<li><a  class="active" href="/">Home</a></li>
 
-<div id="inner">
-<div id="menu">
-<a href="/">Home</a>
-|
-<a href="/episodes.php">Show Notes</a>
-|
-<a href="/blog.php">Blog</a>
-|
+<li><a href="/episodes.php">Show Notes</a></li>
+
+<li><a href="/blog.php">Blog</a></li>
+
 <!--
-<a href="/events.php">Events</a>
-|
+<li><a href="/events.php">Events</a></li>
+
 -->
-<a href="/resources.php">Resources</a>
-|
-<a href="/contact.php">Contact</a>
+<li><a href="/resources.php">Resources</a></li>
+
+<li><a href="/contact.php">Contact</a></li>
+   </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
 </div>
 
 <?
