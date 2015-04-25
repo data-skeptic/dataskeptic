@@ -119,13 +119,13 @@ of "DD"?</p>
 <!--begin.rcode fig.width=10, fig.height=5, echo=FALSE, fig.align='center'
 par(mar=c(4,4,1,1))
 colnames(cpt) = c("i", "f")
-plot(cpt$f, xlab="initials ordered by likelihood", ylab="Likelihood", axes=FALSE, cex=0.5)
+plot(cpt$f, xlab="initials ordered by likelihood", ylab="Likelihood (%)", axes=FALSE, cex=0.5)
 axis(1)
 axis(2)
 x = which(cpt$i=="DD")
 abline(v=x, lty=2, col=rgb(0,0,0,.3))
 abline(h=cpt[x, "f"], lty=2, col=rgb(0,0,0,.3))
-msg = paste("DD = ", round(cpt[x, "f"]*100,3), "%", sep="")
+msg = paste("DD = ", round(cpt[x, "f"]*100,3)/100, "%", sep="")
 text(x, cpt[x, "f"]+.01, msg, pos=4)
 end.rcode-->
 

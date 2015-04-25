@@ -1,9 +1,7 @@
 <?
 $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 if (startsWith($actual_link, "http://dataskeptic.com/epnotes/") || startsWith($actual_link, "http://dataskeptic.com/blog/") || startsWith($actual_link, "http://dataskeptic.com/events/")) {
-?>
-<div class="fb-comments" data-href="<? echo($actual_link); ?>" data-numposts="5" data-colorscheme="light"></div>
-<?
+  include('comments.php');
 }
 ?>
 </div> <!-- inner -->
