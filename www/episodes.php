@@ -63,7 +63,6 @@ function OpenInNewTab(url) {
 </script>
 
 <div id="bbody">
-<h2>Recent Episodes</h2>
 <?
 $showonce=0;
   $i = count($posts);

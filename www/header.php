@@ -83,6 +83,7 @@
   <? include("mailinglist.php"); ?>
   <div class="clear"></div>
   <div id="xtrastuff">
+<!--
     <a href="http://dataskeptic.libsyn.com/rss"><img src="rss2.gif" border=0" /></a><br/>
     <a href="http://feedvalidator.org/check.cgi?url=http%3A//dataskeptic.libsyn.com/rss"> <img src="valid-rss.png" /></a><br/><br/>
 <div id="fb-root"></div>
@@ -95,10 +96,12 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <div class="fb-like" data-href="https://dataskeptic.com" data-width="250" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
-
+-->
   </div>
   <div class="clear"></div>
+<!--
   <div id="vm">If you have a comment or question for the show, you can leave us a voice message by calling <b>(310) 906-0752</b>.</div>
+-->
 </div>
  <nav class="navbar navbar-default">
         <div class="container-fluid">
