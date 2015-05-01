@@ -2,9 +2,6 @@
 
 <div id="bbody">
 
-<p><a href="http://www.openintro.org/stat/">OpenIntro</a>
-provides a great introduction to statistics textbook as a FREE eBook or an at-cost print version.  I got one for under $10 on amazon.  This is a great resource for any listener without a statistics background.</p>
-
 <p><a href="http://www.skepdic.com/">Skeptic's Dictionary</a></td> is a 
 good reference to skeptical materials and references on many questionable claims.</p>
 
@@ -42,6 +39,7 @@ When presented with counter-arguments or empirical falsifications of claims, som
   Alex book on magic
 -->
 
+<a name="books"></a>
 <h2>Recommended Books</h2>
 <table id="myTable" class="tablesorter">
   <thead>
@@ -50,6 +48,11 @@ When presented with counter-arguments or empirical falsifications of claims, som
     <th>Recommended By</th>
   </thead>
   <tbody>
+    <tr>
+      <td><a href="http://www.openintro.org/stat/">OpenIntro</a></td>
+      <td>OpenIntro provides a great introduction to statistics textbook as a FREE eBook or an at-cost print version.  I got one for under $10 on amazon.  This is a great resource for any listener without a statistics background.</td>
+      <td>Kyle Polich</td>
+    </tr>
 <!--
     <tr>
       <td><a href="http://www.amazon.com/Data-Love-Story-Online-Dating/dp/0525953809">Data, a Love Story</a></td>

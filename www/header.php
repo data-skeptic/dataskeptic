@@ -20,9 +20,9 @@
   <meta name="Keywords" content="data science, data skepticism, kyle polich, empirical evidence">
   <meta name="Description" content="The Data Skeptic Podcast features conversations on topics related to data science, statistics, machine learning, artificial intelligence and the like, all from the perspective of applying critical thinking and the scientific method to evaluate the veracity of claims and efficacy of approaches.">
 
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/css/responsive.css" />
 <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
@@ -60,7 +60,7 @@
 <div id="main">
 
 <div id="topheader">
-  <div id="logo"><img src="ituneslogo.png" alt="Data Skeptic Podcast" text="Data Skeptic Podcast" /></div>
+  <div id="logo"><img src="/ituneslogo.png" alt="Data Skeptic Podcast" text="Data Skeptic Podcast" /></div>
   <div id="top">
     <div id="headline">The Data Skeptic Podcast</div>
     <div id="desc">Conversations at the intersection of data science, skepticism, and empirical validation.</div>

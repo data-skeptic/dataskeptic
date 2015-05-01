@@ -10,3 +10,5 @@ my.properties
 .zip
 .xlsx
 .xls
+
+*.sh
