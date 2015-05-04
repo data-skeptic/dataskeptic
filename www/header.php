@@ -20,9 +20,9 @@
   <meta name="Keywords" content="data science, data skepticism, kyle polich, empirical evidence">
   <meta name="Description" content="The Data Skeptic Podcast features conversations on topics related to data science, statistics, machine learning, artificial intelligence and the like, all from the perspective of applying critical thinking and the scientific method to evaluate the veracity of claims and efficacy of approaches.">
 
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/css/responsive.css" />
 <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
@@ -60,7 +60,7 @@
 <div id="main">
 
 <div id="topheader">
-  <div id="logo"><img src="ituneslogo.png" alt="Data Skeptic Podcast" text="Data Skeptic Podcast" /></div>
+  <div id="logo"><img src="/ituneslogo.png" alt="Data Skeptic Podcast" text="Data Skeptic Podcast" /></div>
   <div id="top">
     <div id="headline">The Data Skeptic Podcast</div>
     <div id="desc">Conversations at the intersection of data science, skepticism, and empirical validation.</div>
@@ -83,6 +83,7 @@
   <? include("mailinglist.php"); ?>
   <div class="clear"></div>
   <div id="xtrastuff">
+<!--
     <a href="http://dataskeptic.libsyn.com/rss"><img src="rss2.gif" border=0" /></a><br/>
     <a href="http://feedvalidator.org/check.cgi?url=http%3A//dataskeptic.libsyn.com/rss"> <img src="valid-rss.png" /></a><br/><br/>
 <div id="fb-root"></div>
@@ -95,10 +96,12 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <div class="fb-like" data-href="https://dataskeptic.com" data-width="250" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
-
+-->
   </div>
   <div class="clear"></div>
+<!--
   <div id="vm">If you have a comment or question for the show, you can leave us a voice message by calling <b>(310) 906-0752</b>.</div>
+-->
 </div>
  <nav class="navbar navbar-default">
         <div class="container-fluid">
