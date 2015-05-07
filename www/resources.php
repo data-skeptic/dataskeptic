@@ -3,11 +3,14 @@
 <div id="bbody">
 
 <br/><br/>
+<h2>Skeptical resources</h2>
 <p><a href="http://www.skepdic.com/">Skeptic's Dictionary</a></td> is a 
 good reference to skeptical materials and references on many questionable claims.</p>
 
 <p><a href="http://whatstheharm.net/">What's the Harm?</a>
 When presented with counter-arguments or empirical falsifications of claims, some people often respond with "What's the Harm?".  This site is a great place to answer that question.</p>
+
+<br/>
 
 <h2>Data Science Learning Resources</h2>
 <p><a href="http://sqlzoo.net/wiki/SQL_Tutorial">SQL Zoo</a> can interactively teach you the basics of SQL.</p>
