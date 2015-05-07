@@ -34,7 +34,7 @@ function OpenInNewTab(url) {
 </script>
 
 <div id="bbody">
-<h2>Blog entries</h2>
+<br/><br/>
 <?
 $showonce=0;
   $i = count($posts);

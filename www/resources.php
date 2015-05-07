@@ -2,6 +2,7 @@
 
 <div id="bbody">
 
+<br/><br/>
 <p><a href="http://www.skepdic.com/">Skeptic's Dictionary</a></td> is a 
 good reference to skeptical materials and references on many questionable claims.</p>
 
@@ -49,8 +50,12 @@ When presented with counter-arguments or empirical falsifications of claims, som
   </thead>
   <tbody>
     <tr>
-      <td><a href="http://www.openintro.org/stat/">OpenIntro</a></td>
-      <td>OpenIntro provides a great introduction to statistics textbook as a FREE eBook or an at-cost print version.  I got one for under $10 on amazon.  This is a great resource for any listener without a statistics background.</td>
+      <td><a href="http://www.openintro.org/stat/">OpenIntro</a> (Free ebook, $10 printed)</td>
+      <td>
+<a href="http://www.ddiez.com/">David Diez</a>, 
+<a href="http://directory.stat.ucla.edu/christopher-barr">Christopher Barr</a>, 
+<a href="https://stat.duke.edu/~mc301/">Mine Çetinkaya-Rundel</a>
+      </td>
       <td>Kyle Polich</td>
     </tr>
 <!--
