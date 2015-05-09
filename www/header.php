@@ -137,6 +137,7 @@
 
 <?
   if (strpos($_SERVER['REQUEST_URI'], "epnotes") !== FALSE) {
+    echo("<br/><br/>");
     echo($playercontent);
   }
 ?>
