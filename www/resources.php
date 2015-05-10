@@ -15,6 +15,8 @@ When presented with counter-arguments or empirical falsifications of claims, som
 <h2>Data Science Learning Resources</h2>
 <p><a href="http://sqlzoo.net/wiki/SQL_Tutorial">SQL Zoo</a> can interactively teach you the basics of SQL.</p>
 
+<p><a href="http://datasciencemasters.org/">The Open Source Data Science Masters</a></p>≈
+
 <br/>
 <h2>Other Recommended Podcasts</h2>
 <p><a href="http://www.partiallyderivative.com/">Partially Derivative</a> is a fun and light hearted exploration of the latest news in data science.  It's sort of like diggnation for data science.  Great show and discussions.</p>
