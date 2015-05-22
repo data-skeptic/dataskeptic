@@ -11,5 +11,7 @@ my.properties
 .xlsx
 .xls
 
+20*.txt
+
 *.sh
 feed.rss

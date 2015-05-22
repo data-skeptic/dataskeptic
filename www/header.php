@@ -19,7 +19,9 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
   <meta name="Keywords" content="data science, data skepticism, kyle polich, empirical evidence">
   <meta name="Description" content="The Data Skeptic Podcast features conversations on topics related to data science, statistics, machine learning, artificial intelligence and the like, all from the perspective of applying critical thinking and the scientific method to evaluate the veracity of claims and efficacy of approaches.">
-
+<meta name="google-site-verification" content="rfdd30Kf0eGBN3vxUBuGqUFoKSawSvJJzG3YHoG_lj4" />
+<meta name="google-site-verification" content="plagXHEaZmPWu_C1DSy4mtWkGL7O4I4qG33ZtfUkO-0" />
+<meta name="google-site-verification" content="s6kgIfn46D5a5W_c-Lt56KVIlYSAVVhkcM8ob73wdb8" />
 <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="/css/style.css" />
 <link rel="stylesheet" type="text/css" href="/css/responsive.css" />

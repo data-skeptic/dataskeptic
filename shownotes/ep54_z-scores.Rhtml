@@ -1,0 +1,159 @@
+<? include("../header.php") ?>
+
+<div id="bbody">
+<h1>Z-Scores</h1>
+
+<p>This week's episode dicusses z-scores, also known as standard score.  This score describes the distance (in standard deviations)
+that an observation is away from the mean of the population. A closely related top is the
+<a href="http://en.wikipedia.org/wiki/68%E2%80%9395%E2%80%9399.7_rule">68-95-99.7 rule</a> which tells us that (approximately) 68% of a normally
+distributed population lies within one standard deviation of the mean, 95 within 2, and 99.7 within 3.</p>
+
+<p>Kyle and Linh Da discuss z-scores in the context of human height.  If you'd like to calculate your own z-score for height, you can do so below.
+They further discuss how a z-score can also describe the likelihood that some statistical result is due to chance.  Thus, if the significance of
+a finding can be said to be $3 \sigma$, that means that it's 99.7% likely not due to chance, or only 0.3% likely to be due to chance.</p>
+
+<!-- begin.rcode echo=FALSE
+x = seq(-3,3,length=200)
+plot(x, dnorm(x), type='l', xlab='standard deviations / z-score', ylab='density', axes=FALSE)
+axis(1)
+axis(2)
+xx = seq(-3, 3, by=1)
+segments(xx, 0, xx, dnorm(xx))
+end.rcode-->
+
+<h2>Calculate the z-score of your height</h2>
+
+<script>
+//alert(Math.random());
+function normalcdf(mean, sigma, to) 
+{
+    var z = (to-mean)/Math.sqrt(2*sigma*sigma);
+    var t = 1/(1+0.3275911*Math.abs(z));
+    var a1 =  0.254829592;
+    var a2 = -0.284496736;
+    var a3 =  1.421413741;
+    var a4 = -1.453152027;
+    var a5 =  1.061405429;
+    var erf = 1-(((((a5*t + a4)*t) + a3)*t + a2)*t + a1)*t*Math.exp(-z*z);
+    var sign = 1;
+    if(z < 0)
+    {
+        sign = -1;
+    }
+    return (1/2)*(1+sign*erf);
+}
+
+function update() {
+	g = document.getElementById('m').checked;
+	if (g) {
+		mu = 5 * 12 + 9.5;
+	} else {
+		mu = 5 * 12 + 4;
+	}
+	ft = parseFloat(document.getElementById('height_f').value);
+	inch = parseFloat(document.getElementById('height_i').value);
+	x = ft * 12 + inch;
+	σ = parseFloat(document.getElementById('sig').value);
+	z = (x - mu) / σ;
+	zspan = document.getElementById('zscore');
+	zspan.innerHTML = z;
+	p = normalcdf(mu, σ, x);
+	percentile = document.getElementById('percentile');
+	percentile.innerHTML = p;
+
+}
+</script>
+
+<input type='radio' name='gender' id='m' value='Female' checked onchange='update()' />Male
+<input type='radio' name='gender' id='f' value='Male' onchange='update()' />Female
+
+<br/><br/>
+
+<b>Assumed standard deviation:</b>
+<select id='sig' onchange='update()'>
+	<option>2</option>
+	<option>2.5</option>
+	<option selected>3</option>
+	<option>3.5</option>
+	<option>4</option>
+	<option>4.5</option>
+	<option>5</option>
+</select> inches
+
+<br/><br/>
+
+<table>
+	<tr>
+		<td>Ft:
+			<select id='height_f' onchange='update()'>
+				<option>3</option>
+				<option>4</option>
+				<option selected>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option>8</option>
+			</select>
+		</td>
+		<td>Inches:
+			<select id='height_i' onchange='update()'>
+				<option>0</option>
+				<option>0.5</option>
+				<option>1</option>
+				<option>1.5</option>
+				<option>2</option>
+				<option>2.5</option>
+				<option>3</option>
+				<option>3.5</option>
+				<option>4</option>
+				<option>4.5</option>
+				<option selected>5</option>
+				<option>5.5</option>
+				<option>6</option>
+				<option>6.5</option>
+				<option>7</option>
+				<option>7.5</option>
+				<option>8</option>
+				<option>8.5</option>
+				<option>9</option>
+				<option>9.5</option>
+				<option>10</option>
+				<option>10.5</option>
+				<option>11</option>
+				<option>11.5</option>
+			</select>
+		</td>
+	</tr>
+</table>
+
+<br/>
+
+<table>
+	<tr>
+		<td><b>z-score:</b></td>
+		<td><span id='zscore'></span></td>
+	</tr>
+	<tr>
+		<td><b>percentile:</b></td>
+		<td><span id='percentile'></span></td>
+	</tr>
+</table>
+
+<br/>
+
+<p>Using the interface above, select your gender and enter your height, and your z-score will be calculated.
+Additionally, this page reports the percentile - the percentage of the population which is shorter than you.</p>
+
+<br/><br/>
+
+<script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/javascript">MathJax.Hub.Config({tex2jax: {processEscapes: true,
+        processEnvironments: false, inlineMath: [ ['$','$'] ],
+        displayMath: [ ['$$','$$'] ] },
+        asciimath2jax: {delimiters: [ ['$','$'] ] },
+        "HTML-CSS": {minScaleAdjust: 125 } });
+    </script>
+
+<? include("../footer.php") ?>
+
