@@ -51,7 +51,7 @@ for tweet in alltweets:
   guest = tweet['user']['screen_name'].encode('utf-8')
   img = twitter.show_user(screen_name=guest)['profile_image_url_https']
   out.write('<tr><td valign=top><img src=\'' + img + '\' /></td>')
-  out.write('<td valign=top><a href="http://twitter.com/' + guest[1:len(guest)] + '">' + guest + '</a><br/>' + htm.encode('ascii', 'xmlcharrefreplace') + '</td></tr>')
+  out.write('<td valign=top><a href="http://twitter.com/' + guest[0:len(guest)] + '">' + guest + '</a><br/>' + htm.encode('ascii', 'xmlcharrefreplace') + '</td></tr>')
 
 out.flush()
 out.close()
