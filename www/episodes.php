@@ -125,11 +125,11 @@ $showonce=0;
       }
 	  
 	  
-      echo preg_replace('/[[:^print:]]/', '', $desc);
+      echo preg_replace('/[[:^print:]]/', ' ', $desc);
       echo("<p><a href='$link'>read more...</a></p>");
     }
     else {
-     echo preg_replace('/[[:^print:]]/', '', $desc);
+     echo preg_replace('/[[:^print:]]/', ' ', $desc);
     }
     echo("</div><br/>");
   }
