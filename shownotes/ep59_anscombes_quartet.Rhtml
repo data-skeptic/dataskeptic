@@ -1,0 +1,38 @@
+<? include("../header.php") ?>
+
+<div id="bbody">
+<h1>Anscombe's Quartet</h1>
+
+<p>This mini-episode discusses <a href="http://en.wikipedia.org/wiki/Anscombe%27s_quartet">Anscombe's Quartet</a>, a series of four datasets which are clearly very different but share some similar statistical properties with one another.  For example, each of the four plots has the same mean and variance on both axis, as well as the same correlation coefficient, and same linear regression.</p>
+
+<p>The episode tries to add some context by imagining each of these datasets as data about a sports team, and why it can be important to look beyond basic summary statistics when exploring your dataset.</p>
+
+<!--begin.rcode echo=FALSE, fig.width=7, fig.height=6
+require(stats)
+require(graphics)
+
+##-- now some "magic" to do the 4 regressions in a loop:
+ff <- y ~ x
+mods <- setNames(as.list(1:4), paste0("lm", 1:4))
+for(i in 1:4) {
+  ff[2:3] <- lapply(paste0(c("y","x"), i), as.name)
+  mods[[i]] <- lmi <- lm(ff, data = anscombe)
+}
+
+
+## Now, do what you should have done in the first place: PLOTS
+labels = c('A', 'B', 'C', 'D')
+op <- par(mfrow = c(2, 2), mar = 0.1+c(4,4,1,1), oma =  c(0, 0, 2, 0))
+for(i in 1:4) {
+  ff[2:3] <- lapply(paste0(c("y","x"), i), as.name)
+  plot(ff, data = anscombe, col = "black", pch = 21, bg = "blue", xlim = c(0, 20), ylim = c(0, 20))
+  text(2,16, labels[i], cex=5)
+  abline(mods[[i]], col = "blue")
+}
+mtext("Anscombe's Quartet", outer = TRUE, cex = 1.5)
+par(op)
+end.rcode-->
+
+</div>
+
+<? include("../footer.php") ?>
