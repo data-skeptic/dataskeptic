@@ -95,7 +95,7 @@
 
 
 					<h3>Richard Saunders</h3>
-					<span class="wbcktxt"><a href="https://en.wikipedia.org/wiki/Richard_Saunders_(skeptic)">Richard Saunders</a> has a long list of skeptical accolades including hosting <a href="http://skepticzone.tv/">The Skeptics Zone</a> podcast, in which he frequently reports his post-intro snack choice.  The figure below summarizes the presumed calorie count of these snacks.</span>
+					<span class="wbcktxt"><a href="https://en.wikipedia.org/wiki/Richard_Saunders_(skeptic)">Richard Saunders</a> has a long list of skeptical accolades including hosting <a href="http://skepticzone.tv/">The Skeptics Zone</a> podcast, in which he frequently reports his post-intro snack choice.  The figure below summarizes the presumed calorie count of these snacks; please roll over the bars for details.</span>
 					<br/><br/>
 					<table>
 						<tr><td valign=top><img src='richard.jpg' /></td>
