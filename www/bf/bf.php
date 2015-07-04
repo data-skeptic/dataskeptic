@@ -32,9 +32,13 @@
 				</header>
 				<p>How do people think rationally about small probability events?</p>
 
+				<span style='font-size: 24pt'>This page is NOT yet ready for sharing!!!  But it is the permalink that will be live on July 17th (the official release date of the episode)</span>
+
 				<div id="menu">
-				intrapage links
+				intrapage links go here
 				</div>
+
+				<br/>
 
 				<div id='mmain'>
 
