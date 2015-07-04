@@ -48,9 +48,10 @@
 					<br/><br/>
 					<table>
 						<tr><td valign=top><img src='daniel.jpg' /></td>
-							<td><? include('guest-visuals/daniel/daniel.php'); ?>
+							<td><!--? include('guest-visuals/daniel/daniel.php'); ?-->
+								<img src='guest-visuals/daniel/daniel.png' />
 								<p><a href="https://github.com/kylepolich/dataskeptic/blob/master/www/bf/guest-visuals/daniel/daniel-loxton.ipynb">[src]</a>
-								<a href='guest-visuals/daniel/daniel.png'>[static img]</a></p>
+								<!--<a href='guest-visuals/daniel/daniel.png'>[static img]</a>--></p>
 							</td>
 						</tr>
 					</table>
@@ -63,10 +64,11 @@
 					<br/><br/>
 					<table>
 						<tr><td valign=top><img src='noelle.jpg' /></td>
-							<td><? include('guest-visuals/noelle/noelle.php'); ?>
+							<td><!--? include('guest-visuals/noelle/noelle.php'); ?-->
+								<img src='guest-visuals/noelle/noelle.png' />
 								<p>
 									<a href="https://github.com/kylepolich/dataskeptic/blob/master/www/bf/guest-visuals/noelle/noelle-saldana.ipynb">[src]</a>
-									<a href='guest-visuals/noelle/noelle.png'>[static img]</a>
+									<!--<a href='guest-visuals/noelle/noelle.png'>[static img]</a>-->
 								</p>
 							</td>
 						</tr>
@@ -80,10 +82,11 @@
 					<br/><br/>
 					<table>
 						<tr><td valign=top><img src='nathan.jpg' /></td>
-							<td><? include('guest-visuals/nathan/nathan.php'); ?>
+							<td><!--? include('guest-visuals/nathan/nathan.php'); ?-->
+								<img src='guest-visuals/nathan/nathan.png' />
 								<p>
 									<a href="https://github.com/kylepolich/dataskeptic/blob/master/www/bf/guest-visuals/nathan/nathan-janos.ipynb">[src]</a>
-									<a href='guest-visuals/nathan/nathan.png'>[static img]</a>
+									<!--<a href='guest-visuals/nathan/nathan.png'>[static img]</a>-->
 								</p>
 							</td>
 						</tr>
@@ -113,10 +116,11 @@
 					<br/><br/>
 					<table>
 						<tr><td valign='top'><img src='sharon.jpg' /></td>
-							<td><? include('guest-visuals/sharon/sharon.php'); ?>
+							<td><!--? include('guest-visuals/sharon/sharon.php'); ?-->
+								<img src='guest-visuals/sharon/sharon.png' />
 								<p>
 									<a href="https://github.com/kylepolich/dataskeptic/blob/master/www/bf/guest-visuals/sharon/sharon-hill.ipynb">[src]</a>
-									<a href='guest-visuals/sharon/sharon.png'>[static img]</a>
+									<!--<a href='guest-visuals/sharon/sharon.png'>[static img]</a>-->
 								</p>
 							</td>
 						</tr>
@@ -129,10 +133,11 @@
 					<br/><br/>
 					<table>
 						<tr><td valign=top><img src='susan.jpg' /></td>
-							<td><? include('guest-visuals/susan/susan.php'); ?>
+							<td><!--? include('guest-visuals/susan/susan.php'); ?-->
+								<img src='guest-visuals/susan/susan.png' />
 								<p>
 									<a href="https://github.com/kylepolich/dataskeptic/blob/master/www/bf/guest-visuals/susan/susan-gerbic.ipynb">[src]</a>
-									<a href='guest-visuals/susan/susan.png'>[static img]</a>
+									<!--<a href='guest-visuals/susan/susan.png'>[static img]</a>-->
 								</p>
 							</td>
 						</tr>
@@ -144,10 +149,11 @@
 					<span class="wbcktxt"><a href=" "> </a>  </span>
 					<table>
 						<tr><td valign=top><img src='lieven.jpg' /></td>
-							<td><? include('guest-visuals/lieven/lieven.php'); ?>
+							<td><!--? include('guest-visuals/lieven/lieven.php'); ?-->
+								<img src='guest-visuals/lieven/lieven.png' />
 								<p>
 									<a href="https://github.com/kylepolich/dataskeptic/blob/master/www/bf/guest-visuals/lieven/lieven-devreese.ipynb">[src]</a>
-									<a href='guest-visuals/lieven/lieven.png'>[static img]</a>
+									<!--<a href='guest-visuals/lieven/lieven.png'>[static img]</a>-->
 								</p>
 							</td>
 						</tr>
@@ -161,10 +167,11 @@
 					</span>
 					<table>
 						<tr><td valign=top><img src='alex.jpg' /></td>
-							<td><? include('guest-visuals/alex/alex.php'); ?>
+							<td><!--? include('guest-visuals/alex/alex.php'); ?-->
+								<img src='guest-visuals/alex/alex.png' />
 								<p>
 									<a href="https://github.com/kylepolich/dataskeptic/blob/master/www/bf/guest-visuals/alex/alex-boklin.ipynb">[src]</a>
-									<a href='guest-visuals/alex/alex.png'>[static img]</a>
+									<!--<a href='guest-visuals/alex/alex.png'>[static img]</a>-->
 								</p>
 							</td>
 						</tr>
@@ -177,10 +184,11 @@
 					<br/><br/>
 					<table>
 						<tr><td valign=top><img src='karl.jpg' /></td>
-							<td><? include('guest-visuals/karl/karl.php'); ?>
+							<td><!--? include('guest-visuals/karl/karl.php'); ?-->
+								<img src='guest-visuals/karl/karl.png' />
 								<p>
 									<a href="https://github.com/kylepolich/dataskeptic/blob/master/www/bf/guest-visuals/karl/karl-mamer.ipynb">[src]</a>
-									<a href='guest-visuals/karl/karl.png'>[static img]</a>
+									<!--<a href='guest-visuals/karl/karl.png'>[static img]</a>-->
 								</p>
 							</td>
 						</tr>
