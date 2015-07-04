@@ -48,8 +48,9 @@
 					<br/><br/>
 					<table>
 						<tr><td valign=top><img src='daniel.jpg' /></td>
-							<td><img src='guest-visuals/daniel/daniel.png' />
-								<p><a href="https://github.com/kylepolich/dataskeptic/blob/master/www/bf/guest-visuals/daniel/daniel-loxton.ipynb">[src]</a></p>
+							<td><? include('guest-visuals/daniel/daniel.php'); ?>
+								<p><a href="https://github.com/kylepolich/dataskeptic/blob/master/www/bf/guest-visuals/daniel/daniel-loxton.ipynb">[src]</a>
+								<a href='guest-visuals/daniel/daniel.png'>[static img]</a></p>
 							</td>
 						</tr>
 					</table>
