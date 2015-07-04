@@ -15,3 +15,6 @@ my.properties
 
 *.sh
 feed.rss
+videos/beautifulsoup
+.ipynb_checkpoints
+.DS_Store

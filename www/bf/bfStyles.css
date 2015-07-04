@@ -33,7 +33,6 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
 	font-family: "Open Sans", Arial, sans-serif;
-    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -259,5 +258,15 @@ footer ul li a:hover {
 .wbcktxt {
     color: #888;
 }
+
+h3 {
+    color: #e8d63a;
+    font-size: 25px;
+    line-height: 58px;
+    text-align: left;
+    font-family: 'Londrina Solid', sans-serif;
+}
+
+
 
 
