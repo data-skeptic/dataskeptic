@@ -151,6 +151,7 @@
 
 					<h3>Lieven Devreese</h3>
 					<span class="wbcktxt"><a href="https://vimeo.com/user4444136">Lieven Devreese</a> is a primatologist who has has studied the agiel mangabeys in Central Africa and earlier this year, embarked on an Indigogo funded campaign to get the first confirmed evidence of the Red Colobus Monkey.  Lieven graciously shared some of the story of his expedition for this episode.</span>
+					<br/><br/>
 					<table>
 						<tr><td valign=top><img src='lieven.jpg' /></td>
 							<td><!--? include('guest-visuals/lieven/lieven.php'); ?-->
