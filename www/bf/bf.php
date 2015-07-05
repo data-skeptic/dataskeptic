@@ -48,7 +48,7 @@
 
 
 					<h3>Daniel Loxton</h3>
-					<span class="wbcktxt"><a href="http://www.danielloxton.com/">Daniel Loxton</a> is an author, illustrator, and skeptic.  He's the editor of junior skeptic magazine and author and artist on a number of books including <a href="http://www.amazon.com/Abominable-Science-Origins-Nessie-Cryptids/dp/023115321X/ref=sr_1_5?ie=UTF8&qid=1435971975&sr=8-5&keywords=daniel+loxton">Abominable Science!</a> which we discuss in this episode.  The figure below describes the distribution of images in this beautifully illustrated book.</span>
+					<span class="wbcktxt"><a href="http://www.danielloxton.com/">Daniel Loxton</a> is an author, illustrator, and skeptic.  He's the editor of <a href="http://www.skeptic.com/junior_skeptic/">Junior Skeptic</a> Magazine and author and artist on a number of books including <a href="http://www.amazon.com/Abominable-Science-Origins-Nessie-Cryptids/dp/023115321X/ref=sr_1_5?ie=UTF8&qid=1435971975&sr=8-5&keywords=daniel+loxton">Abominable Science!</a> which we discuss in this episode.  The figure below describes the distribution of images in this beautifully illustrated book.</span>
 					<br/><br/>
 					<table>
 						<tr><td valign=top><img src='daniel.jpg' /></td>
@@ -81,7 +81,7 @@
 
 
 					<h3>Nathon Janos</h3>
-					<span class="wbcktxt"><a href="https://www.linkedin.com/pub/nathan-janos/0/902/895">Nathan Janos</a> was gratious enough to be the very first interview guest way back in <a href="http://dataskeptic.com/epnotes/ep002.php">episode 2</a> to discuss his work doing advertiser attribution.  The figure below describes the number of daily downloads of that episode.
+					<span class="wbcktxt"><a href="https://www.linkedin.com/pub/nathan-janos/0/902/895">Nathan Janos</a> was gratious enough to be the very first interview guest way back in episode #2 to discuss his work doing <a href="http://dataskeptic.com/epnotes/ep002.php">advertiser attribution</a>.  The figure below describes the number of daily downloads of that episode.
 					</span>
 					<br/><br/>
 					<table>
@@ -99,7 +99,7 @@
 
 
 					<h3>Richard Saunders</h3>
-					<span class="wbcktxt"><a href="https://en.wikipedia.org/wiki/Richard_Saunders_(skeptic)">Richard Saunders</a> has a long list of skeptical accolades including hosting <a href="http://skepticzone.tv/">The Skeptics Zone</a> podcast, in which he frequently reports his post-intro snack choice.  The figure below summarizes the presumed calorie count of these snacks; please roll over the bars for details.</span>
+					<span class="wbcktxt"><a href="https://en.wikipedia.org/wiki/Richard_Saunders_(skeptic)">Richard Saunders</a> has a long list of skeptical accolades including producing the documentary <a href="http://www.skeptics.com.au/latest/news/the-vaccination-chronicles/">The Vacciantion Chronicles</a> as well as hosting <a href="http://skepticzone.tv/">The Skeptics Zone</a> podcast, in which he frequently reports his post-intro snack choice.  The figure below summarizes the presumed calorie count of these snacks; please roll over the bars for details.</span>
 					<br/><br/>
 					<table>
 						<tr><td valign=top><img src='richard.jpg' /></td>
@@ -150,7 +150,7 @@
 
 
 					<h3>Lieven Devreese</h3>
-					<span class="wbcktxt"><a href=" "> </a>  </span>
+					<span class="wbcktxt"><a href="https://vimeo.com/user4444136">Lieven Devreese</a> is a primatologist who has has studied the agiel mangabeys in Central Africa and earlier this year, embarked on an Indigogo funded campaign to get the first confirmed evidence of the Red Colobus Monkey.  Lieven graciously shared some of the story of his expedition for this episode.</span>
 					<table>
 						<tr><td valign=top><img src='lieven.jpg' /></td>
 							<td><!--? include('guest-visuals/lieven/lieven.php'); ?-->
