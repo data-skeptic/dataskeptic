@@ -81,7 +81,7 @@
 
 
 					<h3>Nathon Janos</h3>
-					<span class="wbcktxt"><a href="https://www.linkedin.com/pub/nathan-janos/0/902/895">Nathan Janos</a> was gratious enough to be the very first interview guest way back in episode #2 to discuss his work doing <a href="http://dataskeptic.com/epnotes/ep002.php">advertiser attribution</a>.  The figure below describes the number of daily downloads of that episode.
+					<span class="wbcktxt"><a href="https://www.linkedin.com/pub/nathan-janos/0/902/895">Nathan Janos</a> was gratious enough to be the very first interview guest way back in episode #3 to discuss his work doing <a href="http://dataskeptic.com/epnotes/ep002.php">advertiser attribution</a>.  The figure below describes the number of daily downloads of that episode.
 					</span>
 					<br/><br/>
 					<table>
