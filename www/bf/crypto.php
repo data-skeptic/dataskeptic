@@ -167,7 +167,7 @@
 
 
 					<h3>Alex Boklin</h3>
-					<span class="wbcktxt"><a href="https://ru.linkedin.com/in/alexboklin">Alex Boklin</a> appeared on episode 29 to share his insight on <a href="http://dataskeptic.com/epnotes/ep29_the-secret-and-the-global-consciousness-project.php">The Secret and the Global Consciousness Project</a>.  Alex write a great paper titled <a href="http://gmu.academia.edu/AlexBoklin">The Miracle of Large Numbers</a>.  The figure below is a daily histogram of the number of downloads of that episode.  It's distinctively different from the plot of Nathan's downloads, but the discussion of this difference might make a nice topic for another episode.
+					<span class="wbcktxt"><a href="https://ru.linkedin.com/in/alexboklin">Alex Boklin</a> appeared on episode 29 to share his insight on <a href="http://dataskeptic.com/epnotes/ep29_the-secret-and-the-global-consciousness-project.php">The Secret and the Global Consciousness Project</a>.  Alex wrote a great paper titled <a href="http://gmu.academia.edu/AlexBoklin">The Miracle of Large Numbers</a>.  The figure below describes the top 10 <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">term frequency-inverse document frequency</a> weights calculated for his article when each paragraph is treated as a unique element.
 					</span>
 					<br/><br/>
 					<table>
