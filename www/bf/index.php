@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Sasquatch Footprints — How big are they?</title>
+		<title>Crypto - On the probability of unlikely things</title>
 
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -10,14 +10,6 @@
 		<script type="text/javascript" src="jquery.ui.widget.min.js"></script>
 		<script type="text/javascript" src="jquery.ui.mouse.min.js"></script>
 		<script type="text/javascript" src="jquery.ui.draggable.min.js"></script>
-
-		<!-- wColorPicker -->
-		<link rel="Stylesheet" type="text/css" href="wColorPicker.css" />
-		<script type="text/javascript" src="wColorPicker.js"></script>
-
-		<!-- wPaint -->
-		<link rel="Stylesheet" type="text/css" href="wPaint.css" />
-		<script type="text/javascript" src="wPaint.js"></script>
 
 		<!--  STYLE SHEETS  -->
 		<link rel="stylesheet" type="text/css" href="bfStyles.css" />
@@ -30,25 +22,35 @@
 					<a href="/" alt="The Data Skeptic Podcast"><img src="DSlogo_white.png"></a>
 					<h1>Crypto</h1>
 				</header>
-				<p>How do people think rationally about small probability events?</p>
-
-				<span style='font-size: 24pt'>This page is NOT yet ready for sharing!!!  But it is the permalink that will be live on July 17th (the official release date of the episode)</span>
-
-				<div id="menu">
-				intrapage links go here
+				<div id="mmenu">
+				<a href="#player">Player</a> |
+				<a href="#guests">Guests</a> |
+				<a href="#unabridged">Unabridged version</a> |
+				<a href="#comments">Comments</a>
 				</div>
 
 				<br/>
+				<p>How do people think rationally about small probability events?</p>
+				<p>What is the optimal statistical process by which one can update their beliefs in light of new evidence?</p>
+				<p>This episode of Data Skeptic explores questions like this as Kyle consults a cast of previous guests and experts to try and answer the question "What is the probability, however small, that Bigfoot is real?"</p>
 
+				<a name="player" />
+				<div id='player'>
+				  player will go here
+				</div>
+
+				<br/><br/>
+
+				<a name='guests' />
 				<div id='mmain'>
 
 					<h2>Special Guests</h2>
 					<span class='wbcktxt'>In pursuit of the answer to my research question, I enlisted the help of a number of former guests of the show and other noteworthy experts.  A short bio on each panelist is below in order of appearance.</span>
-					You found a secret message!
 
 
 					<h3>Daniel Loxton</h3>
-					<span class="wbcktxt"><a href="http://www.danielloxton.com/">Daniel Loxton</a> is an author, illustrator, and skeptic.  He's the editor of <a href="http://www.skeptic.com/junior_skeptic/">Junior Skeptic</a> Magazine and author and artist on a number of books including <a href="http://www.amazon.com/Abominable-Science-Origins-Nessie-Cryptids/dp/023115321X/ref=sr_1_5?ie=UTF8&qid=1435971975&sr=8-5&keywords=daniel+loxton">Abominable Science!</a> which we discuss in this episode.  The figure below describes the distribution of images in this beautifully illustrated book.</span>
+					<span class="wbcktxt"><a href="http://www.danielloxton.com/">Daniel Loxton</a> <span>
+					<span class="wbcktxt">is an author, illustrator, and skeptic.  He's the editor of <a href="http://www.skeptic.com/junior_skeptic/">Junior Skeptic</a> Magazine and author and artist on a number of books including <a href="http://www.amazon.com/Abominable-Science-Origins-Nessie-Cryptids/dp/023115321X/ref=sr_1_5?ie=UTF8&qid=1435971975&sr=8-5&keywords=daniel+loxton">Abominable Science!</a> which we discuss in this episode.  The figure below describes the distribution of images in this beautifully illustrated book.</span>
 					<br/><br/>
 					<table>
 						<tr><td valign=top><img src='daniel.jpg' /></td>
@@ -81,7 +83,10 @@
 
 
 					<h3>Nathon Janos</h3>
-					<span class="wbcktxt"><a href="https://www.linkedin.com/pub/nathan-janos/0/902/895">Nathan Janos</a> was gratious enough to be the very first interview guest way back in episode #3 to discuss his work doing <a href="http://dataskeptic.com/epnotes/ep002.php">advertiser attribution</a>.  The figure below describes the number of daily downloads of that episode.
+					<span class="wbcktxt"><a href="https://www.linkedin.com/pub/nathan-janos/0/902/895">Nathan Janos</a> was gratious enough to be the very first interview guest way back in episode #3 to discuss his work doing <a href="http://dataskeptic.com/epnotes/ep002.php">advertiser attribution</a>.  
+Nathan is Chief Data Officer at <a href="http://www.openmail.com/">OpenMail</a>.  
+He has a B.S. in C.S. and Eng. from MIT with an emphasis on A.I. and spent three years at the MIT Media Lab.  He enjoys sailing around the Channel Islands, fly fishing and swimming.
+The figure below describes the number of daily downloads of that episode.
 					</span>
 					<br/><br/>
 					<table>
@@ -198,10 +203,43 @@
 							</td>
 						</tr>
 					</table>
+					<span class="wbcktxt">
+					This episode also featured some comments from mini-episode co-host Linhda,
+					as well as brief clips from previous episodes featuring
+					<a href="http://dataskeptic.com/epnotes/ep33_Economic-Modeling-and-Prediction-with-Peter-Backus.php">Peter Backus</a>
+					and
+					<a href="http://dataskeptic.com/epnotes/ep55_detecting-cheating-in-chess.php">Kenneth Regan</a>.
+					</span>
 				</div>
 			</div>
+
+
+			<br/><br/>
+
+
+			<a name='unabridged' />
+			<div class='divwrap'>
+			<div id='unabridged'>
+			<h2>Unabridged Version</h2>
+			<p><span class="bbcktxt">
+			This episode of Data Skeptic is different from the traditional interview or mini-episode style.  A wealth of great material
+			had to hit the editting room floor in the production of this episode.  If you find yourself wanting more, the unabridged
+			version of all these interviews is available via bittorrent.  This extended release is referred to as "unabridged" rather than
+			un-editted because the standard amount of editting (removing umms, coughs, salutations, pauses, etc.) has still been done.
+			</span></p>
+			Info on torrent goes here
+			</div>
+			</div>
+
+
+			<br/><br/>
+
+
+			<a name='comments' />
+			<div class='divwrap'>
+			<? include("../comments.php"); ?>
+			</div>
 		</div>
-!<--alex	daniel	karl	lieven	nathan	noelle	richard	sharon	susan-->
 		<footer>
 			<ul>
 				<li><a href="/">DataSkeptic Podcast</a></li>
@@ -211,74 +249,6 @@
 				<li><a href="../contact.php">Contact</a></li>
 			</ul>
 		</footer>
-		<script type="text/javascript">
-			function dataURItoBlob(dataURI) {
-			    // convert base64/URLEncoded data component to raw binary data held in a string
-			    var byteString;
-			    if (dataURI.split(',')[0].indexOf('base64') >= 0)
-			        byteString = atob(dataURI.split(',')[1]);
-			    else
-			        byteString = unescape(dataURI.split(',')[1]);
-
-			    // separate out the mime component
-			    var mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0];
-
-			    // write the bytes of the string to a typed array
-			    var ia = new Uint8Array(byteString.length);
-			    for (var i = 0; i < byteString.length; i++) {
-			        ia[i] = byteString.charCodeAt(i);
-			    }
-			    return new Blob([ia], {type:mimeString});
-			}
-
-
-			var wp = $("#wPaint").wPaint({
-				strokeStyle: '#000000',
-				drawDown: function(e, mode){ $("#canvasDown").val(this.settings.mode + ": " + e.pageX + ',' + e.pageY); },
-				drawMove: function(e, mode){ $("#canvasMove").val(this.settings.mode + ": " + e.pageX + ',' + e.pageY); },
-				drawUp: function(e, mode){ $("#canvasUp").val(this.settings.mode + ": " + e.pageX + ',' + e.pageY); }
-			}).data('_wPaint');
-				
-			function saveImage() {
-				var imageData = $("#wPaint").wPaint("image");
-				$("#canvasImage").attr('src', imageData);
-				$("#canvasImageData").val(imageData);
-			}
-
-			function clearCanvas() {
-				$("#wPaint").wPaint("clear");
-			}
-				
-			function upload_image(id) {
-				var imageData = $("#" + id).wPaint("image");
-				var email = $('#email').val();
-				var prob = $('#prob').val();
-				var blob = dataURItoBlob(imageData);
-				var fd = new FormData();
-				fd.append('file', blob);
-				$.ajax({
-					url: 'hello.py/post_img?email=' + email + "&prob=" + prob,
-					type: 'POST',
-					data: fd,
-					async: false,
-					cache: false,
-					enctype: 'multipart/form-data',
-					processData: false,
-					contentType: false,
-					success: function(data) {
-						alert('Thanks for participating');
-						clearCanvas();
-					}
-				});
-			}
-
-			$.extend($.fn.wPaint.defaults, {
-			  mode:        'pencil',  // set mode
-			  lineWidth:   '3',       // starting line width
-			  fillStyle:   '#FFFFFF', // starting fill style
-			  strokeStyle: '#000000'  // start stroke style
-			});
-		</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
