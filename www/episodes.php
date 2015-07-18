@@ -64,7 +64,6 @@ function OpenInNewTab(url) {
 
 
 <div id="bbody">
-<br/><br/>
 <?
 $showonce=0;
   $i = count($posts);
@@ -76,7 +75,10 @@ $showonce=0;
     $max--;
     echo("<div class='ep'>");
     $link = $post['link'];
-    if (strpos($link, '/epnotes/') !== FALSE) {
+    if ($i==64) {
+//      $link = 'http://dataskeptic.com/bf';
+    }
+    if (strpos($link, '/epnotes/') !== FALSE || $i==64) {
       echo("<h2><a href='$link'>#" . $i . ": " . $post['title'] . "</a></h2>");
       $tfile = substr($link, strpos($link, '/epnotes/')+9, strlen($link));
     }
