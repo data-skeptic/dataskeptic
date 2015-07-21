@@ -2,7 +2,6 @@
 
 <div id="bbody">
 
-<br/><br/>
 <h2>Skeptical resources</h2>
 <p><a href="http://www.skepdic.com/">Skeptic's Dictionary</a></td> is a 
 good reference to skeptical materials and references on many questionable claims.</p>

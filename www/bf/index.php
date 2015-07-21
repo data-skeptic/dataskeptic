@@ -26,6 +26,7 @@
 				<a href="#player">Player</a> |
 				<a href="#guests">Guests</a> |
 				<a href="#unabridged">Unabridged version</a> |
+				<a href="#research">Research</a> |
 				<a href="#comments">Comments</a>
 				</div>
 
@@ -35,8 +36,10 @@
 				<p>This episode of Data Skeptic explores questions like this as Kyle consults a cast of previous guests and experts to try and answer the question "What is the probability, however small, that Bigfoot is real?"</p>
 
 				<a name="player" />
+				<div class='divwrap'>
 				<div id='player'>
-				  player will go here
+					<iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/3680063/height/360/width/640/theme/legacy/direction/no/autoplay/no/autonext/no/thumbnail/yes/preload/no/no_addthis/no/" height="360" width="640" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+				</div>
 				</div>
 
 				<br/><br/>
@@ -206,9 +209,7 @@ The figure below describes the number of daily downloads of that episode.
 					<span class="wbcktxt">
 					This episode also featured some comments from mini-episode co-host Linhda,
 					as well as brief clips from previous episodes featuring
-					<a href="http://dataskeptic.com/epnotes/ep33_Economic-Modeling-and-Prediction-with-Peter-Backus.php">Peter Backus</a>
-					and
-					<a href="http://dataskeptic.com/epnotes/ep55_detecting-cheating-in-chess.php">Kenneth Regan</a>.
+					<a href="http://dataskeptic.com/epnotes/ep33_Economic-Modeling-and-Prediction-with-Peter-Backus.php">Peter Backus</a>.
 					</span>
 				</div>
 			</div>
@@ -227,7 +228,23 @@ The figure below describes the number of daily downloads of that episode.
 			version of all these interviews is available via bittorrent.  This extended release is referred to as "unabridged" rather than
 			un-editted because the standard amount of editting (removing umms, coughs, salutations, pauses, etc.) has still been done.
 			</span></p>
-			Info on torrent goes here
+			<a href="data-skeptic-crypto.torrent">data-skeptic-crypto.torrent</a>
+			</div>
+			</div>
+
+
+			<br/><br/>
+			<a name='research' />
+			<div class='divwrap'>
+			<div id='research'>
+			<h2>Research</h2>
+			<p><span class="bbcktxt">
+			In preparation for this program, several small data projects were worked on.  The rough (soon to be improved dramatically)
+			Jupyter notebooks related to this can be found via the links below.
+			</span></p>
+			<a href="https://github.com/kylepolich/dataskeptic/blob/da6bb0e9eae055cb4a118b185ac0a79c9572f4f7/bf/bfro/data-aquisition.ipynb">BFRO data set collection</a><br/>
+			<a href="https://github.com/kylepolich/dataskeptic/blob/cf96c1dd52fbf9b28259cf9eddbeab268a81f5cd/bf/bfro/county-analysis.ipynb">BFRO geographic analysis</a><br/>
+			<a href="https://github.com/kylepolich/dataskeptic/blob/da6bb0e9eae055cb4a118b185ac0a79c9572f4f7/bf/fossil-record.ipynb">Fossil record analysis</a>
 			</div>
 			</div>
 
