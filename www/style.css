@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
-@import url(http://fonts.googleapis.com/css?family=Londrina+Solid);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 html, body {
 	background-color: #383b3a;
@@ -23,6 +23,9 @@ a:hover {
 .menu {
 	color: #eee;
 }
+.plot {
+	background-color: #fff;
+}
 #left {
 	float: left;
 	width: 200px;
@@ -33,21 +36,24 @@ a:hover {
 }
 #right {
 	margin-left: 200px;
-	padding: 2px;
+	padding-right: 100px;
 }
 h1 {
     color: #ebe726;
-    font-size: 50px;
+    font-size: 36px;
 	line-height: 48px;
     text-align: left;
-    font-family: 'Londrina Solid', sans-serif;
+    font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
 }
 h2 {
     color: #ebe726;
-    font-size: 30px;
+    font-size: 24px;
 	line-height: 28px;
     text-align: left;
-    font-family: 'Londrina Solid', sans-serif;
+    font-family: 'Lato', sans-serif;
+	font-weight: 400;
 }
 #header {
 
@@ -58,4 +64,19 @@ h2 {
 #footer {
 
 }
-
+@media (max-width: 500px) {
+  #main {
+    display: table;
+    width: 100%;
+  }
+  #right {
+    margin-left: 0px;
+    padding-right: 0px;
+  }
+  #left {
+    display: none;
+  }
+  #left2 {
+    display: none;
+  }
+}
