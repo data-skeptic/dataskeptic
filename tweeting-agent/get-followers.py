@@ -23,7 +23,7 @@ followers = []
 while(next_cursor):
 	search = twitter.get_followers_list(screen_name=name,count=200,cursor=next_cursor)
 	for result in search['users']:
-		followers.append(result["name"].encode('utf-8'))
+		followers.append(result["screen_name"].encode('utf-8'))
 	next_cursor = search["next_cursor"]
 	time.sleep(1)
 
