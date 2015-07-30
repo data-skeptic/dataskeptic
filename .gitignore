@@ -1,5 +1,6 @@
 # History files
 .Rhistory
+.RData
 
 # Example code in package build process
 *-Ex.R
@@ -13,8 +14,21 @@ my.properties
 
 20*.txt
 
+*.old
+*.save
 *.sh
 feed.rss
 videos/beautifulsoup
 .ipynb_checkpoints
 .DS_Store
+
+tweeting-agent/temp.txt
+tweeting-agent/tweets.json
+tweeting-agent/twitter.htm
+
+blog/ideas.txt
+blog/statemap.tab
+analytics/latest.csv
+basis-temperature-timeseries/heartrate.png
+
+www/bf/gruntfile.js
