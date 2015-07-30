@@ -45,7 +45,7 @@
 </head>
 <body>
 <div id='left'>
-<img src='/ds-logo.svg' />
+<a href='http://dataskeptic.com/'><img src='/ds-logo.svg' /></a>
 <div id='left2'>
 <center>
 <a href="https://itunes.apple.com/us/podcast/the-data-skeptic-podcast/id890348705"><img src="http://dataskeptic.com/itunes.png" height=35 alt="Data Science itunes" /></a>
