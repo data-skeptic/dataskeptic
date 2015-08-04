@@ -8,7 +8,7 @@
 	</div>
 	<div id='footer'>
 		<hr/>
-		(c) 2015
+		<a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'><img src='by-nc-sa.eu.png' height=25 /></a>
 	</div>
 </div>
 <script>
