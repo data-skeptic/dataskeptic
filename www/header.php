@@ -44,6 +44,7 @@
 <meta name="theme-color" content="#ffffff">
 </head>
 <body>
+<div id='all'>
 <div id='left'>
 <a href='http://dataskeptic.com/'><img src='/ds-logo.svg' /></a>
 <div id='left2'>

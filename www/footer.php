@@ -8,8 +8,9 @@
 	</div>
 	<div id='footer'>
 		<hr/>
-		<a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'><img src='by-nc-sa.eu.png' height=25 /></a>
+		<a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'><img src='/by-nc-sa.eu.png' height=25 /></a>
 	</div>
+</div>
 </div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
