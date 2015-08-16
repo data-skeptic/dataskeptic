@@ -69,6 +69,8 @@
 	|
 	<span class='menu'><a href='/resources.php'>Resources</a></span>
 	|
+	<span class='menu'><a href='/bios.php'>Bios</a></span>
+	|
 	<span class='menu'><a href='/contact.php'>Contact</a></span>
 		<hr/>
 	</div>
