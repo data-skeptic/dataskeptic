@@ -3,7 +3,7 @@
 <div id="bbody">
 <h2>Kyle Polich</h2>
 <p>Kyle studied computer science and focused on artificial intelligence in grad school.  His general interests range from obvious areas like statistics, machine learning, data viz, and optimization to data provenance, data governance, econometrics, and metrology.</p>
-x
+
 <h2>Linh Da</h2>
 <p>Originally from North Carolina, Linhda graduated undergrad from UNC-Chapel Hill (Tarheels!) and promptly moved to the Golden Coast when she heard of sunnier days, fewer mosquitos and a long coastline of beaches.  When she is not on the podcast, she enjoys commuting to work via bike, spending time with Yoshi, cooking then eating, lots of sleep and occasional yoga and making small-batch artisan ice cream.  Her short stature and below average bike size has deterred many a LA bike thieves-- evidence that it pay off to be short.</p>
 
