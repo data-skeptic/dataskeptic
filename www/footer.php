@@ -3,6 +3,8 @@
         ?>
         <audio src="<? echo($url); ?>" preload="auto" />
         <?
+	echo("<br/><br/></div><div>");
+	include("../comments.php");
   }
 ?>
 	</div>
