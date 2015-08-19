@@ -1,7 +1,7 @@
 <? include("header.php"); ?>
 
 <div id="bbody">
-<h2>Kyle Polich</h2>
+<h2>Kyle</h2>
 <p>Kyle studied computer science and focused on artificial intelligence in grad school.  His general interests range from obvious areas like statistics, machine learning, data viz, and optimization to data provenance, data governance, econometrics, and metrology.</p>
 
 <h2>Linh Da</h2>
