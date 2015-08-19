@@ -145,7 +145,6 @@ $showonce=0;
     echo("</div><br/>");
   }
 ?>
-For a complete list, please find the podcast on itunes, stitcher, or your podcasting place of choice.
 </div>
 
 <? include("footer.php"); ?>
