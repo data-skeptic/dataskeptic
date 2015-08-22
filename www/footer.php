@@ -1,5 +1,5 @@
 <?php
-  if (strpos($_SERVER['REQUEST_URI'], "epnotes") !== FALSE) {
+  if (strpos($_SERVER['REQUEST_URI'], "epnotes") !== FALSE || strpos($_SERVER['REQUEST_URI'], "blog") !== FALSE) {
         ?>
         <audio src="<? echo($url); ?>" preload="auto" />
         <?
