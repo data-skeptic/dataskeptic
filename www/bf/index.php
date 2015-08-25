@@ -43,6 +43,9 @@
 				</div>
 
 				<br/><br/>
+				Download <a href="http://traffic.libsyn.com/dataskeptic/Data_Skeptic_-_Crypto.mp3">Data Skeptic - Crypto</a> as an MP3 by right clicking<br/>
+				that link and choosing "Save Link As..."
+				<br/><br/>
 
 				<a name='guests' />
 				<div id='mmain'>
