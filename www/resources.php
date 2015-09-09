@@ -14,7 +14,7 @@ When presented with counter-arguments or empirical falsifications of claims, som
 <h2>Data Science Learning Resources</h2>
 <p><a href="http://sqlzoo.net/wiki/SQL_Tutorial">SQL Zoo</a> can interactively teach you the basics of SQL.</p>
 
-<p><a href="http://datasciencemasters.org/">The Open Source Data Science Masters</a></p>≈
+<p><a href="http://datasciencemasters.org/">The Open Source Data Science Masters</a></p>
 
 <br/>
 <h2>Other Recommended Podcasts</h2>

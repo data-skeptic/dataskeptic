@@ -21,10 +21,13 @@
           else if ($name == "itunes:image") {
             while ($xml->moveToNextAttribute()) {
               $prefix = "http://assets.libsyn.com/item/";
-              if (strcmp($xml->name, "href") == 0 && strpos($xml->name, $prefix) == 0) {
-                $aid = substr($xml->value, strlen($prefix), strlen($xml->value));
-                if (strpos($aid, ".") === false) {
-                  $post['aid'] = $aid;
+              if (strcmp($xml->name, "href") == 0) {
+                $post['img'] = $xml->value;
+                if (strpos($xml->name, $prefix) == 0) {
+                  $aid = substr($xml->value, strlen($prefix), strlen($xml->value));
+                  if (strpos($aid, ".") === false) {
+                    $post['aid'] = $aid;
+                  }
                 }
               }
             }
@@ -67,7 +70,7 @@ function OpenInNewTab(url) {
 <?
 $showonce=0;
   $i = count($posts);
-  $max = 69;
+  $max = 99;
   foreach ($posts as $post) {
     if ($max <=0) {
       continue;
@@ -78,6 +81,13 @@ $showonce=0;
     if ($i==64) {
 //      $link = 'http://dataskeptic.com/bf';
     }
+    $img = $post['img'];
+    if ($i <= 64) {
+      if ($img == 'http://static.libsyn.com/p/assets/2/9/3/8/2938570bb173ccbc/DataSkeptic-Podcast-1A.jpg') {
+        $img = "/dsold.jpg";
+      }
+    }
+    echo("<table><tr><td valign=top><img src='" . $img . "' width=150 /></td><td valign=top>");
     if (strpos($link, '/epnotes/') !== FALSE || $i==64) {
       echo("<h2><a href='$link'>#" . $i . ": " . $post['title'] . "</a></h2>");
       $tfile = substr($link, strpos($link, '/epnotes/')+9, strlen($link));
@@ -101,6 +111,7 @@ $showonce=0;
         echo("<b>Transcript:</b> <a href='" . $transurl . "'>here</a><br/>");
       }
     }
+    echo("</td></tr></table>");
     $aid = $post['aid'];
     $desc = $post['description'];
     $done = 0;
@@ -119,15 +130,13 @@ $showonce=0;
       if ($done == 0) {
         $ii = strpos($desc, "<br>");
         if ($ii !== false) {
-		
-		
           $desc = substr($desc, 0, $ii);
-		  
         }
       }
 	  
 	  
-      echo preg_replace('/[[:^print:]]/', ' ', $desc);
+      //echo preg_replace('/[[:^print:]]/', ' ', '%' + strip_tags($desc));
+      echo(strip_tags(preg_replace('/[[:^print:]]/', ' ', $desc)));
       echo("<p><a href='$link'>read more...</a></p>");
     }
     else {
@@ -136,7 +145,6 @@ $showonce=0;
     echo("</div><br/>");
   }
 ?>
-For a complete list, please find the podcast on itunes, stitcher, or your podcasting place of choice.
 </div>
 
 <? include("footer.php"); ?>

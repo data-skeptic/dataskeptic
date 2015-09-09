@@ -250,6 +250,11 @@ footer ul li a:hover {
     padding: 10px;
 }
 
+#research {
+    min-width: 600px;
+    padding: 10px;
+}
+
 .wbcktxt {
     color: #888;
 }
@@ -273,6 +278,12 @@ h3 {
 }
 
 #unabridged {
+  width: 50%;
+  background-color: #889988;
+  padding: 10px;
+}
+
+#research {
   width: 50%;
   background-color: #889988;
   padding: 10px;

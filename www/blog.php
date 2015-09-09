@@ -42,6 +42,9 @@ $showonce=0;
     if ($max <=0) {
       continue;
     }
+    if ($i != count($posts)) {
+      echo("<center><img src='/vingette.png' /></center>");
+    }
     $max--;
     echo("<div class='ep'>");
     $link = $post['link'];
