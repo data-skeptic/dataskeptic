@@ -1,4 +1,4 @@
-<?
+<?php
   include("../header.php");
   $license = "by";
 ?>
@@ -17,7 +17,7 @@
 
 <p><b>Kyle:</b> Interesting.  The open notebooks is an especially novel concept, I feel.  Although I imagine you can't speak for every scientist, but is there a concern that someone working on interesting stuff might have their work, you know, sort of, scoped out from under them by someone whose able to work a little faster because they're sharing notes.</p>
 
-<p><b>Peter:</b> There is certainly concern about that.  It will take a long time before the majority of people come around to an open view.  And indeed, it may well be that the majority never does come around.  But one example which is being pursued at the moment is <a href="http://sydney.edu.au/science/people/matthew.todd.php">Matt Todd</a> who is a chemist in Sydney Australia, and he's running an <a href="http://opensourcemalaria.org/">open [source] malaria project</a>, developing new chemical compounds to fight malaria, that is, fighting the parasite of malaria.  This project is run completely openly and as a result he has a lot of people contributing who wouldn't normally be involved in a scientific project.</p>
+<p><b>Peter:</b> There is certainly concern about that.  It will take a long time before the majority of people come around to an open view.  And indeed, it may well be that the majority never does come around.  But one example which is being pursued at the moment is  <a href="http://sydney.edu.au/science/people/matthew.todd.php">Matt Todd</a> who is a chemist in Sydney Australia, and he's running an <a href="http://opensourcemalaria.org/">open [source] malaria project</a>, developing new chemical compounds to fight malaria, that is, fighting the parasite of malaria.  This project is run completely openly and as a result he has a lot of people contributing who wouldn't normally be involved in a scientific project.</p>
 
 <p><b>Kyle:</b> That's a very valuable trade-off I would say.  Let's for a moment, make the obviously incorrect assumption that people have access to scientific publications, which I guess would usually mean I either have a printed version of the journal, or a PDF or postscript file.  Those file formats are pretty easy to view with free software.  What else might someone might want to have available that isn't readily available in that final publication version of a paper.</p>
 
@@ -112,8 +112,6 @@
 <p><b>Peter:</b> Absolutely.  The other question you asked was about volunteers.  Yes, we're very keen to have volunteers.  There are two types of volunteers.  One concerned with the domain specific tasks.  We would see people coming from the taxonomy community who are interested in building the semantic resources for extracting taxonomic data from the literature.  On the other hand we'd see people who are interested in general information extraction, so people who are interested in natural language processing tools to extract tables, analyzing diagrams in images.  People who want to port this thing to different types of architecture.  It doesn't have to run on node and java,which is what we use at the moment.  If people want to port it to Python or something like that, that would be great, and so forth.</p>
 
 <p><b>Kyle:</b>  Excellent.  Peter this has been a really enriching conversation.  I want to thank you so much for coming on the show.  I'll encourage listeners to go and check out contentmine.org.  That and many other things will be linked to in the show notes.  There I'm sure you can learn more, you can find out about volunteering or joining one of those communities we talked about, or otherwise learn about the benefits of the tools and facts that ContentMine has extracted and cataloged.  Until next week I want to remind everyone to keep thinking skeptically of and with data.</p>
-
-
 
 <? include("../footer.php"); ?>
 
