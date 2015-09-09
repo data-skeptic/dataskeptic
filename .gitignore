@@ -13,6 +13,9 @@ my.properties
 
 20*.txt
 
+*.pkl
+*.bck
+*.old
 *.sh
 feed.rss
 videos/beautifulsoup
