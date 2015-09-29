@@ -1,0 +1,20 @@
+<? include("../header.php") ?>
+
+<div id="bbody">
+<h1>Multi-Armed Bandit Problems</h1>
+
+<p>The multi-armed bandit problem is named with reference to slot machines (one armed bandits).  Given the chance to play
+from a pool of slot machines, all with unknown payout frequencies, how can you maximize your reward?  If you knew in advance
+which machine was best, you would play exclusively that machine.  Any strategy less than this will, on average, earn less
+payout, and the difference can be called the "regret".</p>
+
+<p>You can try each slot machine to learn about it, which we refer to as exploration.  When you've spent enough time to be
+convinced you've identified the best machine, you can then double down and exploit that knowledge.  But how do you best
+balance exploration and exploitation to minimize the regret of your play?</p>
+
+<p>This mini-episode explores a few examples including restaurant selection and A/B testing to discuss the nature of this problem.  In the
+end we touch briefly on Thompson sampling as a solution.</p>
+
+</div>
+
+<? include("../footer.php") ?>
