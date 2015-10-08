@@ -13,7 +13,7 @@
     $ii--;
   }
 ?>
-<html>
+<html lang="en">
 <head>
 	<title>Data Skeptic</title>
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
@@ -46,15 +46,15 @@
 <body>
 <div id='all'>
 <div id='left'>
-<a href='http://dataskeptic.com/'><img src='/ds-logo.svg' /></a>
+<a href='http://dataskeptic.com/'><img src='/ds-logo.svg' alt='Data Skeptic logo' /></a>
 <div id='left2'>
-<center>
+<div style="text-align: center; display: block; margin: auto auto;">
 <a href="https://itunes.apple.com/us/podcast/the-data-skeptic-podcast/id890348705"><img src="http://dataskeptic.com/itunes.png" height=35 alt="Data Science itunes" /></a>
 <br/><br/>
 <a href="http://www.stitcher.com/s?fid=50561&refid=stpr"><img src="http://dataskeptic.com/stitcher_234x60.jpg" alt="Data Science Stitcher" height=35></a>
 <br/><br/>
-<a href="http://dataskeptic.com/feed.rss"><img src="http://dataskeptic.com/rss2.gif" /></a>
-</center>
+<a href="http://dataskeptic.com/feed.rss"><img src="http://dataskeptic.com/rss2.gif" alt="Data Skeptic podcast episode rss feed" /></a>
+</div>
 </div>
 </div>
 <div id='right'>

@@ -13,7 +13,7 @@
 		<?php if (isset($license)) { ?>
 		<a href='https://creativecommons.org/licenses/<? echo($license); ?>/4.0/'><img src='/<? echo($license); ?>.png' height=25 /></a>
 		<?php } else { ?>
-		<a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'><img src='/by-nc-sa.eu.png' height=25 /></a>
+		<a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'><img src='/by-nc-sa.eu.png' height=25 alt="Data Skeptic is released under a creative commons attribution non-comercial share alike 4.0 license" /></a>
 		<?php } ?>
 	</div>
 </div>
