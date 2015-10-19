@@ -84,3 +84,35 @@ h2 {
     display: none;
   }
 }
+.input_area {
+  background-color: #888;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid #ebe726;
+}
+.input_prompt {
+  display: none;
+}
+.output_prompt {
+  display: none;
+}
+.anchor-link {
+  display: none;
+}
+.output_png {
+  background-color: #fff;
+}
+.dataframe * {border-color: #c0c0c0 !important;}
+.dataframe th{background: #444;}
+.dataframe td{
+    background: #888;
+    text-align: right; 
+    min-width:5em;
+}
+
+/* Format summary rows */
+.dataframe-summary-row tr:last-child,
+.dataframe-summary-col td:last-child{
+    background: #444;
+    font-weight: 500;
+}
