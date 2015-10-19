@@ -14,7 +14,7 @@ function processRss($feed) {
     $xml = new XMLReader();
     $b = $xml->open($feed);
     if (!$b) {
-      $xml->open("../" . $feed);
+      $xml->open("/" . $feed);
     }
     $item = false;
     $posts = array();
