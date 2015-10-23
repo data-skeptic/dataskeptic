@@ -1,6 +1,6 @@
 <?
   include("funcs.php");
-  $posts = processRss("/feed.rss");
+  $posts = processRss("http://dataskeptic.com/feed.rss");
   $ii = count($posts);
   $playercontent = "";
   for ($x=0; $x < count($posts); $x++) {
