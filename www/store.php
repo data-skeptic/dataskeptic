@@ -45,8 +45,6 @@ div#cart {
 	padding:6px 10px;
 }
 
-
-
 .overlay-bg {
 	display: none;
 	position: fixed;
@@ -61,6 +59,7 @@ div#cart {
 .overlay-content td {
   color: #000;
 }
+
 	.overlay-content {
 		background: #fff;
 		color: #000;
@@ -110,6 +109,9 @@ div#cart {
 #reset {
   background: #aaa;
 }
+#spinner {
+  display: inline;
+  visibility: collapse;
 </style>
 
 <section>
@@ -209,96 +211,27 @@ div#cart {
 					<input id='zip' />
 				</td>
 			</tr>
-
+			<tr>
+				<td colspan=2 align=right>
+					<button class="addtocart" id="close">Close</button>
+					<button class="addtocart" id="order">Order (paypal)</button>
+					<div id='spinner'><img src='spinner.gif' /></div>
+				</td>
+			</tr>
 		</table>
 
-		<span class="payment-errors"></span>
+<div id='formerror'>
+</div>
 
-		<button class="addtocart" id="close">Close</button>
-		<button class="addtocart" id="order">Order</button>
-
-<form name="_xclick" action="https://www.paypal.com/uk/cgi-bin/webscr" method="post">
+<form name="_xclick" action="https://www.paypal.com/us/cgi-bin/webscr" method="post" id="ppform">
 <input type="hidden" name="cmd" value="_xclick">
-<input type="hidden" name="business" value="me@mybusiness.co.uk">
-<input type="hidden" name="currency_code" value="GBP">
-<input type="hidden" name="item_name" value="Teddy Bear">
-<input type="hidden" name="amount" value="12.99">
-<input type="image" src="http://www.paypal.com/en_GB/i/btn/x-click-but01.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+<input type="hidden" name="business" value="kyle@dataskeptic.com">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" id='ppdesc' name="item_name" value="Data Skeptic merch">
+<input type="hidden" id='ppval' name="amount" value="10">
 </form>
 	</div>
 </div>
-
-
-
-
-<form action="." method="post" id='stripe'>
-        <noscript>You must <a href="http://www.enable-javascript.com" target="_blank">enable JavaScript</a> in your web browser in order to pay via Stripe.</noscript>
-
-        <input
-            id="stripebtn"
-            type="submit"
-            value="Pay with Card"
-            data-key="pk_test_y5MWdr7S7Sx6dpRCUTKOWfpf"
-            data-amount="0"
-            data-currency="usd"
-            data-name="Data Skeptic merchandise"
-            data-description="Stripe payment"
-        />
-</form>
-
-<script src="https://checkout.stripe.com/v2/checkout.js"></script>
-
-<script>
-  var handler = StripeCheckout.configure({
-    key: stripe_key,
-    image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
-    locale: 'auto',
-    token: function(token) {
-      $form = $("#stripe");
-      $form.attr('data-key', stripe_key);
-      $form.attr('data-amount', ((pins + stickers) + 1) * 100);
-      $form.attr('data-description', desc);
-      var opts = $.extend({}, $("#stripebtn").data(), {
-                    token: function(result) {
-                        $form.append($('<input>').attr({ type: 'hidden', name: 'stripeToken', value: result.id })).submit();
-                    }
-                });
-      StripeCheckout.open(opts);
-    }
-  });
-
-  $('#order').on('click', function(e) {
-    // Open Checkout with further options
-    if (pins > 0) {
-      desc += pins + ' pin'
-      if (pins > 1) {
-        desc += 's';
-      }
-    }
-    if (stickers > 0) {
-      if (pins > 0) {
-        desc += ' and ';
-      }
-      desc += stickers + ' sticker';
-      if (stickers > 1) {
-        desc += 's';
-      }
-    }
-    var amt = ((pins + stickers) + 1) * 100;
-    handler.open({
-      name: 'Data Skeptic merchandise',
-      description: desc,
-      amount: amt,
-      email: $("#email").val()
-    });
-    e.preventDefault();
-  });
-
-  // Close Checkout on page navigation
-  $(window).on('popstate', function() {
-    handler.close();
-  });
-</script>
 
 <script>
 
@@ -337,6 +270,24 @@ $("#checkout").click(function() {
   if (pins + stickers == 0) {
     alert("Your order of nothing has been instantly delivered.");
   } else {
+    if (pins > 0) {
+      desc += pins + ' pin'
+      if (pins > 1) {
+        desc += 's';
+      }
+    }
+    if (stickers > 0) {
+      if (pins > 0) {
+        desc += ' and ';
+      }
+      desc += stickers + ' sticker';
+      if (stickers > 1) {
+        desc += 's';
+      }
+    }
+    var amt = ((pins + stickers) + 1);
+    $("#ppdesc").val(desc);
+    $("#ppval").val(amt);
     $('.overlay-bg').show();
   }
 });
@@ -349,6 +300,44 @@ $('#order').click(function(){
   ddata['city']    = $("#city").val();
   ddata['state']   = $("#state").val();
   ddata['zip']     = $("#zip").val();
+  $("#spinner").css('visibility', 'collapse');
+  $("#name").css('border', '1px solid black');
+  $("#email").css('border', '1px solid black');
+  $("#address").css('border', '1px solid black');
+  $("#city").css('border', '1px solid black');
+  $("#state").css('border', '1px solid black');
+  $("#zip").css('border', '1px solid black');
+  $("#formerror").html("");
+  if (ddata['name'].trim().length == 0) {
+    $("#formerror").html("Please enter your name.");
+    $("#name").css('border', '3px solid red');
+    $("#name").focus();
+    return false;
+  }
+  if (ddata['email'].trim().length == 0) {
+    $("#formerror").html("Please enter your email address.");
+    $("#email").css('border', '3px solid red');
+    $("#email").focus();
+    return false;
+  }
+  if (ddata['address'].trim().length == 0) {
+    $("#formerror").html("Please enter your mailing address.");
+    $("#address").css('border', '3px solid red');
+    $("#address").focus();
+    return false;
+  }
+  if (ddata['city'].trim().length == 0) {
+    $("#formerror").html("Please enter your city.");
+    $("#city").css('border', '3px solid red');
+    $("#city").focus();
+    return false;
+  }
+  if (ddata['zip'].trim().length == 0) {
+    $("#formerror").html("Please enter your zipcode.");
+    $("#zip").css('border', '3px solid red');
+    $("#zip").focus();
+    return false;
+  }
   console.log(JSON.stringify(ddata));
   $.ajax({
             url: 'http://dataskeptic.com/store-api.php',
@@ -364,7 +353,8 @@ $('#order').click(function(){
                         },
             data: JSON.stringify(ddata)
   });
-  $('.overlay-bg').hide();
+  $("#spinner").css('visibility', 'visible');
+  $("#ppform").submit();
 });
 
 $('#close').click(function(){
