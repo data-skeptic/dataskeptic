@@ -65,6 +65,8 @@
 	|
 	<span class='menu'><a href='/episodes.php'>Episodes</a></span>
 	|
+	<span class='menu'><a href='/store.php'>Store</a></span>
+	|
 	<span class='menu'><a href='/blog.php'>Blog</a></span>
 	|
 	<span class='menu'><a href='/resources.php'>Resources</a></span>
