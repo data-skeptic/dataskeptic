@@ -17,17 +17,17 @@ section {
 }
 div#items {
     width: 55%;
-    height: 400px;
+    height: 550px;
     float: left;
 }
 div#spacer {
   width: 5%;
-  height: 400px;
+  height: 550px;
   float: left;
 }
 div#cart {
     margin-left: 15%;
-    height: 400px;
+    height: 550px;
 }
 .addtocart {
 	-webkit-box-shadow:rgba(0,0,0,0.98) 0 1px 0 0;
@@ -103,18 +103,12 @@ div#cart {
   width: 75px;
 }
 
-#ccnum {
-  width:350px;
+.productimg {
+  margin-right: 10px;
+  margin-bottom: 49px;
 }
-
-#cvc {
-  width:75px;
-}
-#expm {
-  width: 25px;
-}
-#expy {
-  width: 50px;
+#reset {
+  background: #aaa;
 }
 </style>
 
@@ -123,7 +117,7 @@ div#cart {
 <div id='items'>
 <table>
   <tr>
-    <td><img src='data-skeptic-sticker.jpg' alt='Data Skeptic hex sticker' width=200 height=200 /></td>
+    <td><img class='productimg' src='data-skeptic-hex-sticker.jpg' alt='Data Skeptic hex sticker' width=200 height=200 /></td>
     <td valign='top'>
       <h2>Sticker</h2>
       <p>Hexagon logo sticker in the widely accepted <a href='https://github.com/terinjokes/StickerConstructorSpec'>hex format</a>.  These look great on laptops and helicopters.</p>
@@ -132,10 +126,10 @@ div#cart {
     </td>
   </tr>
   <tr>
-    <td><img src='data-skeptic-pin.jpg' alt='Data Skeptic punk rock style one inch pin'  width=200 height=200 /></td>
+    <td><img class='productimg' src='data-skeptic-button.jpg' alt='Data Skeptic punk rock style one inch pin'  width=200 height=200 /></td>
     <td valign='top'>
       <h2>Pin</h2>
-      <p>Half inch pins allow you to proudly show off your Data Skeptic affiliation on your hoddie, backpack, or sombrero.</p>
+      <p>One inch pins allow you to proudly show off your Data Skeptic affiliation on your hoddie, backpack, or sombrero.</p>
       <span class='price'>$1</span>
       <button id='addpin' class='addtocart'>Add to cart</button>
     </td>
@@ -150,7 +144,7 @@ div#cart {
 
 <table>
   <tr>
-    <td><b>Stickers:</b></td>
+    <td width=200><b>Stickers:</b></td>
     <td><div id='nstickers'></div></td>
   </tr>
   <tr>
@@ -169,10 +163,14 @@ div#cart {
     <td><b>Grand Total:</b></td>
     <td><div id='gtotal'></div></td>
   </tr>
+  <tr>
+    <td colspan=2 align=right>
+      <button class='addtocart' id='reset'>Reset</button>
+      <button class='addtocart' id='checkout'>Checkout</button>
+    </td>
+  </tr>
 </table>
 
-<button class='addtocart' id='reset'>Reset</button>
-<button class='addtocart' id='checkout'>Checkout</button>
 
 </div>
 
@@ -189,7 +187,6 @@ div#cart {
 
 <div class="overlay-bg">
 	<div class="overlay-content">
-		</form>
                 <table>
 			<tr>
 				<td>Name:</td>
@@ -212,18 +209,6 @@ div#cart {
 					<input id='zip' />
 				</td>
 			</tr>
-			<tr>
-				<td>Card Number</td>
-				<td><input id='ccnum' data-stripe="number"/></td>
-			</tr>
-			<tr>
-				<td>CVC</td>
-				<td><input id='cvc' data-stripe="cvc"/></td>
-			</tr>
-			<tr>
-				<td>Expiration (MM/YYYY)</td>
-				<td><input id='expm' data-stripe="exp-month"/> / <input id='expy' data-stripe="exp-year"/></td>
-			</tr>
 
 		</table>
 
@@ -231,18 +216,94 @@ div#cart {
 
 		<button class="addtocart" id="close">Close</button>
 		<button class="addtocart" id="order">Order</button>
+
+<form name="_xclick" action="https://www.paypal.com/uk/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="me@mybusiness.co.uk">
+<input type="hidden" name="currency_code" value="GBP">
+<input type="hidden" name="item_name" value="Teddy Bear">
+<input type="hidden" name="amount" value="12.99">
+<input type="image" src="http://www.paypal.com/en_GB/i/btn/x-click-but01.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+</form>
 	</div>
 </div>
 
 
 
 
+<form action="." method="post" id='stripe'>
+        <noscript>You must <a href="http://www.enable-javascript.com" target="_blank">enable JavaScript</a> in your web browser in order to pay via Stripe.</noscript>
 
-<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+        <input
+            id="stripebtn"
+            type="submit"
+            value="Pay with Card"
+            data-key="pk_test_y5MWdr7S7Sx6dpRCUTKOWfpf"
+            data-amount="0"
+            data-currency="usd"
+            data-name="Data Skeptic merchandise"
+            data-description="Stripe payment"
+        />
+</form>
+
+<script src="https://checkout.stripe.com/v2/checkout.js"></script>
+
+<script>
+  var handler = StripeCheckout.configure({
+    key: stripe_key,
+    image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+    locale: 'auto',
+    token: function(token) {
+      $form = $("#stripe");
+      $form.attr('data-key', stripe_key);
+      $form.attr('data-amount', ((pins + stickers) + 1) * 100);
+      $form.attr('data-description', desc);
+      var opts = $.extend({}, $("#stripebtn").data(), {
+                    token: function(result) {
+                        $form.append($('<input>').attr({ type: 'hidden', name: 'stripeToken', value: result.id })).submit();
+                    }
+                });
+      StripeCheckout.open(opts);
+    }
+  });
+
+  $('#order').on('click', function(e) {
+    // Open Checkout with further options
+    if (pins > 0) {
+      desc += pins + ' pin'
+      if (pins > 1) {
+        desc += 's';
+      }
+    }
+    if (stickers > 0) {
+      if (pins > 0) {
+        desc += ' and ';
+      }
+      desc += stickers + ' sticker';
+      if (stickers > 1) {
+        desc += 's';
+      }
+    }
+    var amt = ((pins + stickers) + 1) * 100;
+    handler.open({
+      name: 'Data Skeptic merchandise',
+      description: desc,
+      amount: amt,
+      email: $("#email").val()
+    });
+    e.preventDefault();
+  });
+
+  // Close Checkout on page navigation
+  $(window).on('popstate', function() {
+    handler.close();
+  });
+</script>
 
 <script>
 
 var daddress = "";
+var desc = '';
 var pins = 0;
 var stickers = 0;
 
@@ -256,9 +317,9 @@ function update() {
   }
   $("#npins").html(pins);
   $("#nstickers").html(stickers);
-  $("#itotal").html(itotal);
-  $("#stotal").html(stotal);
-  $("#gtotal").html(gtotal);
+  $("#itotal").html('$' + itotal);
+  $("#stotal").html('$' + stotal);
+  $("#gtotal").html('$' + gtotal);
 }
 
 $("#addsticker").click(function() {
@@ -281,14 +342,28 @@ $("#checkout").click(function() {
 });
 
 $('#order').click(function(){
-  var o = $("#name").val() + " / "
-        + $("#email").val() + " / "
-        + $("#address").val() + " / "
-        + $("#city").val() + " / "
-        + $("#state").val() + " / "
-        + $("#zip").val();
-  daddress = 0;
-  // TODO: log this in case they abandon
+  var ddata = {};
+  ddata['name']    = $("#name").val();
+  ddata['email']   = $("#email").val();
+  ddata['address'] = $("#address").val();
+  ddata['city']    = $("#city").val();
+  ddata['state']   = $("#state").val();
+  ddata['zip']     = $("#zip").val();
+  console.log(JSON.stringify(ddata));
+  $.ajax({
+            url: 'http://dataskeptic.com/store-api.php',
+            type: 'POST',
+            crossDomain: true,
+            dataType: 'json',
+            success: function (data) {
+                console.log(data);
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                          //console.log(textStatus);
+                          console.log("-" + errorThrown);
+                        },
+            data: JSON.stringify(ddata)
+  });
   $('.overlay-bg').hide();
 });
 
@@ -312,7 +387,7 @@ $.each(states, function(item) {
 });
 
 
-Stripe.setPublishableKey('pk_test_y5MWdr7S7Sx6dpRCUTKOWfpf');
+//Stripe.setPublishableKey('pk_test_y5MWdr7S7Sx6dpRCUTKOWfpf');
 
 
 update();
