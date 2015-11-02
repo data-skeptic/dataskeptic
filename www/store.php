@@ -19,7 +19,9 @@ div#items {
     width: 55%;
     height: 550px;
     float: left;
+    min-width: 400px;
 }
+
 div#spacer {
   width: 5%;
   height: 550px;
@@ -112,6 +114,10 @@ div#cart {
 #spinner {
   display: inline;
   visibility: collapse;
+}
+.clear {
+    clear: both;
+}
 </style>
 
 <section>
@@ -385,5 +391,7 @@ update();
 </script>
 
 </div>
+
+<div class="clear"></div>
 
 <? include("footer.php"); ?>
