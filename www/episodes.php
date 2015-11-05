@@ -68,7 +68,7 @@ function OpenInNewTab(url) {
 
 <div id="bbody">
 <?
-$showonce=0;
+  $showonce=0;
   $i = count($posts);
   $max = 99;
   foreach ($posts as $post) {
@@ -76,7 +76,17 @@ $showonce=0;
       continue;
     }
     $max--;
-    echo("<div class='ep'>");
+    echo("<div class='ep'");
+    if (startsWith($post['title'], "[MINI]")) {
+      echo(" class='miniep'");
+    }
+    else if ($post['title'] == 'Crypto' || $post['title'] == 'Proposing Annoyance Mining') {
+      echo(" class='specialep'");
+    }
+    else {
+      echo(" class='interviewep'");
+    }
+    echo(">");
     $link = $post['link'];
     if ($i==64) {
 //      $link = 'http://dataskeptic.com/bf';

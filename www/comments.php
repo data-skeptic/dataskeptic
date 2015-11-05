@@ -1,3 +1,4 @@
+<a name='disqus_anchor' />
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
