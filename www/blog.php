@@ -10,7 +10,13 @@
       $post['link'] = "http://dataskeptic.com/blog/" . $file;
       $post['ts'] = 0;
       $desc = file_get_contents("blog/" . $file);
-      $desc = substr($desc, strpos($desc, "</h1>")+5, strlen($desc));
+      $start = strpos($desc, "</h1>");
+      if ($start !== false) {
+        $start = $start + 5;
+      } else {
+        $start = 0;
+      }
+      $desc = substr($desc, $start, strlen($desc));
       $post['description'] = $desc;
       array_push($posts, $post);
     }
