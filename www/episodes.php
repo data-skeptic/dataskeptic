@@ -23,12 +23,6 @@
               $prefix = "http://assets.libsyn.com/item/";
               if (strcmp($xml->name, "href") == 0) {
                 $post['img'] = $xml->value;
-                if (strpos($xml->name, $prefix) == 0) {
-                  $aid = substr($xml->value, strlen($prefix), strlen($xml->value));
-                  if (strpos($aid, ".") === false) {
-                    $post['aid'] = $aid;
-                  }
-                }
               }
             }
           }
@@ -67,6 +61,99 @@ function OpenInNewTab(url) {
 
 
 <div id="bbody">
+
+<style>
+
+.radio-custom {
+    opacity: 0;
+    position: absolute;   
+}
+
+.radio-custom, .radio-custom-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.radio-custom-label {
+    position: relative;
+}
+
+.radio-custom + .radio-custom-label:before {
+    content: '';
+    background: #fff;
+    border: 2px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.radio-custom + .radio-custom-label:before {
+    border-radius: 50%;
+}
+
+.radio-custom:checked + .radio-custom-label:before {
+    background: #ccc;
+    box-shadow: inset 0px 0px 0px 4px #fff;
+}
+
+.radio-custom:focus + .radio-custom-label {
+  outline: 1px solid #ddd; /* focus style */
+}
+</style>
+
+<!--
+        <div>
+            <input id="radio-1" class="radio-custom" type="checkbox" checked>
+            <label for="radio-1" class="radio-custom-label">Interviews</label>
+        </div>
+        <div>
+            <input id="radio-2" class="radio-custom"v type="checkbox" checked>
+            <label for="radio-2" class="radio-custom-label">Mini episodes</label>
+        </div>
+        <div>
+            <input id="radio-3" class="radio-custom" type="checkbox" checked>
+            <label for="radio-3" class="radio-custom-label">Special episodes</label>
+        </div>
+      </div>
+-->
+
+<script>
+function update() {
+  if ($("#radio-1").is(":checked")) {
+    $(".interviewep").show();
+  } else {
+    $(".interviewep").hide();
+  }
+  if ($("#radio-2").is(":checked")) {
+    $(".miniep").show();
+  } else {
+    $(".miniep").hide();
+  }
+  if ($("#radio-3").is(":checked")) {
+    $(".specialep").show();
+  } else {
+    $(".specialep").hide();
+  }
+}
+$("#radio-1").change(function() {
+  update();
+});
+$("#radio-2").change(function() {
+  update();
+});
+$("#radio-3").change(function() {
+  update();
+});
+
+</script>
+
+
 <?
   $showonce=0;
   $i = count($posts);
@@ -122,7 +209,6 @@ function OpenInNewTab(url) {
       }
     }
     echo("</td></tr></table>");
-    $aid = $post['aid'];
     $desc = $post['description'];
     $done = 0;
     if (strpos($link, '/epnotes/') !== FALSE) {

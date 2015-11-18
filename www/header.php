@@ -1,5 +1,6 @@
 <?
   include("funcs.php");
+  date_default_timezone_set('America/Los_Angeles');
   $posts = processRss("http://dataskeptic.com/feed.rss");
   $ii = count($posts);
   $playercontent = "";
