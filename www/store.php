@@ -7,6 +7,8 @@
 <p>At this time, we can only ship to US addresses.  International listeners are encouraged to announce their displeasure
 with this on social media as a means of motivating the creation of an international shipping option.</p>
 
+<p><b>Orders made after December 15th will experience some delays!</b></p>
+
 <style>
 section {
     width: 80%;
