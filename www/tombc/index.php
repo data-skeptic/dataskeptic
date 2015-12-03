@@ -210,6 +210,8 @@
 
 <div id='footer'>
 <hr/>
+This work was inspired by a recent "The Odds Must be Crazy" segment on Skepticality found
+<a href="http://www.skepticality.com/dont-mess-with-her-pumpkin-spice-lattes/">here</a>.<br/>
 The state shapefiles are used under a Creative Commons Attribution-NonCommercial 4.0 License,<br/>
 and the source is 
 <a href="http://www.amcharts.com/svg-maps/?map=usa">amcharts.com</a>.<br/>
