@@ -1,5 +1,6 @@
 <? include("header.php"); ?>
 <?
+  $skip = $_GET['skip'];
   try {
     $xml = new XMLReader();
     $xml->open('feed.rss');
@@ -107,6 +108,24 @@ function OpenInNewTab(url) {
 }
 </style>
 
+<h1>All Data Skeptic episodes</h1>
+
+<!--
+        <div>
+            <input id="radio-1" class="radio-custom" type="checkbox" checked>
+            <label for="radio-1" class="radio-custom-label">Interviews</label>
+        </div>
+        <div>
+            <input id="radio-2" class="radio-custom"v type="checkbox" checked>
+            <label for="radio-2" class="radio-custom-label">Mini episodes</label>
+        </div>
+        <div>
+            <input id="radio-3" class="radio-custom" type="checkbox" checked>
+            <label for="radio-3" class="radio-custom-label">Special episodes</label>
+        </div>
+      </div>
+-->
+
 <script>
 function update() {
   if ($("#radio-1").is(":checked")) {
@@ -141,8 +160,7 @@ $("#radio-3").change(function() {
 <?
   $showonce=0;
   $i = count($posts);
-  $omax = 10;
-  $max = $omax;
+  $max = 99;
   foreach ($posts as $post) {
     if ($max <=0) {
       continue;
@@ -160,6 +178,9 @@ $("#radio-3").change(function() {
     }
     echo(">");
     $link = $post['link'];
+    if ($i==64) {
+//      $link = 'http://dataskeptic.com/bf';
+    }
     $img = $post['img'];
     if ($i <= 64) {
       if ($img == 'http://static.libsyn.com/p/assets/2/9/3/8/2938570bb173ccbc/DataSkeptic-Podcast-1A.jpg') {
@@ -185,6 +206,7 @@ $("#radio-3").change(function() {
     if (strpos($link, '/epnotes/') !== FALSE) {
       $ii = strpos($link, '/epnotes/');
       $transurl = "trans/" . $tfile;
+//echo($_SERVER["DOCUMENT_ROOT"]);
       if (file_exists($_SERVER["DOCUMENT_ROOT"] . "/" . $transurl) && $tfile != "") {
         echo("<b>Transcript:</b> <a href='" . $transurl . "'>here</a><br/>");
       }
@@ -209,7 +231,10 @@ $("#radio-3").change(function() {
         if ($ii !== false) {
           $desc = substr($desc, 0, $ii);
         }
-      } 
+      }
+	  
+	  
+      //echo preg_replace('/[[:^print:]]/', ' ', '%' + strip_tags($desc));
       echo(strip_tags(preg_replace('/[[:^print:]]/', ' ', $desc)));
       echo("<p><a href='$link'>read more...</a></p>");
     }
@@ -219,12 +244,6 @@ $("#radio-3").change(function() {
     echo("</div><br/>");
   }
 ?>
-
-<center>
-More:<br/>
-<a href="allepisodes.php?skip=<? echo($omax); ?>">Older episodes</a>
-<br/><br/><br/>
-</center>
 </div>
 
 <? include("footer.php"); ?>
