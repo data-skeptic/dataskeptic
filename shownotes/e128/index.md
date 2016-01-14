@@ -254,6 +254,10 @@ GUEST:
 
 TODO: Third act is persistence
 
+What is the oldest artifact?
+
+
+
 Long now
 Cyark
 Iron Mountain
