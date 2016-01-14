@@ -180,6 +180,10 @@ Engineering feat or math feat also?
 
 *PALIMPSEST OF ARCHEMEDES*
 
+### GUEST
+
+TODO: First statements
+
 TODO:
 
 TODO: How far back did this set us mathematically?  How many years / centuries back?  How much sooner would we have had automobiles?
