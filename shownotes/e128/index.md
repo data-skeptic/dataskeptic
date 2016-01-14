@@ -48,7 +48,7 @@ All available resources are at your disposal.  Oh, and you've got a copy of Wiki
 ### NARRATOR
 Now build a car.
 
-Car rev noise
+SOUND EFFECTS - Car rev noise
 
 ### NARRATOR
 Do whatever it takes, but build a car.
