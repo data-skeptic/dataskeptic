@@ -1,43 +1,46 @@
-<html>
-<body>
-ACT 1
+
+## ACT 1
+
 This act introduces our central question for the episode.  It should be the most theatrical act.  We begin with a cold open of the question, acted out.  We conclude by letting Kyle speak indulgently about meta commentary about the show.  As act 2 begins, we’re strictly down to business for the rest of the show.  The overall musical themes should demonstrate that by going from whimsical to serious.
 
-ASKER
+->ASKER<-
+
 The question is: "How far?"
 
 BEGIN MUSIC - mostly reed instruments, drums, and bass
 
-NARRATOR
+->NARRATOR<-
 Imagine yourself being suddenly transported back in time.  Its 2000 BCE.  You're in the Mayan civilization, living in a Maya body, speaking the Maya language, but you've got all the memories of modern person.  You're transported back in time.
 
-NARRATOR
+->NARRATOR<-
 No electricity.  No motorized vehicles.  No computers.  No internet.  Perhaps banking and postal systems, albeit simple ones, exist.
 
 SOUND EFFECTS - timed to match electricity, vehicles, computers, internet
 
-NARRATOR
+->NARRATOR<-
 What can you do to move the civilization forward towards a recovery of all modern knowledge?  How much could one person accomplish in a lifetime?  How would their impact propgate two generations down the line?
 
-NARRATOR
+->NARRATOR<-
 How quickly could things move from this...
 
 SOUND EFFECTS - sound of nature, tree chopping, and an arrow being shot
 
-NARRATOR
+->NARRATOR<-
 to this...?
 
 SOUND EFFECTS - sound of a NYC street with construction from visit during Steve’s wedding
 
-NARRATOR
+->NARRATOR<-
 How many decades before the first automobile could be manufactured?  How many countless breakthroughs are required to be repeated, many of them necessarily in a particular order.
 
-NARRATOR
+->NARRATOR<-
 Breakthroughs in metal and plastic.  Breakthroughs in refinement and elastic.
 
-NARRATOR: Picture yourself also having access to essentially unlimited money.  You hire a team of the brightest Mayans.  You can access the best resources available.  Assume you experience no societal resistance, and take for granted a culture willing to migrate immediately to what is faster, more efficient, or in some other way better.
+->NARRATOR<-
+Picture yourself also having access to essentially unlimited money.  You hire a team of the brightest Mayans.  You can access the best resources available.  Assume you experience no societal resistance, and take for granted a culture willing to migrate immediately to what is faster, more efficient, or in some other way better.
 
-NARRATOR: All available resources are at your disposal.  Oh, and you've got a copy of Wikipedia.
+->NARRATOR<-
+All available resources are at your disposal.  Oh, and you've got a copy of Wikipedia.
 
 [dramatic change in music]
 
@@ -169,10 +172,6 @@ LOUD LIGHTNING STRIKE
 I mean, it could have been.  The lightning just sounded really cool, so I put it in.  Whatever the cause, this ship ends up on the bottom of the sea and sits there until 1900 AD when a number of relics are recovered including a small badly decomposing bronze device of some sort.
 
 
----------------
-80-50 BCE
-Anticethera
-GUEST: 
 
 ---------------
 Baghdad battery
@@ -218,5 +217,3 @@ Essay on making choices
 Talk to Brett about making buildings that last
 
 KYLE: 
-</body>
-</html>
