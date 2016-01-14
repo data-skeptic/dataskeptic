@@ -171,6 +171,7 @@ Publishing cycle, years before newton published
 
 
 
+
 Antikythera Mechanism
 
 What formula / math is it using?
