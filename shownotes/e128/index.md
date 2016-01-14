@@ -276,4 +276,7 @@ Essay on making choices
 
 Talk to Brett about making buildings that last
 
+Need to comment on cars going away in a sense, as they become driverless
+
+
 KYLE: 
