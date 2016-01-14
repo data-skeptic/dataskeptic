@@ -172,13 +172,16 @@ Publishing cycle, years before newton published
 
 
 
----------------
 Antikythera Mechanism
+
 What formula / math is it using?
+
 When do we find people doing that kind of math?
+
 Engineering feat or math feat also?
 
-Archimedes palimpsest
+*PALIMPSEST OF ARCHEMEDES*
+
 GUEST: 
 
 ### KYLE
@@ -201,6 +204,7 @@ SOUND EFFECT: loud lightning strike
 
 ### KYLE
 I mean, it could have been.  The lightning just sounded really cool, so I put it in.  Whatever the cause, this ship ends up on the bottom of the sea and sits there until 1900 AD when a number of relics are recovered including a small badly decomposing bronze device of some sort.
+
 
 
 
