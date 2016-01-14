@@ -204,18 +204,21 @@ I mean, it could have been.  The lightning just sounded really cool, so I put it
 
 
 
----------------
-Baghdad battery
+*BAGHDAD BATTERY*
+
 GUEST: 
----------------
-Hyroglyph is silly
+
+
+Helicopter Hyroglyph is silly
+
 GUEST: 
----------------
+
 Science revolution book
----------------
+
 In CS, what innovation solved what problem?
+
 In statistics - Hand's comment on stat methods developed differently
----------------
+
 
 
 
