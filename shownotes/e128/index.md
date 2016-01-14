@@ -53,7 +53,7 @@ SOUND EFFECT: Car rev noise
 ### NARRATOR
 Do whatever it takes, but build a car.
 
-[Car revs louder]
+SOUND EFFECT: Car revs louder
 
 ### NARRATOR
 Debate in your mind the steps required to launch the petrolieum industry.  Inspect the most advanced forges as they smelt gold, copper, and silver.  Teach them how to work lead, bronze, and tin such that they might master iron in time for you to explain the steam engine.
@@ -151,17 +151,15 @@ TODO: transcribe the conversation I had with Linhda where she gives feedback on 
 ### KYLE
 Let's frame the question this way.  I doubt there's any remote possibility an ancient civilization developed smartphones and all the technologies that necessarily came before it, and have that disappear entirely from our planet memory and our species' cultural memory.
 
-### KYLE
 But we also look at ancient civilizations with modern eyes.  One might think of them as primitive and incapable.  There's no reason to believe a human from a few thousand years ago was any less capable than modern people.  Physiologically, we're not very distant.  Our brains are the same size, and a structural match, containing no mutually exclusive elements.  We just have advantages they didn't yet.  Not only did I have elementary school, high school, and college available to me, so did most every other member of the workforce, the people I collaborate with.  Or at least, in my country, those opportunities were available.
 
-### KYLE
 New technology replaces old technology.  Things have been moving fast in recent decades.  There are consultants that specialize in older software and languages which have been discontinued for a decade or more.  Few people knowing such things and no incentive to learn them makes such a consultant occasionally very in demand at large companies that change slowly.  The number of remaining working Cobol engineers has got to be zero by now.  In a centuries time, no one will even know that language.
 
-### KYLE
 Technology doesn't always move seamlessly from version one, then two, then three, and so on.  Sometimes technology is wholly replaced by something completely different.
 
 [EXAMPLE IN SKIT]
 
+### KYLE
 When something get's cheap enough, the optimal strategy's utility curve intersects the presently dominating solution.  If I had need to cut a stone, I'd use a very strong circular saw.  Why?  Because I know it will work and can aquire and power the tools.  Techniques used 3000 years ago were not so efficient.  They worked, but they worked much slower and with less precision.
 
 Publishing cycle, years before newton published
