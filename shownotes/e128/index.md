@@ -222,6 +222,8 @@ GUEST:
 
 Helicopter Hyroglyph is silly
 
+how do i comment on erich von daniken?
+
 GUEST: 
 
 Science revolution book
