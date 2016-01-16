@@ -136,7 +136,6 @@ This episode explores this question.  Under the most generous of conceits, what 
 ### KYLE
 I recently asked a friend to review the 64th episode of Data Skeptic in which I attempt to calculate the probability, however small, that bigfoot just might be real.  She listened to a few other episodes as well.  One of the comments she made was to stop apologizing.  I guess when I do atypical episodes, I have a tendency to over-explain myself and to justify why its okay for the show to deviate from it’s normal format.
 
-### KYLE
 You are Data Skeptic, she told me.  Whatever you do, that’s it, so don’t apologize for it like you represent some governing body.  So I’m not going to justify why a data scientist who enjoys this show, or a skeptic who listens, should indulge me in this investigation.  If you get Data Skeptic, you’ll understand.  The same way if you get Data Skeptic, you’ll know why I start talking about measurements and long term storage.  I’m no longer going to justify what might seem like a tangent from our regularly scheduled program.  I guess I don’t anyone that, you’re welcome to your opinions.  But maybe there’s just one opinion I want to check in on.
 
 TODO: transcribe the conversation I had with Linhda where she gives feedback on whether or not this is a good topic.
