@@ -4,7 +4,7 @@
 
 [Act 2](#act2) - As act 2 begins, we’re strictly down to business for the rest of the show.  The overall musical themes should demonstrate that by going from whimsical to serious.  We cover specific claims/devices include the Antikythera Mechanism, the Palimpsest of Archemedes, the Baghdad Battery, and generally "ancient aliens" claims.
 
-[Act 3](#act3) - 
+[Act 3](#act3) - In Act 3, the narrative centers on persistence.  What are the oldest artifacts we have?  What modern artifacts are likely to survive far into the future?  What do we most want to preserve for the future, and how can we accomplish it?
 
 
 <a name='act1'></a>
