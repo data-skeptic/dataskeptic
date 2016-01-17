@@ -1,5 +1,11 @@
+*NAVIGATION*
+
+[Act 1](#act1) - 
+[Act 2](#act2) - 
+[Act 3](#act3) - 
 
 
+<a name='act1'></a>
 ## ACT 1
 
 This act introduces our central question for the episode.  It should be the most theatrical act.  We begin with a cold open of the question, acted out.  We conclude by letting Kyle speak indulgently about meta commentary about the show.  As act 2 begins, we’re strictly down to business for the rest of the show.  The overall musical themes should demonstrate that by going from whimsical to serious.
