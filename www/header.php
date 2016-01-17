@@ -13,10 +13,13 @@
     }
     $ii--;
   }
+  if (isset($post)) {
+    $title = $post['title'];
+  }
 ?>
 <html lang="en">
 <head>
-	<title>Data Skeptic</title>
+	<title><? echo($title); ?></title>
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">

@@ -54,7 +54,7 @@ $showonce=0;
     $max--;
     echo("<div class='ep'>");
     $link = $post['link'];
-    echo("<h2><a href='$link'>#" . $i . ": " . $post['title'] . "</a></h2>");
+    echo("<h2><a href='$link'>" . $post['title'] . "</a></h2>");
     $i -= 1;
     $posixTime = strtotime($post['ts']);
     //echo("<b>Posted:</b> " . date('Y-m-d', $posixTime) . "<br/>");
