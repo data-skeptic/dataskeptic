@@ -223,6 +223,8 @@ I mean, it could have been.  The lightning just sounded really cool, so I put it
 ### KYLE
 Wilhelm Konig was a painter by trade, and eventually held the position of director at the National Museum of Iraq.  There he had access to artifacts, one of which was a clay jar.  He published a report in 1940 which I was unable to locate, but secondary sources report it speculates this device may have been a Glavanic cell used for electroplating gold onto silver objects.
 
+There's some debate about when the pot was created.  Let's assume either the earliest date of 250 BCE or the latest of 650 AD, depending on which date is most generous for the question we're asking.
+
 ### GUEST
 [Explain electroplating]
 
@@ -238,7 +240,11 @@ What are the absolute bare bones prerequisite technologies or knowledge required
 ### GUEST
 [response]
 
+### KYLE
+How much amperage could be produced by the best electrical engineer if they had only the finest tools from 650 AD available to them?
 
+### GUEST
+[response]
 
 
 Helicopter Hyroglyph is silly
