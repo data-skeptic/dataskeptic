@@ -345,3 +345,18 @@ Talk to Brett about making buildings that last
 
 Need to comment on cars going away in a sense, as they become driverless
 
+### KYLE
+This exploration began asking how far a person of modern means could take a more primative human society forward.  Specifically, what would it take to go from the Bronze age to the invention of the automobile.  We examined a few noteworthy devices from history, some that made us re-think our expectations about the past, and some that did not.  We explored topics of persistence and preservation.  I have no idea how long this podcast might be around in some archive somewhere.  Even if well preserved, how long will it be before it's inaccessible in it's current form.  Perhaps due to the loss of the LAME MP3 encoder which compressed it.  Perhaps due to future listeners no longer using English.
+
+And if, by chance, some resident of the year 4000 AD (assuming they're still numbering with the Gregorian calendar), how dated will the very premise of this show seem to them?  Will they even know what an automobile is?  I predict that within my lifetime, not only will I own a self-driving car, but I suspect I'll see the day that humans are no longer allowed to pilot cars.  Maybe the people of 4000 AD will find it quaint that this was our focal point, the way we might under-appreciate the importance of the original forms of inventions like the movable type printing press, the analytical engine, or the cotton gin.
+
+
+
+
+
+
+
+
+
+
+
