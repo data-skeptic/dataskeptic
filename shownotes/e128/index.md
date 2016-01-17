@@ -217,7 +217,11 @@ I mean, it could have been.  The lightning just sounded really cool, so I put it
 
 *BAGHDAD BATTERY*
 
-GUEST: 
+### GUEST
+[first statements]
+
+### KYLE
+Wilhelm Konig was a painter by trade, and eventually held the position of director at the National Museum of Iraq.  There he had access to artifacts, one of which was a clay jar.  
 
 
 Helicopter Hyroglyph is silly
