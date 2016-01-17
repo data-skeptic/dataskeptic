@@ -252,7 +252,7 @@ I've got one closing question, but it's one that I may need your help formulatin
 When is it generally accepted that some human created the first battery, however primative, which successfully chemically captured energy that could later be extracted in the form of a potential different across two electric terminals?
 
 ### GUEST
-
+[response]
 
 
 Helicopter Hyroglyph is silly
