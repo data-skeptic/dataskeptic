@@ -255,6 +255,11 @@ When is it generally accepted that some human created the first battery, however
 [response]
 
 
+
+T vs \tau case
+
+That story about re-discoverying aritmetic algorithms, i think it's asimov
+
 Helicopter Hyroglyph is silly
 
 how do i comment on erich von daniken?
