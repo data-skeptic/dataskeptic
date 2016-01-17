@@ -341,9 +341,25 @@ Amazon saves everything
 
 Essay on making choices
 
-Talk to Brett about making buildings that last
+--------------------------
 
-Need to comment on cars going away in a sense, as they become driverless
+### KYLE
+What's the oldest building you're aware of that has survived in some recognizable form to the modern day?
+
+### BRETT
+[response]
+
+### KYLE
+Thinking more broadly about old buildings, I imagine the likelihood of survive rests in a combination of the building's cultural importance, robustness of construction, and geographic location.  Have I missed any considerations?  And which of these criteria have the most significant impact?
+
+### BRETT
+[response]
+
+### KYLE
+
+
+
+--------------------------
 
 ### KYLE
 This exploration began asking how far a person of modern means could take a more primative human society forward.  Specifically, what would it take to go from the Bronze age to the invention of the automobile.  We examined a few noteworthy devices from history, some that made us re-think our expectations about the past, and some that did not.  We explored topics of persistence and preservation.  I have no idea how long this podcast might be around in some archive somewhere.  Even if well preserved, how long will it be before it's inaccessible in it's current form.  Perhaps due to the loss of the LAME MP3 encoder which compressed it.  Perhaps due to future listeners no longer using English.
