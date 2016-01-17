@@ -344,7 +344,7 @@ Essay on making choices
 --------------------------
 
 ### KYLE
-
+Buildings serve many purposes to humanity.  We live in them.  They store our artifacts.  In some sense, they are technology.  A clear line of advancement can be seen through history.  Who better to explore some of these ideas with than one of the founder of Chicago based EWP architects?  Why?  Well, mostly because the P in EWP stands for Polich, so let's hear what my older brother Brett, often referred to by our father as "the architect", has to say on these topics.
 
 ### KYLE
 What's the oldest building you're aware of that has survived in some recognizable form to the modern day?
