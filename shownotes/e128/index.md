@@ -272,7 +272,7 @@ In CS, what innovation solved what problem?
 
 In statistics - Hand's comment on stat methods developed differently
 
-===============================
+---------------------------------
 
 
 
