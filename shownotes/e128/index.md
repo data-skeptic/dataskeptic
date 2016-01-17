@@ -344,6 +344,9 @@ Essay on making choices
 --------------------------
 
 ### KYLE
+
+
+### KYLE
 What's the oldest building you're aware of that has survived in some recognizable form to the modern day?
 
 ### BRETT
@@ -363,6 +366,12 @@ As you know I'm not a materials scientist, but even a data scientist like me has
 
 ### KYLE
 Are there things architects might like to do which current technology does not allow, yet seem within the realm of plausibility?
+
+### BRETT
+[response]
+
+### KYLE
+... library of alexandria? ...
 
 ### BRETT
 [response]
