@@ -1,7 +1,9 @@
 *NAVIGATION*
 
 [Act 1](#act1) - 
+
 [Act 2](#act2) - 
+
 [Act 3](#act3) - 
 
 
@@ -150,6 +152,7 @@ TODO: transcribe the conversation I had with Linhda where she gives feedback on 
 
 
 
+<a name='act2'></a>
 ## ACT 2
 
 
@@ -305,6 +308,8 @@ GUEST:
 
 
 
+
+<a name='act3'></a>
 
 ## ACT 3
 
