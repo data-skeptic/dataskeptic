@@ -254,7 +254,7 @@ When is it generally accepted that some human created the first battery, however
 ### GUEST
 [response]
 
-===============================
+---------------------------------
 
 T vs \tau case
 
