@@ -319,23 +319,29 @@ What is the oldest artifact?
 
 
 
-Long now
+The Long Now Foundation
+
 Cyark
+
 Iron Mountain
+
 Oldest example of... Text, etc.
+
 Flag on moon
+
 Nuclear warning language
 
 Sunspots / eyesight
+
 Time capsule
 
 What to save / archive cost
+
 Amazon saves everything
+
 Essay on making choices
 
 Talk to Brett about making buildings that last
 
 Need to comment on cars going away in a sense, as they become driverless
 
-
-KYLE: 
