@@ -247,7 +247,9 @@ How much amperage could be produced by the best electrical engineer if they had 
 [response]
 
 ### KYLE
-What is the generally accepted first battery, however, primative, which successfully chemically captured energy that could later be extracted in the form of a potential different across two electric terminals?
+I've got one closing question, but it's one that I may need your help formulating in a meaningful way, because I thin k we're going to get to the point of needing to quibble about definitions.  But here's my attempt...
+
+When is it generally accepted that some human created the first battery, however primative, which successfully chemically captured energy that could later be extracted in the form of a potential different across two electric terminals?
 
 ### GUEST
 
