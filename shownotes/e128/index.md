@@ -359,6 +359,18 @@ Thinking more broadly about old buildings, I imagine the likelihood of survive r
 [response]
 
 ### KYLE
+I'm sure architects must consider the expected lifespan of buildings when they draw them.  Or perhaps in some cases, one thinks of a significant building as a work in progress, knowing that other professionals will need to make contributions decades later.  Can you discuss how architects think about the intended lifespan of their creations?
+
+### BRETT
+[response]
+
+### KYLE
+... library of alexandria? ...
+
+### BRETT
+[response]
+
+### KYLE
 As you know I'm not a materials scientist, but even a data scientist like me has an intuitive sense of the importance of steel on construction and persistence.  Can you comment on what materials have constituted major innovations in building design and longevity?
 
 ### BRETT
@@ -366,12 +378,6 @@ As you know I'm not a materials scientist, but even a data scientist like me has
 
 ### KYLE
 Are there things architects might like to do which current technology does not allow, yet seem within the realm of plausibility?
-
-### BRETT
-[response]
-
-### KYLE
-... library of alexandria? ...
 
 ### BRETT
 [response]
