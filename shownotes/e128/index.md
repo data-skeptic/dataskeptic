@@ -356,7 +356,22 @@ Thinking more broadly about old buildings, I imagine the likelihood of survive r
 [response]
 
 ### KYLE
+As you know I'm not a materials scientist, but even a data scientist like me has an intuitive sense of the importance of steel on construction and persistence.  Can you comment on what materials have constituted major innovations in building design and longevity?
 
+### BRETT
+[response]
+
+### KYLE
+Are there things architects might like to do which current technology does not allow, yet seem within the realm of plausibility?
+
+### BRETT
+[response]
+
+### KYLE
+So I don't do sponsors on Data Skeptic, or at least, to date I've turned down all offers, even the very generous ones that have arrived in my inbox.  But I do believe part of the way I can thank my guests for their time is by letting them plug their services, so can you give me 30 second pitch for EWP's services and contact info?
+
+### BRETT
+[response]
 
 
 --------------------------
