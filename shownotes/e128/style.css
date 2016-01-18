@@ -1,3 +1,9 @@
+p {
+  width: 600px;
+  margin: 0 auto;
+  padding-bottom: 15pt;
+}
+
 h2 {
   font-size: 40pt;
   text-align: center;

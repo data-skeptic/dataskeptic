@@ -1,8 +1,15 @@
+*NAVIGATION*
 
+[Act 1](#act1) - This act introduces our central question for the episode.  It should be the most theatrical act.  We begin with a cold open of the question, acted out.  We conclude by letting Kyle speak indulgently about meta commentary about the show.
+
+[Act 2](#act2) - As act 2 begins, we’re strictly down to business for the rest of the show.  The overall musical themes should demonstrate that by going from whimsical to serious.  We cover specific claims/devices include the Antikythera Mechanism, the Palimpsest of Archemedes, the Baghdad Battery, and generally "ancient aliens" claims.
+
+[Act 3](#act3) - In Act 3, the narrative centers on persistence.  What are the oldest artifacts we have?  What modern artifacts are likely to survive far into the future?  What do we most want to preserve for the future, and how can we accomplish it?
+
+
+<a name='act1'></a>
 
 ## ACT 1
-
-This act introduces our central question for the episode.  It should be the most theatrical act.  We begin with a cold open of the question, acted out.  We conclude by letting Kyle speak indulgently about meta commentary about the show.  As act 2 begins, we’re strictly down to business for the rest of the show.  The overall musical themes should demonstrate that by going from whimsical to serious.
 
 ### ASKER
 
@@ -48,12 +55,12 @@ All available resources are at your disposal.  Oh, and you've got a copy of Wiki
 ### NARRATOR
 Now build a car.
 
-Car rev noise
+SOUND EFFECT: Car rev noise
 
 ### NARRATOR
 Do whatever it takes, but build a car.
 
-[Car revs louder]
+SOUND EFFECT: Car revs louder
 
 ### NARRATOR
 Debate in your mind the steps required to launch the petrolieum industry.  Inspect the most advanced forges as they smelt gold, copper, and silver.  Teach them how to work lead, bronze, and tin such that they might master iron in time for you to explain the steam engine.
@@ -136,7 +143,6 @@ This episode explores this question.  Under the most generous of conceits, what 
 ### KYLE
 I recently asked a friend to review the 64th episode of Data Skeptic in which I attempt to calculate the probability, however small, that bigfoot just might be real.  She listened to a few other episodes as well.  One of the comments she made was to stop apologizing.  I guess when I do atypical episodes, I have a tendency to over-explain myself and to justify why its okay for the show to deviate from it’s normal format.
 
-### KYLE
 You are Data Skeptic, she told me.  Whatever you do, that’s it, so don’t apologize for it like you represent some governing body.  So I’m not going to justify why a data scientist who enjoys this show, or a skeptic who listens, should indulge me in this investigation.  If you get Data Skeptic, you’ll understand.  The same way if you get Data Skeptic, you’ll know why I start talking about measurements and long term storage.  I’m no longer going to justify what might seem like a tangent from our regularly scheduled program.  I guess I don’t anyone that, you’re welcome to your opinions.  But maybe there’s just one opinion I want to check in on.
 
 TODO: transcribe the conversation I had with Linhda where she gives feedback on whether or not this is a good topic.
@@ -145,23 +151,23 @@ TODO: transcribe the conversation I had with Linhda where she gives feedback on 
 
 
 
+<a name='act2'></a>
+
 ## ACT 2
 
 
 ### KYLE
 Let's frame the question this way.  I doubt there's any remote possibility an ancient civilization developed smartphones and all the technologies that necessarily came before it, and have that disappear entirely from our planet memory and our species' cultural memory.
 
-### KYLE
 But we also look at ancient civilizations with modern eyes.  One might think of them as primitive and incapable.  There's no reason to believe a human from a few thousand years ago was any less capable than modern people.  Physiologically, we're not very distant.  Our brains are the same size, and a structural match, containing no mutually exclusive elements.  We just have advantages they didn't yet.  Not only did I have elementary school, high school, and college available to me, so did most every other member of the workforce, the people I collaborate with.  Or at least, in my country, those opportunities were available.
 
-### KYLE
 New technology replaces old technology.  Things have been moving fast in recent decades.  There are consultants that specialize in older software and languages which have been discontinued for a decade or more.  Few people knowing such things and no incentive to learn them makes such a consultant occasionally very in demand at large companies that change slowly.  The number of remaining working Cobol engineers has got to be zero by now.  In a centuries time, no one will even know that language.
 
-### KYLE
 Technology doesn't always move seamlessly from version one, then two, then three, and so on.  Sometimes technology is wholly replaced by something completely different.
 
 [EXAMPLE IN SKIT]
 
+### KYLE
 When something get's cheap enough, the optimal strategy's utility curve intersects the presently dominating solution.  If I had need to cut a stone, I'd use a very strong circular saw.  Why?  Because I know it will work and can aquire and power the tools.  Techniques used 3000 years ago were not so efficient.  They worked, but they worked much slower and with less precision.
 
 Publishing cycle, years before newton published
@@ -181,6 +187,16 @@ When do we find people doing that kind of math?
 Engineering feat or math feat also?
 
 *PALIMPSEST OF ARCHEMEDES*
+
+### GUEST
+
+TODO: First statements
+
+### KYLE
+
+TODO:
+
+TODO: How far back did this set us mathematically?  How many years / centuries back?  How much sooner would we have had automobiles?
 
 GUEST: 
 
@@ -210,10 +226,52 @@ I mean, it could have been.  The lightning just sounded really cool, so I put it
 
 *BAGHDAD BATTERY*
 
-GUEST: 
+### GUEST
+[first statements]
 
+### KYLE
+Wilhelm Konig was a painter by trade, and eventually held the position of director at the National Museum of Iraq.  There he had access to artifacts, one of which was a clay jar.  He published a report in 1940 which I was unable to locate, but secondary sources report it speculates this device may have been a Glavanic cell used for electroplating gold onto silver objects.
+
+There's some debate about when the pot was created.  Let's assume either the earliest date of 250 BCE or the latest of 650 AD, depending on which date is most generous for the question we're asking.
+
+### GUEST
+[Explain electroplating]
+
+### KYLE
+Can you speculate on the earliest known time humans used electroplating?
+
+### GUEST
+[response]
+
+### KYLE
+What are the absolute bare bones prerequisite technologies or knowledge required for someone to perform electroplating?
+
+### GUEST
+[response]
+
+### KYLE
+How much amperage could be produced by the best electrical engineer if they had only the finest tools from 650 AD available to them?
+
+### GUEST
+[response]
+
+### KYLE
+I've got one closing question, but it's one that I may need your help formulating in a meaningful way, because I thin k we're going to get to the point of needing to quibble about definitions.  But here's my attempt...
+
+When is it generally accepted that some human created the first battery, however primative, which successfully chemically captured energy that could later be extracted in the form of a potential different across two electric terminals?
+
+### GUEST
+[response]
+
+---------------------------------
+
+T vs \tau case
+
+That story about re-discoverying aritmetic algorithms, i think it's asimov
 
 Helicopter Hyroglyph is silly
+
+how do i comment on erich von daniken?
 
 GUEST: 
 
@@ -223,6 +281,7 @@ In CS, what innovation solved what problem?
 
 In statistics - Hand's comment on stat methods developed differently
 
+---------------------------------
 
 
 
@@ -250,6 +309,8 @@ GUEST:
 
 
 
+<a name='act3'></a>
+
 ## ACT 3
 
 TODO: Third act is persistence
@@ -258,20 +319,90 @@ What is the oldest artifact?
 
 
 
-Long now
+The Long Now Foundation
+
 Cyark
+
 Iron Mountain
+
 Oldest example of... Text, etc.
+
 Flag on moon
+
 Nuclear warning language
 
 Sunspots / eyesight
+
 Time capsule
 
 What to save / archive cost
+
 Amazon saves everything
+
 Essay on making choices
 
-Talk to Brett about making buildings that last
+--------------------------
 
-KYLE: 
+### KYLE
+Buildings serve many purposes to humanity.  We live in them.  They store our artifacts.  In some sense, they are technology.  A clear line of advancement can be seen through history.  Who better to explore some of these ideas with than one of the founder of Chicago based EWP architects?  Why?  Well, mostly because the P in EWP stands for Polich, so let's hear what my older brother Brett, often referred to by our father as "the architect", has to say on these topics.
+
+### KYLE
+What's the oldest building you're aware of that has survived in some recognizable form to the modern day?
+
+### BRETT
+[response]
+
+### KYLE
+Thinking more broadly about old buildings, I imagine the likelihood of survive rests in a combination of the building's cultural importance, robustness of construction, and geographic location.  Have I missed any considerations?  And which of these criteria have the most significant impact?
+
+### BRETT
+[response]
+
+### KYLE
+I'm sure architects must consider the expected lifespan of buildings when they draw them.  Or perhaps in some cases, one thinks of a significant building as a work in progress, knowing that other professionals will need to make contributions decades later.  Can you discuss how architects think about the intended lifespan of their creations?
+
+### BRETT
+[response]
+
+### KYLE
+... library of alexandria? ...
+
+### BRETT
+[response]
+
+### KYLE
+As you know I'm not a materials scientist, but even a data scientist like me has an intuitive sense of the importance of steel on construction and persistence.  Can you comment on what materials have constituted major innovations in building design and longevity?
+
+### BRETT
+[response]
+
+### KYLE
+Are there things architects might like to do which current technology does not allow, yet seem within the realm of plausibility?
+
+### BRETT
+[response]
+
+### KYLE
+So I don't do sponsors on Data Skeptic, or at least, to date I've turned down all offers, even the very generous ones that have arrived in my inbox.  But I do believe part of the way I can thank my guests for their time is by letting them plug their services, so can you give me 30 second pitch for EWP's services and contact info?
+
+### BRETT
+[response]
+
+
+--------------------------
+
+### KYLE
+This exploration began asking how far a person of modern means could take a more primative human society forward.  Specifically, what would it take to go from the Bronze age to the invention of the automobile.  We examined a few noteworthy devices from history, some that made us re-think our expectations about the past, and some that did not.  We explored topics of persistence and preservation.  I have no idea how long this podcast might be around in some archive somewhere.  Even if well preserved, how long will it be before it's inaccessible in it's current form.  Perhaps due to the loss of the LAME MP3 encoder which compressed it.  Perhaps due to future listeners no longer using English.
+
+And if, by chance, some resident of the year 4000 AD (assuming they're still numbering with the Gregorian calendar), how dated will the very premise of this show seem to them?  Will they even know what an automobile is?  I predict that within my lifetime, not only will I own a self-driving car, but I suspect I'll see the day that humans are no longer allowed to pilot cars.  Maybe the people of 4000 AD will find it quaint that this was our focal point, the way we might under-appreciate the importance of the original forms of inventions like the movable type printing press, the analytical engine, or the cotton gin.
+
+
+
+
+
+
+
+
+
+
+
