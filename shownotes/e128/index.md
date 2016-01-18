@@ -281,6 +281,16 @@ In CS, what innovation solved what problem?
 
 In statistics - Hand's comment on stat methods developed differently
 
+#### Hints of the Unknowable
+
+* Nyquist frequency
+
+* Number of photons that will reach us from a distant body
+
+* Undecideability (like a mini episode)
+
+* Need to do literature search on destructive processes
+
 ---------------------------------
 
 
