@@ -6,7 +6,7 @@
 
 [Act 3](#act3) - In Act 3, the narrative centers on persistence.  What are the oldest artifacts we have?  What modern artifacts are likely to survive far into the future?  What do we most want to preserve for the future, and how can we accomplish it?
 
-Note- if you're seeing this, you're looking much to much to closely.  THere's no reason a person should be at this level of resolution this data.  How did you possibly find this note?  Are you so bored that you're reviewing commit by commit manually?
+Note- if you're seeing this, you're looking much to much to closely.  THere's no reason a person should be at this level of resolution this data.  How did you possibly find this note?  Are you so bored that you're reviewing commit by commit manually?  This couldn't possibly be interesting enough to see every tiny commit like this.
 
 <a name='act1'></a>
 
