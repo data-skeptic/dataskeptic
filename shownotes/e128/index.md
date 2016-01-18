@@ -283,7 +283,11 @@ In statistics - Hand's comment on stat methods developed differently
 
 ---------------------------------
 
+The better the technology, the more likely it would have made a record.  More people will talk about it.  Can we estimate this somehow?
 
+Can we measure the proliferation of new idea via Google trends?  What about the decay rates of new ideas?
+
+---------------------------------
 
 
 
