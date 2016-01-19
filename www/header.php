@@ -6,7 +6,7 @@
   $playercontent = "";
   for ($x=0; $x < count($posts); $x++) {
     $p = $posts[$x];
-    if (endswith($p['link'], $_SERVER['REQUEST_URI'])) {
+    if (endswith($p['link'], $_SERVER['REQUEST_URI']) && $_SERVER['REQUEST_URI'] != "/") {
       $post = $p;
       $i = $ii;
       $url = $post['a_url'];
@@ -15,6 +15,9 @@
   }
   if (isset($post)) {
     $title = $post['title'];
+  }
+  else {
+    $title = "Data Skeptic";
   }
 ?>
 <html lang="en">

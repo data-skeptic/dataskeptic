@@ -280,9 +280,23 @@ In CS, what innovation solved what problem?
 
 In statistics - Hand's comment on stat methods developed differently
 
+#### Hints of the Unknowable
+
+* Nyquist frequency
+
+* Number of photons that will reach us from a distant body
+
+* Undecideability (like a mini episode)
+
+* Need to do literature search on destructive processes
+
 ---------------------------------
 
+The better the technology, the more likely it would have made a record.  More people will talk about it.  Can we estimate this somehow?
 
+Can we measure the proliferation of new idea via Google trends?  What about the decay rates of new ideas?
+
+---------------------------------
 
 
 
