@@ -6,7 +6,6 @@
 
 [Act 3](#act3) - In Act 3, the narrative centers on persistence.  What are the oldest artifacts we have?  What modern artifacts are likely to survive far into the future?  What do we most want to preserve for the future, and how can we accomplish it?
 
-
 <a name='act1'></a>
 
 ## ACT 1
