@@ -76,6 +76,8 @@
 	|
 	<span class='menu'><a href='/blog.php'>Blog</a></span>
 	|
+        <span class='menu'><a href='/home-sales/'>Home Sales</a></span>
+	|
 	<span class='menu'><a href='/resources.php'>Resources</a></span>
 	|
 	<span class='menu'><a href='/bios.php'>Bios</a></span>
