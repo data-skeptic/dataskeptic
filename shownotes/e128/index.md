@@ -6,7 +6,6 @@
 
 [Act 3](#act3) - In Act 3, the narrative centers on persistence.  What are the oldest artifacts we have?  What modern artifacts are likely to survive far into the future?  What do we most want to preserve for the future, and how can we accomplish it?
 
-
 <a name='act1'></a>
 
 ## ACT 1
@@ -281,6 +280,16 @@ In CS, what innovation solved what problem?
 
 In statistics - Hand's comment on stat methods developed differently
 
+#### Hints of the Unknowable
+
+* Nyquist frequency
+
+* Number of photons that will reach us from a distant body
+
+* Undecideability (like a mini episode)
+
+* Need to do literature search on destructive processes
+
 ---------------------------------
 
 The better the technology, the more likely it would have made a record.  More people will talk about it.  Can we estimate this somehow?
@@ -336,6 +345,8 @@ Flag on moon
 Nuclear warning language
 
 Sunspots / eyesight
+
+Voyager
 
 Time capsule
 
