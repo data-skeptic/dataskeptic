@@ -26,7 +26,7 @@ When presented with counter-arguments or empirical falsifications of claims, som
 
 <p><a href="http://datastori.es/">Data Stories</a> is a podcast similar to The Data Skeptic Podcast.  Their focus tends to be a bit more on data visualization.  A great addition for listeners keenly interested in data science.</p>
 
-<p><a href="http://mathmutation.blogspot.com/">Math Mutations</a> explores "weird corners of mathematics that you probably didn't hear in school".</p>
+<p><a href="http://mathmutation.blogspot.com/">Math Mutations</a> explores "weird corners of mathematics that you probably didn't hear in school".  It's soon to appear in book form.</p>
 
 <p><a href="http://probablyscience.libsyn.com/">Probably Science</a> is one of my sources of news.  Hosted by comedians with an interest in science, and featuring frequent celebrity appearances including not only Jana Levin but also Karen Gillan.</p>
 
@@ -35,6 +35,16 @@ When presented with counter-arguments or empirical falsifications of claims, som
 <p><a href="http://www.theskepticsguide.org/">The Skeptics' Guide to the Universe</a> is your escape to reality and an anticipated part of my weekend routine.</p>
 
 <p><a href="http://www.sciencesortof.com/">Science... sort of</a> is a fantastic panel news discussion and interview program.</p>
+
+<p><a href="http://relprime.com/">Relatively Prime</a> is my favorite maths podcast.</p>
+
+<p><a href="http://www.thetalkingmachines.com/">Talking Machines</a> features technical and deep interviews with some of the leading machine learning and statistical thinkers.  It's also (IMO) the unofficial NIPS podcast.</p>
+
+<p><a href="http://lineardigressions.com/">Linear Digressions</a> is a shorter form podcast that will appeal to people who like Data Skeptic mini-episodes but want something slightly more technical.</p>
+
+<p><a href="http://www.learningmachines101.com/">Learning Machines 101</a> are deep in detail like a college course, but in podcast form.</p>
+
+<p><a href="http://www.becomingadatascientist.com/category/podcast/">Becoming a data scientist</a> is a video and audio podcast with interviews of data science professionals.</p>
 
 <p>... and my appologies to the many great other skeptical and data related podcast I enjoy but could not remember off the top of my head.</p>
 

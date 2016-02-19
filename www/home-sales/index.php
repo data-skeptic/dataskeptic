@@ -3,7 +3,7 @@
 <div id="bbody">
 <p>
 Data Skeptic is launching a new community project to gather, process, and explore home purchasing data.
-If you'd like to participate, please join our Slack channel by submitting your email via the form at the bottom.</p>
+If you'd like to participate, please email kyle at data skeptic dot com and ask to join our Slack channel.</p>
 
 <h2>Mission Statement</h2>
 <ul>
@@ -14,11 +14,10 @@ If you'd like to participate, please join our Slack channel by submitting your e
 <li>Data Skeptic shall launch such a project.</li>
 </ul>
 
-<iframe src="https://docs.google.com/forms/d/1ecOULUY35hx2rQaOoFVpBZpACcuOMN6ZW1KW6EZTD3I/viewform?embedded=true" width="760" height="600"
-style=".freebirdFormviewerViewFormCard{background-color:#ddd;margin-top:4px;"
-frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<h2>Related Posts</h2>
 
-
+<p><a href="http://dataskeptic.com/home-sales/feedback001.php">Feedback #1</a> - Read the criticisms of one listener.</p>
+<p><a href="http://dataskeptic.com/epnotes/multiple-regression.php">Multiple regressions</a> - A mini-episode on a basic tool and how Kyle is getting started with applying it to this problem.</p>
 </div>
 
 <? include("../footer.php"); ?>
