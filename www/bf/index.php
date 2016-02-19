@@ -254,7 +254,11 @@ The figure below describes the number of daily downloads of that episode.
 
 			<br/><br/>
 
-
+<style>
+#disqus_thread {
+  width: 800px
+}
+</style>
 			<a name='comments' />
 			<div class='divwrap'>
 			<? include("../comments.php"); ?>
