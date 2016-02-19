@@ -49,6 +49,7 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </head>
 <body>
 <div id='all'>
@@ -67,7 +68,7 @@
 <div id='right'>
 	<div id='header'>
 	<h1>Data Skeptic</h1>
-	<h2>The podcast that is skeptical of and with data.</h2>
+	<h2>Skeptical of and with data.</h2>
 	<span class='menu'><a href="/">Home</a></span>
 	|
 	<span class='menu'><a href='/episodes.php'>Episodes</a></span>
