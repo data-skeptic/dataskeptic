@@ -28,6 +28,13 @@ you.  Everyone else (probably most of you) should send Kyle an email to get acce
 </div>
 
 <h2>Meeting Minutes</h2>
-
+<?
+  $files = scandir("mtg-mins/");
+  foreach ($files as $file) {
+    if (endsWith($file, ".php")) {
+      echo("<a href='mtg-mins/" . $file . "'>" . substr($file, 0, strlen($file)-4) . "</a><br/>");
+    }
+  }
+?>
 
 <? include("../footer.php"); ?>

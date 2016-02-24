@@ -1,40 +1,39 @@
-<? include("../header.php"); ?>
+<? include("header.php"); ?>
 
 <div id="bbody">
 <p>
-Data Skeptic is launching a new community project to gather, process, and explore home purchasing data.
-If you'd like to participate, please <b>email kyle at data skeptic dot com</b> and ask to join our Slack channel.</p>
-
-<p>You can try to sign up via
-<a href="https://dataskeptic.slack.com/signup">https://dataskeptic.slack.com/signup</a>, but unfortunately,
-Slack won't allow me to auto-add popular domains like gmail.  When Slack approves of new domains from people
-that join, I always allow auto-sign up, so perhaps one of your college or peers will have paved this path for
-you.  Everyone else (probably most of you) should send Kyle an email to get access.  Thanks!
+Data Skeptic is a podcast that alternates between short mini episodes and longer interviews.
+For the mini-episodes, Kyle and Linh Da explore basic data science concepts.
+Longer interviews feature practitioners and experts on interesting topics related to data, all through the eye of scientific skepticism.
 </p>
 
-<h2>Mission Statement</h2>
-<ul>
-<li>Data about active and historic home sales in the United States is difficult if not impossible to access.  It is unnecessarily obfuscated, harming both buyers and sellers.</li>
-<li>A variety of companies in the vein of Trulia and Zillow have helped consumers, but they don't offer full featured APIs, making it impossible for a data scientist to access a sufficient dataset to inform their decisions.</li>
-<li>In the spirit expressed by true hackers, this information should be free.</li>
-<li>An open community driven project should exist to liberate this data and provide tools for accessing new and current data.</li>
-<li>Data Skeptic shall launch such a project.</li>
-</ul>
+<? if (strtotime("now") < strtotime("3/10/2016")) { ?>
+<div>
+<h2>Live Event</h2>
+<p>I'll be giving a talk in Berkeley, CA on March 3rd, details below.</p>
+<table>
+  <tr>
+    <td><i>Title:</i></td>
+    <td>A Skeptic's Perspective on Artificial Intelligence</td>
+  </tr>
+  <tr>
+    <td><i>Address:</i></td>
+    <td><a href="https://www.google.com/maps/place/La+Pe%C3%B1a+Cultural+Center/@37.852834,-122.2658731,15z/data=!4m2!3m1!1s0x0:0xad75f442460279f8">La Pe&ntilde;a, 3105 Shattuck Avenue, Berkeley</a></td>
+  </tr>
+  <tr>
+    <td><i>Datetime:</i></td>
+    <td>7:30pm Thursday <b>3/10/2016</b></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>The past few decades have shown incredible progress in technology. Advancements in computer speed and storage have enabled impressive advancements like Google Search, voice recognition, facial recognition, and competitive machine players for games like Chess and Go. Today we own electronics that have certain features we appropriately call "intelligent", yet we do not (or is it not yet?) have artificial intelligence. Discussion of A.I. includes both good science and a lot of woo. This talk will explore what's likely, unlikely, possible, and science fiction. Further, this talk will comment on how a non-technical person can be appropriately skeptical without an advanced degree.</td>
+  </tr>
+</table>
+</div>
+<? } ?>
 
-<h2>Related Posts</h2>
+<? include("mailinglist.php"); ?>
 
-<p><a href="http://dataskeptic.com/home-sales/feedback001.php">Feedback #1</a> - Read the criticisms of one listener.</p>
-<p><a href="http://dataskeptic.com/epnotes/multiple-regression.php">Multiple regressions</a> - A mini-episode on a basic tool and how Kyle is getting started with applying it to this problem.</p>
 </div>
 
-<h2>Meeting Minutes</h2>
-<?
-  $files = scandir("mtg-mins/");
-  foreach ($files as $file) {
-    if (endsWith($file, ".php")) {
-      echo("<a href='mtg-mins/" . $file . "'>" . substr($file, 0, strlen($file)-4) . "</a><br/>");
-    }
-  }
-?>
-
-<? include("../footer.php"); ?>
+<? include("footer.php"); ?>
