@@ -10,7 +10,7 @@ Longer interviews feature practitioners and experts on interesting topics relate
 <? if (strtotime("now") < strtotime("3/10/2016")) { ?>
 <div>
 <h2>Live Event</h2>
-<p>I'll be giving a talk in Berkeley, CA on March 3rd, details below.</p>
+<p>I'll be giving a talk in Berkeley, CA on March 10th, details below.</p>
 <table>
   <tr>
     <td><i>Title:</i></td>
