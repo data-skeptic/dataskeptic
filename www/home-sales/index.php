@@ -12,6 +12,8 @@ that join, I always allow auto-sign up, so perhaps one of your college or peers 
 you.  Everyone else (probably most of you) should send Kyle an email to get access.  Thanks!
 </p>
 
+<b>Join us for a live chat discussion of the project every Tuesday at 6:30pm PST in the Data Skeptic Slack channel.</b>
+
 <h2>Mission Statement</h2>
 <ul>
 <li>Data about active and historic home sales in the United States is difficult if not impossible to access.  It is unnecessarily obfuscated, harming both buyers and sellers.</li>
