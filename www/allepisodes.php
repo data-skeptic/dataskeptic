@@ -184,7 +184,6 @@ $("#radio-3").change(function() {
     $img = $post['img'];
     if ($i <= 64) {
       if ($img == 'http://static.libsyn.com/p/assets/2/9/3/8/2938570bb173ccbc/DataSkeptic-Podcast-1A.jpg') {
-        $img = "/dsold.jpg";
       }
     }
     echo("<table><tr><td valign=top><img src='" . $img . "' width=150 /></td><td valign=top>");
