@@ -27,6 +27,8 @@ you.  Everyone else (probably most of you) should send Kyle an email to get acce
 
 <p><a href="http://dataskeptic.com/home-sales/feedback001.php">Feedback #1</a> - Read the criticisms of one listener.</p>
 <p><a href="http://dataskeptic.com/epnotes/multiple-regression.php">Multiple regressions</a> - A mini-episode on a basic tool and how Kyle is getting started with applying it to this problem.</p>
+<p><a href="http://ankoorb.github.io/Housing/index.html">Phoenix Housing Viz</a> - Ankoor put together a visualization of some housing data with D3.</p>
+<p><a href="http://dataskeptic.com/blog/b008_home-sales-so-far.php">Next steps blog post</a> - About milestones.</p>
 </div>
 
 <h2>Meeting Minutes</h2>
