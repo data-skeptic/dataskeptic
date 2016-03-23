@@ -7,10 +7,12 @@
 my.properties
 
 # R data files from past sessions
-.Rdata
-.zip
-.xlsx
-.xls
+*.Rdata
+*.zip
+*.xlsx
+*.xls
+*.pdf
+*.zip
 
 20*.txt
 
