@@ -1,56 +1,8 @@
 <? include("header.php"); ?>
 <?
   $skip = $_GET['skip'];
-  try {
-    $xml = new XMLReader();
-    $xml->open('feed.rss');
-    $item = false;
-    $posts = array();
-    while ($xml->read()) {
-      if($xml->nodeType==XMLReader::ELEMENT) {
-        while($xml->read()) {
-          $name = $xml->name;
-          if (strcmp($name, "enclosure") == 0) {
-            $attributes = array();
-            while ($xml->moveToNextAttribute()) {
-              $attributes[$xml->name] = $xml->value;
-            }
-            $post['a_length'] = $attributes['length'];
-            $post['a_type'] = $attributes['type'];
-            $post['a_url'] = $attributes['url'];
-          }
-          else if ($name == "itunes:image") {
-            while ($xml->moveToNextAttribute()) {
-              $prefix = "http://assets.libsyn.com/item/";
-              if (strcmp($xml->name, "href") == 0) {
-                $post['img'] = $xml->value;
-              }
-            }
-          }
-          if($xml->nodeType==XMLReader::ELEMENT) {
-            $xml->read();
-            $value = $xml->value;
-            if (strcmp($name, "item") == 0) {
-              $item = true;
-              $post = array();
-            }
-            else if ($item) {
-              $post[$name] = $value;
-            }
-          }
-          if($xml->nodeType==XMLReader::END_ELEMENT && strcmp($name, "item") == 0) {
-            if ($item) {
-              array_push($posts, $post);
-               $item = false;
-            }
-          }
-        }
-      }
-    }
-  }
-  catch (Exception $e) {
-    echo($e);
-  }
+  $feed = 'feed.rss';
+  $posts = processRss($feed);
 ?>
 
 <script>
@@ -160,7 +112,7 @@ $("#radio-3").change(function() {
 <?
   $showonce=0;
   $i = count($posts);
-  $max = 99;
+  $max = 999999;
   foreach ($posts as $post) {
     if ($max <=0) {
       continue;
