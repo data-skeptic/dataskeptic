@@ -31,11 +31,8 @@ function processRss($feed) {
           else if ($name == "itunes:image") {
             while ($xml->moveToNextAttribute()) {
               $prefix = "http://assets.libsyn.com/item/";
-              if (strcmp($xml->name, "href") == 0 && strpos($xml->name, $prefix) == 0) {
-                $aid = substr($xml->value, strlen($prefix), strlen($xml->value));
-                if (strpos($aid, ".") === false) {
-                  $post['aid'] = $aid;
-                }
+              if (strcmp($xml->name, "href") == 0) {
+                $post['img'] = $xml->value;
               }
             }
           }
