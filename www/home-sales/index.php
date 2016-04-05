@@ -27,7 +27,7 @@ you.  Everyone else (probably most of you) should send Kyle an email to get acce
 
 <h2>Related Posts</h2>
 
-<p><a href="http://dataskeptic.com/blog/b010_pushing-data-to-home-sales-api.php"> - blog post showing how to push to the API in Python with very few lines of code.</p>
+<p><a href="http://dataskeptic.com/blog/b010_pushing-data-to-home-sales-api.php">Home Sales API upload</a> - blog post showing how to push to the API in Python with very few lines of code.</p>
 <p><a href="https://github.com/data-skeptic/data-source-notes">Home to contribute</a> - instructions for how you can share datasources you know about.</p>
 <p><a href="http://dataskeptic.com/blog/b009_Crawling-forsalebyowner.php">Blog post on crawling forsalebyowner.com</a> - a disappointing, but instructional crawl.</p>
 <p><a href="http://dataskeptic.com/blog/b008_home-sales-so-far.php">Next steps blog post</a> - About milestones.</p>
