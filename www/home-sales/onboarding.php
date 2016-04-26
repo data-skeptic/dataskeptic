@@ -11,23 +11,25 @@ Students and experts alike can contribute.<p>
 As a second step, figure out which section below best describes the way you'd like to contribute.</p>
 
 <h2>Non-technical Contributions</h2>
-<p>A Trello board for non-technical contributions will be added shortly.</p>
+<p>Pick a task on our
+<a href="https://trello.com/b/XH6nS4dB/volunteer-tasks">Trello board</a>
+and volunteer to complete it!</p>
 
-<h2>Developer</h2>
+<h2>Developers</h2>
 <p>We track proposed features and issues with the API here:
 <a href="http://github.com/data-skeptic/home-data-api/issues">http://github.com/data-skeptic/home-data-api/issues</a>.
 If you see something you can tackle, or would like to be coached through, volunteer for the task!</p>
 
-<h2>Data Pusher</h2>
+<h2>Data Pushers</h2>
 <p>Do you know of a data source that covers an area we current don't have data for?  Are you willing to help get that data streamed
 into our system?  Great!  To get started, visit the <a href="http://github.com/data-skeptic/data-source-notes">Data Source Notes</a> repository
 which will explain the best procedure for contributing in this way.</p>
 
-<h2>API Extender</h2>
+<h2>API Extenders</h2>
 <p>Do you have experience in Django Framework for Python?  Maybe you can help fix a bug or implement a requested feature in our API.
 Check out the <a href="http://github.com/data-skeptic/home-data-api/issues">Issues page</a> and see if there's anything you'd like to tackle.</p>
 
-<h2>API Consumer</h2>
+<h2>API Consumers</h2>
 <p>Right now we're light on data.  It's ok, we're in the first phases of the project.  In time, we'll be rich in data.  At that point, we'll
 be eager to facilitate lots of machine learning, forecasting, and data visualization projects.</p>
 
