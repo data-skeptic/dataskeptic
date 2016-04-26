@@ -13,15 +13,15 @@ As a second step, figure out which section below best describes the way you'd li
 <h2>Non-technical Contributions</h2>
 <p>A Trello board for non-technical contributions will be added shortly.</p>
 
+<h2>Developer</h2>
+<p>We track proposed features and issues with the API here:
+<a href="http://github.com/data-skeptic/home-data-api/issues">http://github.com/data-skeptic/home-data-api/issues</a>.
+If you see something you can tackle, or would like to be coached through, volunteer for the task!</p>
+
 <h2>Data Pusher</h2>
 <p>Do you know of a data source that covers an area we current don't have data for?  Are you willing to help get that data streamed
 into our system?  Great!  To get started, visit the <a href="http://github.com/data-skeptic/data-source-notes">Data Source Notes</a> repository
 which will explain the best procedure for contributing in this way.</p>
-
-<h2>Bug Finder / QA</h2>
-<p>Have you found a problem in one of our systems or are you interesting in hunting for problems?  We use Github Issues to track bugs.  Please
-consider filing one for us.  For example, our API codebase can be found here:
-<a href="http://github.com/data-skeptic/home-data-api/issues">http://github.com/data-skeptic/home-data-api/issues</a>.</p>
 
 <h2>API Extender</h2>
 <p>Do you have experience in Django Framework for Python?  Maybe you can help fix a bug or implement a requested feature in our API.
