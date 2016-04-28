@@ -79,11 +79,11 @@
 	|
         <span class='menu'><a href='/home-sales/'>Home Sales</a></span>
 	|
-	<span class='menu'><a href='/resources.php'>Resources</a></span>
-	|
 	<span class='menu'><a href='/store.php'>Store</a></span>
 	|
 	<span class='menu'><a href='/bios.php'>Bios</a></span>
+	|
+	<span class='menu'><a href='/resources.php'>Resources</a></span>
 	|
 	<span class='menu'><a href='/contact.php'>Contact</a></span>
 		<hr/>
