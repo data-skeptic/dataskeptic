@@ -86,7 +86,7 @@
 	<span class='menu'><a href='/resources.php'>Resources</a></span>
 	|
 	<span class='menu'><a href='/contact.php'>Contact</a></span>
-		<hr/>
+	<hr/>
 	</div>
 	<div id='main'>
 <?
