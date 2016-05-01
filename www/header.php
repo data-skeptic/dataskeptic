@@ -59,6 +59,8 @@
 <div style="text-align: center; display: block; margin: auto auto;">
 <a href="https://itunes.apple.com/us/podcast/the-data-skeptic-podcast/id890348705"><img src="http://dataskeptic.com/itunes.png" height=35 alt="Data Science itunes" /></a>
 <br/><br/>
+<a href="https://goo.gl/app/playmusic?ibi=com.google.PlayMusic&isi=691797987&ius=googleplaymusic&link=https://play.google.com/music/m/Ibr6e2jb7ot6m6gupwdjgsfmoqa?t%3DData_Skeptic"><img src="http://dataskeptic.com/google-play.png" height=35 alt="Data Science google play" /></a>
+<br/><br/>
 <a href="http://www.stitcher.com/s?fid=50561&refid=stpr"><img src="http://dataskeptic.com/stitcher_234x60.jpg" alt="Data Science Stitcher" height=35></a>
 <br/><br/>
 <a href="http://dataskeptic.com/feed.rss"><img src="http://dataskeptic.com/rss2.gif" alt="Data Skeptic podcast episode rss feed" /></a>
@@ -73,18 +75,18 @@
 	|
 	<span class='menu'><a href='/episodes.php'>Episodes</a></span>
 	|
-	<span class='menu'><a href='/store.php'>Store</a></span>
-	|
 	<span class='menu'><a href='/blog.php'>Blog</a></span>
 	|
         <span class='menu'><a href='/home-sales/'>Home Sales</a></span>
 	|
-	<span class='menu'><a href='/resources.php'>Resources</a></span>
+	<span class='menu'><a href='/store.php'>Store</a></span>
 	|
 	<span class='menu'><a href='/bios.php'>Bios</a></span>
 	|
+	<span class='menu'><a href='/resources.php'>Resources</a></span>
+	|
 	<span class='menu'><a href='/contact.php'>Contact</a></span>
-		<hr/>
+	<hr/>
 	</div>
 	<div id='main'>
 <?
