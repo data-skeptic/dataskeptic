@@ -6,6 +6,8 @@
 
 <p>The internship will last four weeks and your name will be mentioned in the credits of the episode when it goes live.  The work will be conducted remotely with conversations via Slack and Skype.  We have two slots for applicants.  To submit your application, send a resume and cover letter to <a href="mailto:interns@dataskeptic.com">interns@dataskeptic.com</a></p>
 
+<p><center><b>Apply by Friday, May 27th, 2016!</b></center></p>
+
 <h2>Requirements</h2>
 
 <ul>
