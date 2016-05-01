@@ -16,7 +16,7 @@
 <li>Hands-on experience working in Python and/or R</li>
 <li>Some basic familiarity with Javascript and D3</li>
 <li>Work sample on github</li>
-<li>Available for at least 4-5 hours of work per week.</li>
+<li>Available for at least 4-5 hours of work per week for one month.</li>
 <li>Availability after 6pm PST for a weekly check-in</li>
 </ul>
 
