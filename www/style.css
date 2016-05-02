@@ -30,6 +30,12 @@ a:hover {
 .plot {
 	background-color: #fff;
 }
+
+#bbody {
+	display: inline-block;
+	width: 90%;
+}
+
 #left {
 	float: left;
 	width: 200px;
