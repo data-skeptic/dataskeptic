@@ -1,20 +1,18 @@
 <? include("../header.php"); ?>
 
 <div id="bbody">
+<table><tr>
+<td><img src='dshs.png' /></td>
+<td>
 <p>
 Data Skeptic is launching a new community project to gather, process, and explore home purchasing data.
 If you'd like to participate, please <b>email kyle at data skeptic dot com</b> and ask to join our Slack channel.</p>
 
 <p>Check out our <a href="onboarding.php">Onboarding page</a> that will give you some direction on how to get started.</p>
 
-<p>You can try to sign up via
-<a href="https://dataskeptic.slack.com/signup">https://dataskeptic.slack.com/signup</a>, but unfortunately,
-Slack won't allow me to auto-add popular domains like gmail.  When Slack approves of new domains from people
-that join, I always allow auto-sign up, so perhaps one of your college or peers will have paved this path for
-you.  Everyone else (probably most of you) should send Kyle an email to get access.  Thanks!
-</p>
-
 <b>Join us for a live chat discussion of the project every Tuesday at 6:30pm PST in the Data Skeptic Slack channel.</b>
+</td>
+</tr></table>
 
 <h2>Mission Statement</h2>
 <ul>
