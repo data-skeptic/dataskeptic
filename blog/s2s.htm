@@ -1,4 +1,3 @@
-
 <html>
 <head>
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
@@ -6,17 +5,15 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
 </head>
 <body>
+<!--
 http://www.amcharts.com/svg-maps/?map=usa
 [Creative Commons Attribution-NonCommercial 4.0 License](http://creativecommons.org/licenses/by-nc/4.0/)
+<object id='map' type="image/svg+xml" data="usaLow.svg" width=1200 height=800>
+  USA map SVG
+</object>
+-->
 
-<br/>
-
-< object id='map' type="image/svg+xml" data="usaLow.svg" width=1200 height=800 >
-  USA map SVG <!-- fallback image in CSS -->
-< /object >
-
-<br/>
-
+<div id='svgcontainer'>
 <svg id="map" xmlns="http://www.w3.org/2000/svg" xmlns:amcharts="http://amcharts.com/ammap" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width=1200 height=800>
   <defs>
     <style type="text/css">
@@ -85,47 +82,141 @@ http://www.amcharts.com/svg-maps/?map=usa
     <path id="US-WY" title="Wyoming" class="land" d="M499.16,180.45L495.46,226.79L491.58,271.97L474.43,270.36L440.2,266.58L423.12,264.4L406.05,262.04L372.15,256.16L375.87,234.37L385.21,178.56L384.7,178.06L385.13,177.31L386.97,165.87L418.47,170.63L443.38,174.28L472.33,177.57z"/>
   </g>
 </svg>
+</div>
+
+<style>
+#svgcontainer {
+  position: relative;
+}
+#infobox {
+  position: absolute;
+  top: 20px;
+  left: 600px;
+  background: #aaa;
+}
+</style>
 
 <script>
 
-$.ajax({
+  var data = null;
+  var colMap = {};
+  var rowMap = {};
+  var tmpColor = {};
+  
+  $.ajax({
     url: "s2s_migration.tsv",
-    async: false,
+    async: true,
     success: function (csvd) {
-        data = $.csv2Array(csvd);
+        data = $.csv2Array(csvd, {'separator': '\t', 'head': true});
+        for (i=0; i < data[0].length; i++) {
+          colMap[data[0][i]] = i;
+        }
+        for (i=0; i < data.length; i++) {
+          rowMap[data[i][0]] = i;
+        }
     },
     dataType: "text",
     complete: function () {
         // call a function on complete 
     }
-});
+  });
+  
+  var c_inactive = "#000";
+  var c_hover    = "#AA0";
+  var c_info     = "#eeeeee";
+  var c_clicked  = "#ff0";
 
   var active = null;
   function hover_in(state) {
+    var col = colMap[state.attr('title')];
+    var srcPop = data[col][1];
     if (state != active) {
-      state.attr("fill", "#FF0");
+      state.attr("fill", c_hover);
+      if (active != null) {
+        var row = rowMap[active.attr('title')];
+        var totalPop = data[row][1];
+        var moves = data[row][col];
+        var p = Math.round((1000000 * moves) / totalPop) / 100;
+        $("#over_name").html(state.attr('title'));
+        $("#over_percent").html(p + "%");
+        $("#over_name").css("visibility", "visible");
+        $("#over_percent").css("visibility", "visible");
+        console.log("t");
+      }
     }
   }
   function hover_out(state) {
     if (state != active) {
-      state.attr("fill", "#000");
+      if (active) {
+        c = tmpColor[state.attr('title')];
+        state.attr("fill", c);
+        $("#over_name").css("visibility", "hidden");
+        $("#over_percent").css("visibility", "hidden");
+      } else {
+        state.attr("fill", c_inactive);
+      }
     }
+  }
+  function get_color(state, orig, shade) {
+    shade = Math.pow(shade, .5);
+    var a = (Math.floor(255 * shade)).toString(16);
+    a = ("0" + a).slice(-2);
+    var c = orig + a;
+    c = "#" + a + "00" + a;
+    tmpColor[state] = c;
+    return c;
+  }
+  function set_active(state) {
+    active = state;
+    var row = data[rowMap[state.attr('title')]];
+    var allInPop = 0;
+    var max = 0;
+    for (c=5; c < row.length-1; c++) {
+      val = parseInt(row[c]);
+      allInPop += val;
+      if (val > max) {
+        max = val;
+      }
+    }
+    $(".land").each(function(index) {
+      var state = $(".land")[index];
+      var stateid = state['id'];
+      state = $('#' + stateid);
+      var pop = parseInt(row[colMap[state.attr('title')]]);
+      var p = pop / max;
+      if (state != active) {
+        c = get_color(state.attr('title'), c_info, p);
+        state.attr("fill", c);
+      }
+    });
+    state.attr("fill", c_clicked);
+  }
+  function set_inactive(state) {
+    active = null;
+    $(".land").each(function(index) {
+      var state = $(".land")[index];
+      var stateid = state['id'];
+      state = $('#' + stateid);
+      state.attr("fill", c_inactive);
+    });
   }
   $(".land").each(function(index) {
     var state = $(".land")[index];
     var stateid = state['id'];
     state = $('#' + stateid);
     state.click(function() {
+$("#infobox").attr("top", "350px");
       if (state == active) {
-        active = null;
+        set_inactive(state);
         hover_in(state);
       }
       else {
         if (active != null) {
-          active.attr("fill", "#000");
+          active.attr("fill", c_inactive);
+          set_inactive(active);
         }
-        state.attr("fill", "#FFA");
-        active = state;
+        state.attr("fill", c_clicked);
+        set_active(state);
       }
     });
     state.hover(
@@ -138,11 +229,43 @@ $.ajax({
     );
     
   });
+
+$(document).ready(function() {
+  console.log("!!!");
+});
 </script>
 
 Load data from CSV
 Shade all other states appropriate colors
 Have a D3 bar chart adjust itself
+
+<style>
+#over_name {
+  margin 0; padding:0;
+  top: 30px;
+  left: 720px;
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  visibility: hidden;
+}
+#over_percent {
+  margin 0; padding:0;
+  font-size: 44pt;
+  top: 40px;
+  left: 720px;
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  visibility: hidden;
+}
+</style>
+<div id="over_name">
+State Name
+</div>
+<div id="over_percent">
+75%
+</div>
 
 
 

@@ -6,6 +6,8 @@
 
 <p>The internship will last four weeks and your name will be mentioned in the credits of the episode when it goes live.  The work will be conducted remotely with conversations via Slack and Skype.  We have two slots for applicants.  To submit your application, send a resume and cover letter to <a href="mailto:interns@dataskeptic.com">interns@dataskeptic.com</a></p>
 
+<p><center><b>Apply by Friday, May 27th, 2016!</b></center></p>
+
 <h2>Requirements</h2>
 
 <ul>
@@ -14,7 +16,7 @@
 <li>Hands-on experience working in Python and/or R</li>
 <li>Some basic familiarity with Javascript and D3</li>
 <li>Work sample on github</li>
-<li>Available for at least 4-5 hours of work per week.</li>
+<li>Available for at least 4-5 hours of work per week for one month.</li>
 <li>Availability after 6pm PST for a weekly check-in</li>
 </ul>
 

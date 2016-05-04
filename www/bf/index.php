@@ -6,10 +6,7 @@
 
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script type="text/javascript" src="jquery.ui.core.min.js"></script>
-		<script type="text/javascript" src="jquery.ui.widget.min.js"></script>
-		<script type="text/javascript" src="jquery.ui.mouse.min.js"></script>
-		<script type="text/javascript" src="jquery.ui.draggable.min.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 
 		<!--  STYLE SHEETS  -->
 		<link rel="stylesheet" type="text/css" href="bfStyles.css" />
