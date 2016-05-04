@@ -1,6 +1,9 @@
 <? include("../header.php"); ?>
 
 <div id="bbody">
+
+<h1>Home Sales Data Project</h1>
+
 <table><tr>
 <td><img src='dshs.png' /></td>
 <td>
