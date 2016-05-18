@@ -2,20 +2,25 @@
 
 <div id="bbody">
 
-<h1>Home Sales Data Project</h1>
+<h1>OpenHouse</h1>
 
 <table><tr>
 <td><img src='dshs.png' /></td>
 <td>
 <p>
-Data Skeptic is launching a new community project to gather, process, and explore home purchasing data.
-If you'd like to participate, please <b>email kyle at data skeptic dot com</b> and ask to join our Slack channel.</p>
+OpenHouse is a community project with the objective of gathering, processing, and exploring home purchasing data.
+Today, this data is not readily accessible to the general public on a granular and longitudinal basis, which would
+be required to do interesting analysis.  This project seeks to liberate historical and current data on home sales
+to enable consumers to make smarter, better informed decisions, and to provide a rich, robust dataset for data
+scientists and data visualization people to do interesting work.</p>
+</td>
+</tr></table>
+
+<p>If you'd like to participate, please <b>email kyle at data skeptic dot com</b> and ask to join our Slack channel.</p>
 
 <p>Check out our <a href="onboarding.php">Onboarding page</a> that will give you some direction on how to get started.</p>
 
 <b>Join us for a live chat discussion of the project every Tuesday at 6:30pm PST in the Data Skeptic Slack channel.</b>
-</td>
-</tr></table>
 
 <h2>Mission Statement</h2>
 <ul>
@@ -46,5 +51,8 @@ If you'd like to participate, please <b>email kyle at data skeptic dot com</b> a
     }
   }
 ?>
+<a href="https://docs.google.com/document/d/1Q-QwIbyECOERaIfO2kJHyrBASsWTXS8kIhS9kChQa3k/edit#heading=h.1pnzdwsrgbl7">2016-05-03</a><br/>
+<a href="https://docs.google.com/document/d/1hzlARxetUDax7tuLuC_Nv7Kqb6KQPYhfUUvvRFniZKE/edit#heading=h.mn1vx494in06">2016-05-10</a><br/>
+<a href="https://docs.google.com/document/d/15FumPlnsTghHfWYWgPRbnXhdndXjMto6ibSwM_NiO5Q/edit#heading=h.mn1vx494in06">2016-05-17</a><br/>
 
 <? include("../footer.php"); ?>

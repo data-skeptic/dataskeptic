@@ -2,7 +2,7 @@
 
 <h1>Volunteer Onboarding</h1>
 
-<p>Hi.  Thanks for your interest in helping with the Data Skeptic Home Sales project!</p>
+<p>Hi.  Thanks for your interest in helping with the OpenHouse project!</p>
 
 <p>We intend for there to be opportunities for anyone interested in getting involved to do so regardless of their available time or technical background.
 Students and experts alike can contribute.<p>
@@ -12,7 +12,7 @@ As a second step, figure out which section below best describes the way you'd li
 
 <h2>Non-technical Contributions</h2>
 <p>Pick a task on our
-<a href="https://trello.com/b/XH6nS4dB/volunteer-tasks">Trello board</a>
+<a href="https://trello.com/invite/b/XH6nS4dB/14d892fe4b7b442871ccd6d18b289eb8/openhouse-kanban">Trello board</a>
 and volunteer to complete it!</p>
 
 <h2>Developers</h2>

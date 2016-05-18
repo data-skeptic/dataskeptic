@@ -77,7 +77,7 @@
 	|
 	<span class='menu'><a href='/blog.php'>Blog</a></span>
 	|
-        <span class='menu'><a href='/home-sales/'>Home Sales</a></span>
+        <span class='menu'><a href='/home-sales/'>OpenHouse</a></span>
 	|
 	<span class='menu'><a href='/store.php'>Store</a></span>
 	|
