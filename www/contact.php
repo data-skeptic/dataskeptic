@@ -21,7 +21,7 @@ is greatly appreciated, but I can no longer commit to responding.</p>
 <p>With finite time to interact directly with listeners, I've had to make choices about optimizing my time.  If you have a question, comment, or
 correction on a specific show, please visit the episode specific page and leave a comment at the bottom in the Disqus comment area.  This might allow
 for other visitors to respond as well.  If you're looking to get a personal response directly from me, please reach out via a public channel such
-as the via the official Twitter account of the show 
+as Twitter 
 (<a href="https://twitter.com/dataskeptic">@dataskeptic</a>)
 or on the
 <a href="https://www.facebook.com/dataskeptic">Data Skeptic Facebook page</a>.
