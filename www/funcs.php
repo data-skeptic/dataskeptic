@@ -15,9 +15,12 @@ function processRss($feed) {
     $b = $xml->open($feed);
     $item = false;
     $posts = array();
-    while ($xml->read()) {
+    $maxElem = 99999999;
+    while ($xml->read() && $maxElem > 0) {
+      $maxElem -= 1;
       if($xml->nodeType==XMLReader::ELEMENT) {
-        while($xml->read()) {
+        while($xml->read() && $maxElem > 0) {
+          $maxElem -= 1;
           $name = $xml->name;
           if (strcmp($name, "enclosure") == 0) {
             $attributes = array();

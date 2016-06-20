@@ -1,6 +1,9 @@
 <? include("header.php"); ?>
 <?
-  $skip = $_GET['skip'];
+  $skip = 0;
+  if (isset($_GET['skip'])) {
+    $skip = $_GET['skip'];
+  }
   $feed = 'feed.rss';
   $posts = processRss($feed);
 ?>
