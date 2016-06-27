@@ -4,11 +4,6 @@
 
 <h1>Data Skeptic Merch</h1>
 
-<p>At this time, we can only ship to US addresses.  International listeners are encouraged to announce their displeasure
-with this on social media as a means of motivating the creation of an international shipping option.</p>
-
-<p><b>Orders made after December 15th will experience some delays!</b></p>
-
 <style>
 section {
     width: 80%;
@@ -227,6 +222,8 @@ div#cart {
 				</td>
 			</tr>
 		</table>
+		For international orders, please enter all relevant infromation in the "city, state zip" box.  If your
+		country is difficult to ship to, you may want to follow up with notes during the PayPal checkout process.
 
 <div id='formerror'>
 </div>

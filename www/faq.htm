@@ -1,0 +1,22 @@
+<html>
+<body>
+<h1>FAQ for Open House</h1>
+
+<p>Below are some common problems you may encounter when contributing to OpenHouse.  If your question is not found below, or if the answer is not
+clear, please ask it in the #api channel in the Data Skeptic Slack group.
+
+<h2>How do I set up a config file for the batch uploader?</h2>
+<a name="config-file"/>
+<p>The software expects that you have a file called "openhouse.config" in the same directory as the uploader file.  The file should contain your
+personal account credentials (user and password), as well as the baseurl so you can specify which environment you are uploading to.  Below is
+an example file.  You may wish to copy and paste this, altering the user and passwords to match your own.
+
+<pre>
+[API]
+user: kpolich
+password: yoshi-bird-90008
+baseurl: http://home-sales-data-api.herokuapp.com
+</pre>
+
+</body>
+</html>
