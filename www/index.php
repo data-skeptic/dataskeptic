@@ -1,6 +1,10 @@
 <? include("header.php"); ?>
 
 <div id="bbody">
+
+<p><b>Materials from my recent talk at the Hope Conference can be found on my github page
+<a href="https://github.com/kylepolich/hacking-machine-learning">here</a>.</b></p>
+
 <p>
 Data Skeptic is a podcast that alternates between short mini episodes and longer interviews.
 For the mini-episodes, Kyle and Linh Da explore basic data science concepts.
