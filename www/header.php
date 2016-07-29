@@ -91,6 +91,10 @@
 	<div id='main'>
 <?
   if (strpos($_SERVER['REQUEST_URI'], "epnotes") !== FALSE) {
+    $trans = "../" . str_replace("epnotes/", "trans/", $_SERVER['REQUEST_URI']);
+    if (file_exists($trans)) {
+      echo("Full transcript found: <a href='$trans'>here</a>");
+    }
 	?>
 	<script>
 		audiojs.events.ready(function() {
