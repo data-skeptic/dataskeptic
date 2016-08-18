@@ -1,9 +1,7 @@
 <?php
   if (strpos($_SERVER['REQUEST_URI'], "epnotes") !== FALSE || strpos($_SERVER['REQUEST_URI'], "blog") !== FALSE || strpos($_SERVER['REQUEST_URI'], "home-sales") !== FALSE) {
     if (isset($url)) {
-        ?>
-        <audio src="<? echo($url); ?>" preload="auto" />
-        <?
+     include("../player.php");
     }
     echo("<br/><br/></div><div>");
     include("../comments.php");

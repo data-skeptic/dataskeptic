@@ -26,9 +26,7 @@
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
-	<script src="/audiojs/audio.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="/skin/jplayer.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="/style.css" />
 	<link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 
@@ -95,13 +93,5 @@
     if (file_exists($trans)) {
       echo("Full transcript found: <a href='$trans'>here</a>");
     }
-	?>
-	<script>
-		audiojs.events.ready(function() {
-			var as = audiojs.createAll();
-		});
-	</script>
-	<?
   }
 ?>
-

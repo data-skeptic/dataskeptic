@@ -68,53 +68,6 @@ function processRss($feed) {
 
 function makePlayer($post, $i) {
   $url = $post['a_url'];
-  $title = $post['title'];
-  $str =  "<br/><div id=\"jquery_jplayer_" . $i . "\" class=\"jp-jplayer\"></div>";
-  $str .= "<div id=\"jp_container_" . $i . "\" class=\"jp-audio\">";
-  $str .= "    <div class=\"jp-type-single\">";
-  $str .= "        <div class=\"jp-gui jp-interface\">";
-  $str .= "            <ul class=\"jp-controls\">";
-  $str .= "                <li><a href=\"javascript:;\" class=\"jp-play\" tabindex=\"1\">play</a></li>\";";
-  $str .= "                <li><a href=\"javascript:;\" class=\"jp-pause\" tabindex=\"1\">pause</a></li>";
-  $str .= "                <li><a href=\"javascript:;\" class=\"jp-volume-max\" tabindex=\"1\" title=\"max volume\">max volume</a></li>";
-  $str .= "            </ul>";
-  $str .= "            <div class=\"jp-progress\">";
-  $str .= "                <div class=\"jp-seek-bar\">";
-  $str .= "                    <div class=\"jp-play-bar\"></div>";
-  $str .= "                </div>";
-  $str .= "            </div>";
-  $str .= "            <div class=\"jp-volume-bar\">";
-  $str .= "                <div class=\"jp-volume-bar-value\"></div>";
-  $str .= "            </div>";
-  $str .= "            <div class=\"jp-current-time\"></div>";
-  $str .= "            <div class=\"jp-duration\"></div>";
-  $str .= "        </div>";
-  $str .= "        <div class=\"jp-details\">";
-  $str .= "            <ul>";
-  $str .= "                <li><span class=\"jp-title\"></span></li>";
-  $str .= "            </ul>";
-  $str .= "        </div>";
-  $str .= "        <div class=\"jp-no-solution\">";
-  $str .= "            <span>Update Required</span>";
-  $str .= "            To play the media you will need to either update your browser to a recent version to use our player";
-  $str .= "        </div>";
-  $str .= "    </div>";
-  $str .= "</div>";
-  $str .= "<script>";
-  $str .= "$(document).ready(function() {";
-  $str .= "    $(\"#jquery_jplayer_" . $i . "\").jPlayer({";
-  $str .= "        ready: function(event) {";
-  $str .= "            $(this).jPlayer(\"setMedia\", {";
-  $str .= "                title: \"" . $title . "\",";
-  $str .= "                mp3: \"" . $url . "\"";
-  $str .= "            });";
-  $str .= "        },";
-  $str .= "        swfPath: \"http://jplayer.org/latest/js\",";
-  $str .= "        cssSelectorAncestor: '#jp_container_" . $i . "',";
-  $str .= "        supplied: \"mp3\"";
-  $str .= "    });";
-  $str .= "});";
-  $str .= "</script>";
-  return $str;
+  include("/player.php");
 }
 ?>
