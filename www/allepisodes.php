@@ -19,7 +19,7 @@ function OpenInNewTab(url) {
 
 .radio-custom {
     opacity: 0;
-    position: absolute;   
+    position: absolute;
 }
 
 .radio-custom, .radio-custom-label {
@@ -62,21 +62,15 @@ function OpenInNewTab(url) {
 
 <h1>All Data Skeptic episodes</h1>
 
-<!--
-        <div>
-            <input id="radio-1" class="radio-custom" type="checkbox" checked>
-            <label for="radio-1" class="radio-custom-label">Interviews</label>
-        </div>
-        <div>
-            <input id="radio-2" class="radio-custom"v type="checkbox" checked>
-            <label for="radio-2" class="radio-custom-label">Mini episodes</label>
-        </div>
-        <div>
-            <input id="radio-3" class="radio-custom" type="checkbox" checked>
-            <label for="radio-3" class="radio-custom-label">Special episodes</label>
-        </div>
-      </div>
--->
+<?
+/*
+  $start = 2014;
+  $end = date("Y");
+  for ($y=$start; $y <= $end; $y++) {
+    echo("<div><input id='radio-$y' class='radio-custom' type='checkbox' checked><label for='radio-1' class='radio-custom-label'>$y</label></div>");
+  }
+*/
+?>
 
 <script>
 function update() {
@@ -106,6 +100,8 @@ $("#radio-3").change(function() {
   update();
 });
 
+$(document).ready(function() {
+})
 </script>
 
 
@@ -118,21 +114,16 @@ $("#radio-3").change(function() {
       continue;
     }
     $max--;
-    echo("<div class='ep'");
-    if (startsWith($post['title'], "[MINI]")) {
-      echo(" class='miniep'");
+    $posixTime = strtotime($post['pubDate']);
+    $y = date('Y', $posixTime);
+    if (strpos($post['title'], "[MINI]") !== false) {
+      $typ = "mini";
+    } else {
+      $typ = "main";
     }
-    else if ($post['title'] == 'Crypto' || $post['title'] == 'Proposing Annoyance Mining') {
-      echo(" class='specialep'");
-    }
-    else {
-      echo(" class='interviewep'");
-    }
+    echo("<div class='ep $typ $y'");
     echo(">");
     $link = $post['link'];
-    if ($i==64) {
-//      $link = 'http://dataskeptic.com/bf';
-    }
     $img = $post['img'];
     if ($i <= 64) {
       if ($img == 'http://static.libsyn.com/p/assets/2/9/3/8/2938570bb173ccbc/DataSkeptic-Podcast-1A.jpg') {
@@ -148,7 +139,6 @@ $("#radio-3").change(function() {
       $tfile = "";
     }
     $i -= 1;
-    $posixTime = strtotime($post['pubDate']);
     $url = $post['a_url'];
     echo("<b>Posted:</b> " . date('Y-m-d', $posixTime) . "<br/>");
     echo("<b>Duration:</b> " . $post['itunes:duration'] . "<br/>");
