@@ -2,6 +2,9 @@
 
 <div id="bbody">
 
+<h2>Other podcasts</h2>
+<p>A list of podcasts Kyle listens to can be found <a href="podcasts.php">here</a>.</p>
+
 <h2>Skeptical resources</h2>
 <p><a href="http://www.skepdic.com/">Skeptic's Dictionary</a></td> is a 
 good reference to skeptical materials and references on many questionable claims.</p>
@@ -15,38 +18,6 @@ When presented with counter-arguments or empirical falsifications of claims, som
 <p><a href="http://sqlzoo.net/wiki/SQL_Tutorial">SQL Zoo</a> can interactively teach you the basics of SQL.</p>
 
 <p><a href="http://datasciencemasters.org/">The Open Source Data Science Masters</a></p>
-
-<br/>
-<h2>Other Recommended Podcasts</h2>
-<p><a href="http://www.partiallyderivative.com/">Partially Derivative</a> is a fun and light hearted exploration of the latest news in data science.  It's sort of like diggnation for data science.  Great show and discussions.</p>
-
-<p><a href="http://www.yrad.com/cs/">The Conspiracy Skeptic</a> discusses well known conspiracies from an evidence based perspective.  As they say on talk radio "Long time listener; first time caller" - since I appeared as a guest to discuss The Bible Code in August of 2014.</p>
-
-<p><a href="http://www.skeptic.com/podcasts/monstertalk/">Monster Talk</a> is another personal favorite exploring the skeptical angle on cryptozoological claims, folklore, and monsters in general.</p>
-
-<p><a href="http://datastori.es/">Data Stories</a> is a podcast similar to The Data Skeptic Podcast.  Their focus tends to be a bit more on data visualization.  A great addition for listeners keenly interested in data science.</p>
-
-<p><a href="http://mathmutation.blogspot.com/">Math Mutations</a> explores "weird corners of mathematics that you probably didn't hear in school".  It's soon to appear in book form.</p>
-
-<p><a href="http://probablyscience.libsyn.com/">Probably Science</a> is one of my sources of news.  Hosted by comedians with an interest in science, and featuring frequent celebrity appearances including not only Jana Levin but also Karen Gillan.</p>
-
-<p><a href="http://skeptoid.com/">Skeptoid</a> is a fantastic weekly program featuring short episodes on particular skeptical topics.  In many ways, skeptoid was the inspiration for the Data Skeptic mini episodes.</p>
-
-<p><a href="http://www.theskepticsguide.org/">The Skeptics' Guide to the Universe</a> is your escape to reality and an anticipated part of my weekend routine.</p>
-
-<p><a href="http://www.sciencesortof.com/">Science... sort of</a> is a fantastic panel news discussion and interview program.</p>
-
-<p><a href="http://relprime.com/">Relatively Prime</a> is my favorite maths podcast.</p>
-
-<p><a href="http://www.thetalkingmachines.com/">Talking Machines</a> features technical and deep interviews with some of the leading machine learning and statistical thinkers.  It's also (IMO) the unofficial NIPS podcast.</p>
-
-<p><a href="http://lineardigressions.com/">Linear Digressions</a> is a shorter form podcast that will appeal to people who like Data Skeptic mini-episodes but want something slightly more technical.</p>
-
-<p><a href="http://www.learningmachines101.com/">Learning Machines 101</a> are deep in detail like a college course, but in podcast form.</p>
-
-<p><a href="http://www.becomingadatascientist.com/category/podcast/">Becoming a data scientist</a> is a video and audio podcast with interviews of data science professionals.</p>
-
-<p>... and my appologies to the many great other skeptical and data related podcast I enjoy but could not remember off the top of my head.</p>
 
 <!--
   TO ADD:

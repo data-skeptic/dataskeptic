@@ -16,7 +16,6 @@
 
 <!--
 Event	Event Link	Title	Slideshare	Address	Date
-St. Mary's College Business Analytics class	-	Presenting Data Science to non-technical Decision Makers		St. Mary's College	5/21/16
 NSF Discussion					
 CIO Magazine	http://www.cio.com/article/3086896/hiring/how-to-hire-for-the-right-big-data-skill-set.html				
 -->
@@ -24,10 +23,11 @@ CIO Magazine	http://www.cio.com/article/3086896/hiring/how-to-hire-for-the-right
 <script>
 function render_event(container, event) {
   $(container).append("<h2>" + event['title'] + "</h2>")
-  $(container).append("<p>On " + event['date'] + " at <a href=\"" + event['url'] + "\">" + event['title'] + "</a></p>")
   var loc = event['location']
+  $(container).append("<p>On " + event['date'] + " at <a href=\"" + event['url'] + "\">" + event['conference'] + "</a></p>")
   if (loc != "") {
     $(container).append("<a href=\"https://www.google.com/maps/search/" + encodeURIComponent(loc) + "\">" + loc + "</a>")
+  } else {
   }
   $(container).append("<hr/>")
 }
@@ -105,6 +105,13 @@ $(document).ready(function() {
       'url':        'http://www.career.ucla.edu/Student/Events/The-JumpStart-Series'
     },
     {
+      'title':      'Presenting Data Science to non-technical Decision Makers',
+      'conference': 'St. Mary\'s College Business Analytics class',
+      'location':   '',
+      'date':       '2016-05-21',
+      'url':        'https://grad.saintmarys.edu/academic-programs/ms-data-science'
+    },
+    {
       'title':      'The Evolving Data Science Landscape',
       'conference': 'Big Data Day LA',
       'location':   'West LA College',
@@ -115,7 +122,7 @@ $(document).ready(function() {
       'title':      'Hacking Machine Learning Algorithms',
       'conference': 'The Eleventh Hope',
       'location':   'Hotel Pennsylvania, 401 7th Ave, New York, NY 10001',
-      'date':       '2016-07-09',
+      'date':       '2016-07-22',
       'url':        'https://hope.net/index.html'
     },
     {

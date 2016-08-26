@@ -1,5 +1,31 @@
 <? include("header.php") ?>
 
+<p>Below are the shows I am subscribed to as of 2016-08-25.  Some of these are dead shows (I assume), but my player (PocketCasts) continues to check the feed nonetheless.</p>
+
+<style>
+  .podcast_content {
+    float: left;
+    width: 130px;
+    height: 130px;
+  }
+</style>
+<script>
+$(document).ready(function() {
+  $(".title").hide()
+  $(".author").hide()
+  $.each($(".podcast_content"), function(i, elem) {
+    href = elem.getAttribute('href')
+    id = href.substring(href.lastIndexOf('/')+1, href.length)
+    link = "https://play.pocketcasts.com/web#/podcasts/show/" + id
+    console.log(link)
+    img = elem.getElementsByTagName("img")[0]
+    img.id = id
+    $("#" + id).wrap("<a href='" + link + "'></a>")
+  })
+})
+</script>
+
+
 <div id="podcasts_page">
             <div id="podcast_list">
               <!-- ngRepeat: podcast in podcasts | filter:search --><div class="podcast ng-scope" ng-repeat="podcast in podcasts | filter:search" title="23min of Ska">
