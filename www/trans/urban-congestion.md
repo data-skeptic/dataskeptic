@@ -121,6 +121,7 @@ It was interesting to me just to hear some of the results of how those worked bu
 But now I live in L.A., which is heavily dominated by geography, we have these things called mountains here that I did know about before, you know, maybe one and only one road to get from A to B.
 
 What can we learn from the existing zone-based pricing systems that will generalize? If it's true, that may be every city has its own nuances.
+
 **LEWIS**: It can be pretty good to implement your system using a technology that is flexible. The cities are so different that you learn something as you go so. That's one way that Singapore has really excelled. When they set up their system originally, it was actually just very flexible, because there's just people standing around checking to see if you had a piece of paper that you would stick in your front of car.
 
 So they were able to modify prices and modify the boundaries of the zone a whole lot. They got data and everything, and then after like twenty years they upgraded to an electronic system. But it was an electronics systems that used these gantries, and they were able to move the gantries, which are pieces of this metal archways. So they are able to put the gantries in this place or that place, and to move the zones around as needs arise. So it is a very flexible system.
@@ -165,7 +166,7 @@ In general, what's best for a city or is there even a notion of best?
 
 **LEWIS**: There is no notion of best. Of course, it's going to depend on what the leaders of the city want. Have you ever heard this idea, whatever you measure you are going to get good at?
 
-**I think they say that in startup community.** I think it's pretty true that most of these systems, the easiest thing to measure is the number of people going into the downtown, because once you set up the system as part of charging people, you are measuring that. The intensity, that's kind of been what it gets graded on. Then also you can measure speeds on the city streets. That's probably what any system in the long run, regardless of its goals, will end up doing because that's always associated with the more ethereal goals that you might call "touchy-feely," even though getting killed by a car isn't literally a "touchy-feely" experience. The fact is — or air pollution or something like — that you don't measure those with equipment and receive daily feedback on whether or not this toll is doing its job and such. So I think over time they're all pretty much going to target speed or traffic flows. 
+I think they say that in startup community. I think it's pretty true that most of these systems, the easiest thing to measure is the number of people going into the downtown, because once you set up the system as part of charging people, you are measuring that. The intensity, that's kind of been what it gets graded on. Then also you can measure speeds on the city streets. That's probably what any system in the long run, regardless of its goals, will end up doing because that's always associated with the more ethereal goals that you might call "touchy-feely," even though getting killed by a car isn't literally a "touchy-feely" experience. The fact is — or air pollution or something like — that you don't measure those with equipment and receive daily feedback on whether or not this toll is doing its job and such. So I think over time they're all pretty much going to target speed or traffic flows. 
 
 **HOST**: I imagine making changes is difficult. You mentioned a couple of times political reasons, or there could be other reasons of just confusion in the cost of rolling out changes. With that in mind, can we really do data-driven pricing and zone pricing and things like that, or do we have to buy into a model and trust it and roll it out, maybe make annual changes or something like that.
 **LEWIS**: The highways and the express lanes will be measuring speed in real time, and they are updating based on real data because that's not that difficult to measure on a freeway at a glance, like how fast the traffic is going.
@@ -189,9 +190,9 @@ And all of cities in America, a lot of the traffic is on freeways and among subu
 
 And I think you find out in 1-2 business days and there is tons of data on there and it's very interesting.
 
-The interface is sometimes like a little bit tricky to use. It can be hard to download a lot of data at once, but if you're going to use some elbow grease, you can get a lot of really interesting data. I've seen as some, there is some [machine learning classes used PEMS] (https://archive.ics.uci.edu/ml/datasets/PEMS-SF) data as their sample set.
+The interface is sometimes like a little bit tricky to use. It can be hard to download a lot of data at once, but if you're going to use some elbow grease, you can get a lot of really interesting data. I've seen as some, there is some [machine learning classes used PEMS](https://archive.ics.uci.edu/ml/datasets/PEMS-SF) data as their sample set.
 
-Another popular one, I think, for machine learning classes is a DC bike share data. I did a machine learning class, and, yeah, we used the [data from DC bike shares] (http://rstudio-pubs-static.s3.amazonaws.com/25024_ab1590e0d42d4443b88d30b9baf86897.html). It was very interesting.
+Another popular one, I think, for machine learning classes is a DC bike share data. I did a machine learning class, and, yeah, we used the [data from DC bike shares](http://rstudio-pubs-static.s3.amazonaws.com/25024_ab1590e0d42d4443b88d30b9baf86897.html). It was very interesting.
 
 **HOST**: Just to wind up, maybe we could get particularly speculative here. How you think self-driving cars are going do to affect our transportation systems?
 
